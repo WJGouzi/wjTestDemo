@@ -47,16 +47,8 @@
     self.tableView.backgroundColor = [UIColor whiteColor];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
-    self.tableView.tableFooterView = nil;
-    UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, wjScreenWidth, 44)];
-    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(10, 0, wjScreenWidth - 10, 44)];
-    label.text = @"项目";
-    [headerView addSubview:label];
-    UIView *line = [[UIView alloc] initWithFrame:CGRectMake(0, 44, wjScreenWidth, 1)];
-    line.backgroundColor = [UIColor lightGrayColor];
-    [headerView addSubview:line];
-    self.tableView.tableHeaderView = headerView;
-    
+//    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
 }
 
 #pragma mark - UITableViewDataSource
@@ -72,7 +64,6 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:iden];
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
-        
     }
     
     wjModel *model = self.dataArray[indexPath.row];
@@ -98,7 +89,6 @@
             break;
     }
 }
-
 
 
 @end

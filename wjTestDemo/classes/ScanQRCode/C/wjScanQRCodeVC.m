@@ -9,7 +9,7 @@
 #import "wjScanQRCodeVC.h"
 #import <AVFoundation/AVFoundation.h>
 
-
+typedef void(^actionBlock)(UIAlertAction *action);
 /**
  *  屏幕 高 宽 边界
  */
@@ -35,6 +35,8 @@
 @property (strong,nonatomic) AVCaptureSession *session;
 @property (strong,nonatomic) AVCaptureVideoPreviewLayer *previewLayer;
 @property (nonatomic, strong) UIImageView * scanLine;
+
+@property (nonatomic,strong) actionBlock actionblock;
 
 @end
 
@@ -145,16 +147,68 @@
 }
 
 
-#pragma mark - 共用方法
-- (void)wjShowAlertWithTitle:(NSString *)title message:(NSString *)message actionTitle:(NSString *)actionTitle actionStyle:(UIAlertActionStyle)style {
-    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"提示" message:@"设备没有摄像头" preferredStyle:UIAlertControllerStyleAlert];
-    UIAlertAction *action = [UIAlertAction actionWithTitle:@"确认" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+#pragma mark AVCaptureMetadataOutputObjectsDelegate
+- (void)captureOutput:(AVCaptureOutput *)captureOutput didOutputMetadataObjects:(NSArray *)metadataObjects fromConnection:(AVCaptureConnection *)connection {
+    NSLog(@"%@", metadataObjects);
+    if (metadataObjects.count > 0) {
+        // 有扫描的结果
+        [self.session stopRunning];
+        [timer setFireDate:[NSDate distantFuture]];
         
-    }];
+        AVMetadataMachineReadableCodeObject *metadataObject = metadataObjects[0];
+        NSString *scanResult = metadataObject.stringValue;
+        NSLog(@"scan result is %@", scanResult);
+        
+        NSArray *arry = metadataObject.corners;
+        for (id temp in arry) {
+            NSLog(@"temp:%@",temp);
+        }
+        
+        [self wjShowAlertWithTitle:@"扫描结果" message:scanResult actionTitle:@"确认" actionStyle:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+            if (self.session != nil && timer != nil) {
+                [self.session startRunning];
+                [timer setFireDate:[NSDate date]];
+            }
+        }];
+    } else {
+        [self wjShowAlertWithTitle:@"提示" message:@"无扫描信息" actionTitle:@"确定" actionStyle:UIAlertActionStyleDefault];
+    }
+    
+}
+
+
+#pragma mark - 共用方法
+
+/**
+ 提示框
+
+ @param title 提示
+ @param message 提示的文字
+ @param actionTitle 按钮的文字
+ @param style action的样式
+ */
+- (void)wjShowAlertWithTitle:(NSString *)title message:(NSString *)message actionTitle:(NSString *)actionTitle actionStyle:(UIAlertActionStyle)style  {
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"提示" message:@"设备没有摄像头" preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *action = [UIAlertAction actionWithTitle:@"确认" style:UIAlertActionStyleDefault handler:nil];
     [alert addAction:action];
     [self presentViewController:alert animated:YES completion:nil];
 }
 
 
+/**
+ 提示框
+
+ @param title 提示
+ @param message 提示的文字
+ @param actionTitle 按钮的文字
+ @param style 按钮的样式
+ @param block 点击后需要做的操作
+ */
+- (void)wjShowAlertWithTitle:(NSString *)title message:(NSString *)message actionTitle:(NSString *)actionTitle actionStyle:(UIAlertActionStyle)style handler:(actionBlock)block {
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *action = [UIAlertAction actionWithTitle:actionTitle style:UIAlertActionStyleDefault handler:block];
+    [alert addAction:action];
+    [self presentViewController:alert animated:YES completion:nil];
+}
 
 @end
