@@ -5,6 +5,14 @@
 	<dict>
 		<key>cellName</key>
 		<string>生成二维码</string>
+		<key>imageName</key>
+		<string>generateQRCode</string>
+	</dict>
+	<dict>
+		<key>cellName</key>
+		<string>扫描二维码</string>
+		<key>imageName</key>
+		<string>scanQRCode</string>
 	</dict>
 </array>
 </plist>

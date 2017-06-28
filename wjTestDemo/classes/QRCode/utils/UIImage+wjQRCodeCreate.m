@@ -9,7 +9,7 @@
 #import "UIImage+wjQRCodeCreate.h"
 
 @implementation UIImage (wjQRCodeCreate)
-#pragma mark - 生成二维码
+#pragma mark - 生成自定义的二维码->二维码中带有一个头像
 + (UIImage *)qrCodeImageWithContent:(NSString *)content
                       codeImageSize:(CGFloat)size
                                logo:(UIImage *)logo
@@ -110,7 +110,7 @@ void ProviderReleaseData (void *info, const void *data, size_t size) {
 
 
 
-
+#pragma mark - 系统生成的二维码进行高清化的处理
 /**
  *  根据CIImage生成指定大小的UIImage
  *

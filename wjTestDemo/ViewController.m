@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "wjQRCodeVC.h"
+#import "wjScanQRCodeVC.h"
 #import "wjModel.h"
 
 #define wjScreenWidth [UIScreen mainScreen].bounds.size.width
@@ -42,10 +43,20 @@
 }
 
 - (void)wjBasicSettings {
-//    self.tableView.frame = CGRectMake(0, 20, wjScreenWidth, wjScreenHeight - 20);
-    self.tableView.backgroundColor = [UIColor lightGrayColor];
+    self.title = @"主页";
+    self.tableView.backgroundColor = [UIColor whiteColor];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
+    self.tableView.tableFooterView = nil;
+    UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, wjScreenWidth, 44)];
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(10, 0, wjScreenWidth - 10, 44)];
+    label.text = @"项目";
+    [headerView addSubview:label];
+    UIView *line = [[UIView alloc] initWithFrame:CGRectMake(0, 44, wjScreenWidth, 1)];
+    line.backgroundColor = [UIColor lightGrayColor];
+    [headerView addSubview:line];
+    self.tableView.tableHeaderView = headerView;
+    
 }
 
 #pragma mark - UITableViewDataSource
@@ -59,9 +70,14 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:iden];
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:iden];
+        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        
     }
+    
     wjModel *model = self.dataArray[indexPath.row];
     cell.textLabel.text = model.cellName;
+    cell.imageView.image = [UIImage imageNamed:model.imageName];
     return cell;
 }
 
@@ -70,7 +86,12 @@
     switch (indexPath.row) {
         case 0: {
             wjQRCodeVC *qrvc = [[wjQRCodeVC alloc] init];
-            [self presentViewController:qrvc animated:YES completion:nil];
+            [self.navigationController pushViewController:qrvc animated:YES];
+        }
+            break;
+        case 1: {
+            wjScanQRCodeVC *scanQRCodeVC = [[wjScanQRCodeVC alloc] init];
+            [self.navigationController pushViewController:scanQRCodeVC animated:YES];
         }
             break;
         default:

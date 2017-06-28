@@ -21,7 +21,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    
+    self.title = @"扫描二维码";
 }
 
 // 系统创建二维码
@@ -55,7 +55,7 @@
 
 // 自定义二维码的创建
 - (IBAction)wjCustomQRCodeCreatAction:(UIButton *)sender {
-    //二维码
+    // 二维码
     UIImage *qrCodeImage = [UIImage qrCodeImageWithContent:@"How are you?"
                                                codeImageSize:150
                                                         logo:[UIImage imageNamed:@"icon.jpeg"]
@@ -65,16 +65,11 @@
                                                         blue:139/255.0f];
     self.wjQRCodeImageView.image = qrCodeImage;
     self.wjQRCodeImageView.backgroundColor = [UIColor colorWithRed:253/255.0f green:245/255.0f blue:230/255.0f alpha:1.0f];//:@"#FDF5E6"];// #006400
-//    //阴影
+    // 阴影
     self.wjQRCodeImageView.layer.shadowOffset = CGSizeMake(0, 0);
     self.wjQRCodeImageView.layer.shadowRadius = 5;
     self.wjQRCodeImageView.layer.shadowColor = [UIColor blackColor].CGColor;
     self.wjQRCodeImageView.layer.shadowOpacity = 0.4;
-}
-
-
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 

@@ -21,6 +21,12 @@
 		C4274B951F020C7800C7B379 /* wjModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C4274B941F020C7800C7B379 /* wjModel.m */; };
 		C4274B971F020F8F00C7B379 /* model.plist in Resources */ = {isa = PBXBuildFile; fileRef = C4274B961F020F8F00C7B379 /* model.plist */; };
 		C4274B991F023C4B00C7B379 /* icon.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C4274B981F023C4B00C7B379 /* icon.jpeg */; };
+		C4274BA11F035EE500C7B379 /* wjScanQRCodeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C4274B9F1F035EE500C7B379 /* wjScanQRCodeVC.m */; };
+		C4274BA21F035EE500C7B379 /* wjScanQRCodeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4274BA01F035EE500C7B379 /* wjScanQRCodeVC.xib */; };
+		C4274BA81F03614D00C7B379 /* line.png in Resources */ = {isa = PBXBuildFile; fileRef = C4274BA41F03614D00C7B379 /* line.png */; };
+		C4274BA91F03614D00C7B379 /* line@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C4274BA51F03614D00C7B379 /* line@2x.png */; };
+		C4274BAA1F03614D00C7B379 /* pick_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = C4274BA61F03614D00C7B379 /* pick_bg.png */; };
+		C4274BAB1F03614D00C7B379 /* pick_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C4274BA71F03614D00C7B379 /* pick_bg@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +63,13 @@
 		C4274B941F020C7800C7B379 /* wjModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = wjModel.m; sourceTree = "<group>"; };
 		C4274B961F020F8F00C7B379 /* model.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = model.plist; sourceTree = "<group>"; };
 		C4274B981F023C4B00C7B379 /* icon.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = icon.jpeg; sourceTree = "<group>"; };
+		C4274B9E1F035EE500C7B379 /* wjScanQRCodeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wjScanQRCodeVC.h; sourceTree = "<group>"; };
+		C4274B9F1F035EE500C7B379 /* wjScanQRCodeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = wjScanQRCodeVC.m; sourceTree = "<group>"; };
+		C4274BA01F035EE500C7B379 /* wjScanQRCodeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = wjScanQRCodeVC.xib; sourceTree = "<group>"; };
+		C4274BA41F03614D00C7B379 /* line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = line.png; sourceTree = "<group>"; };
+		C4274BA51F03614D00C7B379 /* line@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "line@2x.png"; sourceTree = "<group>"; };
+		C4274BA61F03614D00C7B379 /* pick_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pick_bg.png; sourceTree = "<group>"; };
+		C4274BA71F03614D00C7B379 /* pick_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pick_bg@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +150,7 @@
 		C4274B761F0201D300C7B379 /* classes */ = {
 			isa = PBXGroup;
 			children = (
+				C4274B9A1F0356FC00C7B379 /* ScanQRCode */,
 				C4274B771F0201D300C7B379 /* QRCode */,
 			);
 			path = classes;
@@ -185,6 +199,52 @@
 				C4274B911F02081700C7B379 /* CoreImage.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C4274B9A1F0356FC00C7B379 /* ScanQRCode */ = {
+			isa = PBXGroup;
+			children = (
+				C4274BA31F03604A00C7B379 /* resource */,
+				C4274B9B1F0356FC00C7B379 /* C */,
+				C4274B9C1F0356FC00C7B379 /* M */,
+				C4274B9D1F0356FC00C7B379 /* V */,
+			);
+			path = ScanQRCode;
+			sourceTree = "<group>";
+		};
+		C4274B9B1F0356FC00C7B379 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				C4274B9E1F035EE500C7B379 /* wjScanQRCodeVC.h */,
+				C4274B9F1F035EE500C7B379 /* wjScanQRCodeVC.m */,
+				C4274BA01F035EE500C7B379 /* wjScanQRCodeVC.xib */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		C4274B9C1F0356FC00C7B379 /* M */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = M;
+			sourceTree = "<group>";
+		};
+		C4274B9D1F0356FC00C7B379 /* V */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = V;
+			sourceTree = "<group>";
+		};
+		C4274BA31F03604A00C7B379 /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				C4274BA41F03614D00C7B379 /* line.png */,
+				C4274BA51F03614D00C7B379 /* line@2x.png */,
+				C4274BA61F03614D00C7B379 /* pick_bg.png */,
+				C4274BA71F03614D00C7B379 /* pick_bg@2x.png */,
+			);
+			path = resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,10 +332,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4274B971F020F8F00C7B379 /* model.plist in Resources */,
+				C4274BAA1F03614D00C7B379 /* pick_bg.png in Resources */,
 				C4274B5C1F0200E800C7B379 /* LaunchScreen.storyboard in Resources */,
 				C4274B991F023C4B00C7B379 /* icon.jpeg in Resources */,
+				C4274BA81F03614D00C7B379 /* line.png in Resources */,
 				C4274B591F0200E800C7B379 /* Assets.xcassets in Resources */,
+				C4274BA21F035EE500C7B379 /* wjScanQRCodeVC.xib in Resources */,
+				C4274BAB1F03614D00C7B379 /* pick_bg@2x.png in Resources */,
 				C4274B571F0200E800C7B379 /* Main.storyboard in Resources */,
+				C4274BA91F03614D00C7B379 /* line@2x.png in Resources */,
 				C4274B8A1F02029700C7B379 /* wjQRCodeVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,6 +361,7 @@
 			files = (
 				C4274B541F0200E800C7B379 /* ViewController.m in Sources */,
 				C4274B511F0200E800C7B379 /* AppDelegate.m in Sources */,
+				C4274BA11F035EE500C7B379 /* wjScanQRCodeVC.m in Sources */,
 				C4274B4E1F0200E800C7B379 /* main.m in Sources */,
 				C4274B891F02029700C7B379 /* wjQRCodeVC.m in Sources */,
 				C4274B951F020C7800C7B379 /* wjModel.m in Sources */,
