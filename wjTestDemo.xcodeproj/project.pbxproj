@@ -36,6 +36,7 @@
 		C43691711F04DD0500F18340 /* wjTouchedVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C436916F1F04DD0500F18340 /* wjTouchedVC.m */; };
 		C43691721F04DD0500F18340 /* wjTouchedVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C43691701F04DD0500F18340 /* wjTouchedVC.xib */; };
 		C43691761F04F56B00F18340 /* 3DTouch_changeIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = C43691751F04F56B00F18340 /* 3DTouch_changeIcon.png */; };
+		C43691781F04FBE000F18340 /* icon.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C43691771F04FBE000F18340 /* icon.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +92,7 @@
 		C436916F1F04DD0500F18340 /* wjTouchedVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = wjTouchedVC.m; sourceTree = "<group>"; };
 		C43691701F04DD0500F18340 /* wjTouchedVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = wjTouchedVC.xib; sourceTree = "<group>"; };
 		C43691751F04F56B00F18340 /* 3DTouch_changeIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3DTouch_changeIcon.png; sourceTree = "<group>"; };
+		C43691771F04FBE000F18340 /* icon.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = icon.jpeg; sourceTree = "<group>"; };
 		C4AC5AE71F048AB90023DD13 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -342,6 +344,7 @@
 		C43691631F04ADEE00F18340 /* res */ = {
 			isa = PBXGroup;
 			children = (
+				C43691771F04FBE000F18340 /* icon.jpeg */,
 				C43691751F04F56B00F18340 /* 3DTouch_changeIcon.png */,
 			);
 			path = res;
@@ -446,6 +449,7 @@
 				C43691761F04F56B00F18340 /* 3DTouch_changeIcon.png in Resources */,
 				C4274BA81F03614D00C7B379 /* line.png in Resources */,
 				C43691721F04DD0500F18340 /* wjTouchedVC.xib in Resources */,
+				C43691781F04FBE000F18340 /* icon.jpeg in Resources */,
 				C436915E1F048D1600F18340 /* wjAlterAppIconVC.xib in Resources */,
 				C4274B591F0200E800C7B379 /* Assets.xcassets in Resources */,
 				C4274BA21F035EE500C7B379 /* wjScanQRCodeVC.xib in Resources */,
