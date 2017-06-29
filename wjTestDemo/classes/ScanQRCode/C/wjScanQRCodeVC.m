@@ -13,9 +13,7 @@ typedef void(^actionBlock)(UIAlertAction *action);
 /**
  *  屏幕 高 宽 边界
  */
-#define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
-#define SCREEN_WIDTH  [UIScreen mainScreen].bounds.size.width
-#define SCREEN_BOUNDS  [UIScreen mainScreen].bounds
+
 
 #define TOP (SCREEN_HEIGHT-220)/2
 #define LEFT (SCREEN_WIDTH-220)/2

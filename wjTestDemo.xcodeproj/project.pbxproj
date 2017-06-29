@@ -31,6 +31,10 @@
 		C4280A791F03B56400EBEF45 /* iconChange@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C4280A771F03B56400EBEF45 /* iconChange@3x.png */; };
 		C436915D1F048D1600F18340 /* wjAlterAppIconVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C436915B1F048D1600F18340 /* wjAlterAppIconVC.m */; };
 		C436915E1F048D1600F18340 /* wjAlterAppIconVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C436915C1F048D1600F18340 /* wjAlterAppIconVC.xib */; };
+		C43691681F04D09900F18340 /* wj3DTouchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C43691661F04D09900F18340 /* wj3DTouchVC.m */; };
+		C43691691F04D09900F18340 /* wj3DTouchVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C43691671F04D09900F18340 /* wj3DTouchVC.xib */; };
+		C43691711F04DD0500F18340 /* wjTouchedVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C436916F1F04DD0500F18340 /* wjTouchedVC.m */; };
+		C43691721F04DD0500F18340 /* wjTouchedVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C43691701F04DD0500F18340 /* wjTouchedVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +83,12 @@
 		C436915A1F048D1600F18340 /* wjAlterAppIconVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wjAlterAppIconVC.h; sourceTree = "<group>"; };
 		C436915B1F048D1600F18340 /* wjAlterAppIconVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = wjAlterAppIconVC.m; sourceTree = "<group>"; };
 		C436915C1F048D1600F18340 /* wjAlterAppIconVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = wjAlterAppIconVC.xib; sourceTree = "<group>"; };
+		C43691651F04D09900F18340 /* wj3DTouchVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wj3DTouchVC.h; sourceTree = "<group>"; };
+		C43691661F04D09900F18340 /* wj3DTouchVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = wj3DTouchVC.m; sourceTree = "<group>"; };
+		C43691671F04D09900F18340 /* wj3DTouchVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = wj3DTouchVC.xib; sourceTree = "<group>"; };
+		C436916E1F04DD0500F18340 /* wjTouchedVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wjTouchedVC.h; sourceTree = "<group>"; };
+		C436916F1F04DD0500F18340 /* wjTouchedVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = wjTouchedVC.m; sourceTree = "<group>"; };
+		C43691701F04DD0500F18340 /* wjTouchedVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = wjTouchedVC.xib; sourceTree = "<group>"; };
 		C4AC5AE71F048AB90023DD13 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -155,6 +165,7 @@
 		C4274B761F0201D300C7B379 /* classes */ = {
 			isa = PBXGroup;
 			children = (
+				C43691601F04ADEE00F18340 /* 3DTouch */,
 				C4280A731F03B56400EBEF45 /* AlterAppIcon */,
 				C4274B9A1F0356FC00C7B379 /* ScanQRCode */,
 				C4274B771F0201D300C7B379 /* QRCode */,
@@ -295,6 +306,51 @@
 			path = resource;
 			sourceTree = "<group>";
 		};
+		C43691601F04ADEE00F18340 /* 3DTouch */ = {
+			isa = PBXGroup;
+			children = (
+				C43691611F04ADEE00F18340 /* C */,
+				C43691621F04ADEE00F18340 /* M */,
+				C43691631F04ADEE00F18340 /* res */,
+				C43691641F04ADEE00F18340 /* V */,
+			);
+			path = 3DTouch;
+			sourceTree = "<group>";
+		};
+		C43691611F04ADEE00F18340 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				C43691651F04D09900F18340 /* wj3DTouchVC.h */,
+				C43691661F04D09900F18340 /* wj3DTouchVC.m */,
+				C43691671F04D09900F18340 /* wj3DTouchVC.xib */,
+				C436916E1F04DD0500F18340 /* wjTouchedVC.h */,
+				C436916F1F04DD0500F18340 /* wjTouchedVC.m */,
+				C43691701F04DD0500F18340 /* wjTouchedVC.xib */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		C43691621F04ADEE00F18340 /* M */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = M;
+			sourceTree = "<group>";
+		};
+		C43691631F04ADEE00F18340 /* res */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = res;
+			sourceTree = "<group>";
+		};
+		C43691641F04ADEE00F18340 /* V */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = V;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -382,8 +438,10 @@
 				C4274B971F020F8F00C7B379 /* model.plist in Resources */,
 				C4274BAA1F03614D00C7B379 /* pick_bg.png in Resources */,
 				C4274B5C1F0200E800C7B379 /* LaunchScreen.storyboard in Resources */,
+				C43691691F04D09900F18340 /* wj3DTouchVC.xib in Resources */,
 				C4274B991F023C4B00C7B379 /* icon.jpeg in Resources */,
 				C4274BA81F03614D00C7B379 /* line.png in Resources */,
+				C43691721F04DD0500F18340 /* wjTouchedVC.xib in Resources */,
 				C436915E1F048D1600F18340 /* wjAlterAppIconVC.xib in Resources */,
 				C4274B591F0200E800C7B379 /* Assets.xcassets in Resources */,
 				C4274BA21F035EE500C7B379 /* wjScanQRCodeVC.xib in Resources */,
@@ -410,8 +468,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C43691711F04DD0500F18340 /* wjTouchedVC.m in Sources */,
 				C4274B541F0200E800C7B379 /* ViewController.m in Sources */,
 				C436915D1F048D1600F18340 /* wjAlterAppIconVC.m in Sources */,
+				C43691681F04D09900F18340 /* wj3DTouchVC.m in Sources */,
 				C4274B511F0200E800C7B379 /* AppDelegate.m in Sources */,
 				C4274BA11F035EE500C7B379 /* wjScanQRCodeVC.m in Sources */,
 				C4274B4E1F0200E800C7B379 /* main.m in Sources */,

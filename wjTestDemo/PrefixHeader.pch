@@ -16,5 +16,23 @@
 #import "wjQRCodeVC.h"          // 生成二维码
 #import "wjScanQRCodeVC.h"      // 扫描二维码
 #import "wjAlterAppIconVC.h"    // 更换应用图标
+#import "wj3DTouchVC.h"         // 3DTouch peek
+
+
+
+#pragma mark - 一些常规的设置
+#define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
+#define SCREEN_WIDTH  [UIScreen mainScreen].bounds.size.width
+#define SCREEN_BOUNDS [UIScreen mainScreen].bounds
+
+
+/**
+ *  打印输出
+ */
+#ifdef DEBUG // 开发阶段
+#define NSLog(FORMAT, ...) fprintf(stderr,"Class:%s line:%d Msg:%s\n",[[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String], __LINE__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
+#else       // 发布阶段
+#define NSLog(FORMAT, ...) nil
+#endif
 
 #endif /* PrefixHeader_pch */

@@ -50,7 +50,6 @@
 
 #pragma mark - UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    NSLog(@"%ld", self.dataArray.count);
     return self.dataArray.count;
 }
 
@@ -85,6 +84,11 @@
         case 2: {
             wjAlterAppIconVC *alterIconVC = [[wjAlterAppIconVC alloc] init];
             [self.navigationController pushViewController:alterIconVC animated:YES];
+        }
+            break;
+        case 3: {
+            wj3DTouchVC *touchVC = [[wj3DTouchVC alloc] init];
+            [self.navigationController pushViewController:touchVC animated:YES];
         }
             break;
         default:
