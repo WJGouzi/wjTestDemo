@@ -22,21 +22,25 @@
 // peek后上滑的几个选择按钮
 - (NSArray<id<UIPreviewActionItem>> *)previewActionItems {
     // setup a list of preview actions
-    UIPreviewAction *action1 = [UIPreviewAction actionWithTitle:@"点赞" style:UIPreviewActionStyleDefault handler:^(UIPreviewAction * _Nonnull action, UIViewController * _Nonnull previewViewController) {
-        NSLog(@"Aciton1");
+    UIPreviewAction *action1 = [UIPreviewAction actionWithTitle:@"短信" style:UIPreviewActionStyleDefault handler:^(UIPreviewAction * _Nonnull action, UIViewController * _Nonnull previewViewController) {
+        NSDictionary *info = @{@"msm" : @"你好"};
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"sms://%@", @"15982925521"]] options:info completionHandler:^(BOOL success) {
+            
+        }];
     }];
     
-    UIPreviewAction *action2 = [UIPreviewAction actionWithTitle:@"分享" style:UIPreviewActionStyleDefault handler:^(UIPreviewAction * _Nonnull action, UIViewController * _Nonnull previewViewController) {
-        NSLog(@"Aciton2");
+    UIPreviewAction *action2 = [UIPreviewAction actionWithTitle:@"电话" style:UIPreviewActionStyleDefault handler:^(UIPreviewAction * _Nonnull action, UIViewController * _Nonnull previewViewController) {
+        // 打电话(系统会自动弹出提示框)
+        NSDictionary *info = @{@"tel" : @"15982925521"};
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"tel://%@", info[@"tel"]]] options:info completionHandler:^(BOOL success) {
+            
+        }];
     }];
     
     UIPreviewAction *action3 = [UIPreviewAction actionWithTitle:@"关闭" style:UIPreviewActionStyleDefault handler:^(UIPreviewAction * _Nonnull action, UIViewController * _Nonnull previewViewController) {
         [self.navigationController popViewControllerAnimated:YES];
     }];
-    
     NSArray *actions = @[action1,action2,action3];
-    
-    // and return them (return the array of actions instead to see all items ungrouped)
     return actions;
 }
 
