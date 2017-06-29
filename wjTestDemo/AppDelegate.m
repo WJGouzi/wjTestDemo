@@ -12,6 +12,8 @@
 #define wjScreenWidth [UIScreen mainScreen].bounds.size.width
 #define wjScreenHeight [UIScreen mainScreen].bounds.size.height
 
+
+
 @interface AppDelegate ()
 
 @end
@@ -26,35 +28,80 @@
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
     self.window.rootViewController = nav;
     [self.window makeKeyAndVisible];
+    
+    // 3DTOUCH
+    [self wjCreat3DShortCutItemInAppicon];
+    [self wjAccordingToFlagIntoDifferentControllerWithOptions:launchOptions navigation:nav];
     return YES;
 }
 
+#pragma mark - -------------------------------------------3DTouch 相关-------------------------------------------------
 
-- (void)applicationWillResignActive:(UIApplication *)application {
-    // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-    // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
+/**
+ 在图标上创建一个3DTouch的列表
+ */
+- (void)wjCreat3DShortCutItemInAppicon {
+    // 创建系统风格的快捷键
+    UIApplicationShortcutIcon *systemIcon = [UIApplicationShortcutIcon iconWithType:UIApplicationShortcutIconTypeSearch];
+    // 创建快捷选项
+    UIApplicationShortcutItem *systemItem = [[UIApplicationShortcutItem alloc] initWithType:@"com.wangjun.wjTestDemo.3Dtouch.share" localizedTitle:@"分享" localizedSubtitle:@"一起分享" icon:systemIcon userInfo:nil];
+    
+    // 自定义的风格的快捷键
+    UIApplicationShortcutIcon *changeAppIcon = [UIApplicationShortcutIcon iconWithTemplateImageName:@"3DTouch_changeIcon"];
+    UIApplicationShortcutItem *changIconItem = [[UIApplicationShortcutItem alloc] initWithType:@"com.wangjun.wjTestDemo.3Dtouch.changeAppIcon" localizedTitle:@"切换应用图标" localizedSubtitle:@"试试吧" icon:changeAppIcon userInfo:nil];
+    
+    [UIApplication sharedApplication].shortcutItems = @[systemItem, changIconItem];
 }
 
 
-- (void)applicationDidEnterBackground:(UIApplication *)application {
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-    // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+/**
+ 根据不同的标志进入到不同的页面
+ */
+- (BOOL)wjAccordingToFlagIntoDifferentControllerWithOptions:(NSDictionary *)launchOptions navigation:(UINavigationController *)nav {
+    UIApplicationShortcutItem *item = [launchOptions valueForKey:UIApplicationLaunchOptionsShortcutItemKey];
+    if (item) {
+        [self wjIntoDifferentControllerWithItem:item withNavgation:nav];
+        return NO;
+    }
+    return YES;
+}
+
+//如果app在后台，通过快捷选项标签进入app，则调用该方法，如果app不在后台已杀死，则处理通过快捷选项标签进入app的逻辑在- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions中
+- (void)application:(UIApplication *)application performActionForShortcutItem:(UIApplicationShortcutItem *)shortcutItem completionHandler:(void (^)(BOOL))completionHandler {
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = [UIColor whiteColor];
+    ViewController *vc = [[ViewController alloc] init];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+    self.window.rootViewController = nav;
+    [self.window makeKeyAndVisible];
+    
+    [self wjIntoDifferentControllerWithItem:shortcutItem withNavgation:nav];
+    if (completionHandler) {
+        completionHandler(YES);
+    }
 }
 
 
-- (void)applicationWillEnterForeground:(UIApplication *)application {
-    // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
+// 封装进入不同的控制器
+- (void)wjIntoDifferentControllerWithItem:(UIApplicationShortcutItem *)item withNavgation:(UINavigationController *)nav{
+    if ([item.type isEqualToString:@"com.wangjun.wjTestDemo.3Dtouch.share"]) {
+        NSArray *shares = @[@"3d Touch"];
+        UIActivityViewController *shareVC = [[UIActivityViewController alloc]initWithActivityItems:shares applicationActivities:nil];
+        [self.window.rootViewController presentViewController:shareVC animated:YES completion:^{
+            NSLog(@"this is share demo display!");
+        }];
+    } else if ([item.type isEqualToString:@"com.wangjun.wjTestDemo.3Dtouch.changeAppIcon"]) {
+        wjAlterAppIconVC *alterIconVC = [[wjAlterAppIconVC alloc] init];
+        [nav pushViewController:alterIconVC animated:YES];
+    } else if ([item.type isEqualToString:@"com.wangjun.wjTestDemo.3Dtouch.changeAppIcon"]) {
+        wjAlterAppIconVC *alterIconVC = [[wjAlterAppIconVC alloc] init];
+        [nav pushViewController:alterIconVC animated:YES];
+    } else if ([item.type isEqualToString:@"com.wangjun.wjTestDemo.3Dtouch.creatQRCode"]) {
+        wjQRCodeVC *creatQRCodeVC = [[wjQRCodeVC alloc] init];
+        [nav pushViewController:creatQRCodeVC animated:YES];
+    }
 }
 
-
-- (void)applicationDidBecomeActive:(UIApplication *)application {
-    // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-}
-
-
-- (void)applicationWillTerminate:(UIApplication *)application {
-    // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
-}
-
+#pragma mark - --------------------------------------------------------------------------------------------------------
 
 @end

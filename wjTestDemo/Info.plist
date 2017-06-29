@@ -62,5 +62,29 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIApplicationShortcutItems</key>
+	<array>
+		<dict>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>生成二维码</string>
+			<key>UIApplicationShortcutItemType</key>
+			<string>com.wangjun.wjTestDemo.3Dtouch.creatQRCode</string>
+		</dict>
+		<dict>
+			<key>UIApplicationShortcutItemIconType</key>
+			<string>UIApplicationShortcutIconTypeShuffle</string>
+			<key>UIApplicationShortcutItemSubtitle</key>
+			<string>应用图标更改</string>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>切换图标</string>
+			<key>UIApplicationShortcutItemType</key>
+			<string>com.wangjun.wjTestDemo.3Dtouch.changeAppIcon</string>
+			<key>UIApplicationShortcutItemUserInfo</key>
+			<dict>
+				<key>key1</key>
+				<string>value1</string>
+			</dict>
+		</dict>
+	</array>
 </dict>
 </plist>

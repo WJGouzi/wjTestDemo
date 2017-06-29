@@ -35,6 +35,7 @@
 		C43691691F04D09900F18340 /* wj3DTouchVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C43691671F04D09900F18340 /* wj3DTouchVC.xib */; };
 		C43691711F04DD0500F18340 /* wjTouchedVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C436916F1F04DD0500F18340 /* wjTouchedVC.m */; };
 		C43691721F04DD0500F18340 /* wjTouchedVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C43691701F04DD0500F18340 /* wjTouchedVC.xib */; };
+		C43691761F04F56B00F18340 /* 3DTouch_changeIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = C43691751F04F56B00F18340 /* 3DTouch_changeIcon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +90,7 @@
 		C436916E1F04DD0500F18340 /* wjTouchedVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wjTouchedVC.h; sourceTree = "<group>"; };
 		C436916F1F04DD0500F18340 /* wjTouchedVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = wjTouchedVC.m; sourceTree = "<group>"; };
 		C43691701F04DD0500F18340 /* wjTouchedVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = wjTouchedVC.xib; sourceTree = "<group>"; };
+		C43691751F04F56B00F18340 /* 3DTouch_changeIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3DTouch_changeIcon.png; sourceTree = "<group>"; };
 		C4AC5AE71F048AB90023DD13 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -340,6 +342,7 @@
 		C43691631F04ADEE00F18340 /* res */ = {
 			isa = PBXGroup;
 			children = (
+				C43691751F04F56B00F18340 /* 3DTouch_changeIcon.png */,
 			);
 			path = res;
 			sourceTree = "<group>";
@@ -440,6 +443,7 @@
 				C4274B5C1F0200E800C7B379 /* LaunchScreen.storyboard in Resources */,
 				C43691691F04D09900F18340 /* wj3DTouchVC.xib in Resources */,
 				C4274B991F023C4B00C7B379 /* icon.jpeg in Resources */,
+				C43691761F04F56B00F18340 /* 3DTouch_changeIcon.png in Resources */,
 				C4274BA81F03614D00C7B379 /* line.png in Resources */,
 				C43691721F04DD0500F18340 /* wjTouchedVC.xib in Resources */,
 				C436915E1F048D1600F18340 /* wjAlterAppIconVC.xib in Resources */,
