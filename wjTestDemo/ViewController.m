@@ -47,7 +47,6 @@
     self.tableView.backgroundColor = [UIColor whiteColor];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
-//    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
 }
 
@@ -81,6 +80,11 @@
         }
             break;
         case 1: {
+            wjScanQRCodeVC *scanQRCodeVC = [[wjScanQRCodeVC alloc] init];
+            [self.navigationController pushViewController:scanQRCodeVC animated:YES];
+        }
+            break;
+        case 2: {
             wjScanQRCodeVC *scanQRCodeVC = [[wjScanQRCodeVC alloc] init];
             [self.navigationController pushViewController:scanQRCodeVC animated:YES];
         }

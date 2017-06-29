@@ -52,7 +52,7 @@ typedef void(^actionBlock)(UIAlertAction *action);
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    
+    [self setCropRect:kScanRect];
     [self performSelector:@selector(wjCameraSettings) withObject:nil afterDelay:0.3];
 }
 
@@ -100,6 +100,28 @@ typedef void(^actionBlock)(UIAlertAction *action);
         }
     }
 }
+
+
+#pragma mark - 设置蒙层
+- (void)setCropRect:(CGRect)cropRect {
+    cropLayer = [[CAShapeLayer alloc] init];
+    CGMutablePathRef path = CGPathCreateMutable();
+    CGPathAddRect(path, nil, cropRect);
+    CGPathAddRect(path, nil, self.view.bounds);
+    
+    [cropLayer setFillRule:kCAFillRuleEvenOdd];
+    [cropLayer setPath:path];
+    [cropLayer setFillColor:[UIColor blackColor].CGColor];
+    [cropLayer setOpacity:0.6];
+    
+    
+    [cropLayer setNeedsDisplay];
+    
+    [self.view.layer addSublayer:cropLayer];
+}
+
+
+
 
 #pragma mark - 设置相机
 - (void)wjCameraSettings {

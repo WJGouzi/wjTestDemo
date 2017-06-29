@@ -27,6 +27,8 @@
 		C4274BA91F03614D00C7B379 /* line@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C4274BA51F03614D00C7B379 /* line@2x.png */; };
 		C4274BAA1F03614D00C7B379 /* pick_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = C4274BA61F03614D00C7B379 /* pick_bg.png */; };
 		C4274BAB1F03614D00C7B379 /* pick_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C4274BA71F03614D00C7B379 /* pick_bg@2x.png */; };
+		C4280A781F03B56400EBEF45 /* iconChange@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C4280A761F03B56400EBEF45 /* iconChange@2x.png */; };
+		C4280A791F03B56400EBEF45 /* iconChange@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C4280A771F03B56400EBEF45 /* iconChange@3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +72,8 @@
 		C4274BA51F03614D00C7B379 /* line@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "line@2x.png"; sourceTree = "<group>"; };
 		C4274BA61F03614D00C7B379 /* pick_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pick_bg.png; sourceTree = "<group>"; };
 		C4274BA71F03614D00C7B379 /* pick_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pick_bg@2x.png"; sourceTree = "<group>"; };
+		C4280A761F03B56400EBEF45 /* iconChange@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconChange@2x.png"; sourceTree = "<group>"; };
+		C4280A771F03B56400EBEF45 /* iconChange@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconChange@3x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,18 +117,8 @@
 		C4274B4B1F0200E800C7B379 /* wjTestDemo */ = {
 			isa = PBXGroup;
 			children = (
+				C4280A721F03B3DA00EBEF45 /* main */,
 				C4274B761F0201D300C7B379 /* classes */,
-				C4274B4F1F0200E800C7B379 /* AppDelegate.h */,
-				C4274B501F0200E800C7B379 /* AppDelegate.m */,
-				C4274B521F0200E800C7B379 /* ViewController.h */,
-				C4274B531F0200E800C7B379 /* ViewController.m */,
-				C4274B931F020C7800C7B379 /* wjModel.h */,
-				C4274B941F020C7800C7B379 /* wjModel.m */,
-				C4274B961F020F8F00C7B379 /* model.plist */,
-				C4274B551F0200E800C7B379 /* Main.storyboard */,
-				C4274B581F0200E800C7B379 /* Assets.xcassets */,
-				C4274B5A1F0200E800C7B379 /* LaunchScreen.storyboard */,
-				C4274B5D1F0200E800C7B379 /* Info.plist */,
 				C4274B4C1F0200E800C7B379 /* Supporting Files */,
 			);
 			path = wjTestDemo;
@@ -133,6 +127,10 @@
 		C4274B4C1F0200E800C7B379 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C4274B551F0200E800C7B379 /* Main.storyboard */,
+				C4274B581F0200E800C7B379 /* Assets.xcassets */,
+				C4274B5A1F0200E800C7B379 /* LaunchScreen.storyboard */,
+				C4274B5D1F0200E800C7B379 /* Info.plist */,
 				C4274B4D1F0200E800C7B379 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -150,6 +148,7 @@
 		C4274B761F0201D300C7B379 /* classes */ = {
 			isa = PBXGroup;
 			children = (
+				C4280A731F03B56400EBEF45 /* AlterAppIcon */,
 				C4274B9A1F0356FC00C7B379 /* ScanQRCode */,
 				C4274B771F0201D300C7B379 /* QRCode */,
 			);
@@ -247,6 +246,45 @@
 			path = resource;
 			sourceTree = "<group>";
 		};
+		C4280A721F03B3DA00EBEF45 /* main */ = {
+			isa = PBXGroup;
+			children = (
+				C4274B4F1F0200E800C7B379 /* AppDelegate.h */,
+				C4274B501F0200E800C7B379 /* AppDelegate.m */,
+				C4274B521F0200E800C7B379 /* ViewController.h */,
+				C4274B531F0200E800C7B379 /* ViewController.m */,
+				C4274B931F020C7800C7B379 /* wjModel.h */,
+				C4274B941F020C7800C7B379 /* wjModel.m */,
+				C4274B961F020F8F00C7B379 /* model.plist */,
+			);
+			name = main;
+			sourceTree = "<group>";
+		};
+		C4280A731F03B56400EBEF45 /* AlterAppIcon */ = {
+			isa = PBXGroup;
+			children = (
+				C4280A741F03B56400EBEF45 /* C */,
+				C4280A751F03B56400EBEF45 /* resource */,
+			);
+			path = AlterAppIcon;
+			sourceTree = "<group>";
+		};
+		C4280A741F03B56400EBEF45 /* C */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		C4280A751F03B56400EBEF45 /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				C4280A761F03B56400EBEF45 /* iconChange@2x.png */,
+				C4280A771F03B56400EBEF45 /* iconChange@3x.png */,
+			);
+			path = resource;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -338,8 +376,10 @@
 				C4274BA81F03614D00C7B379 /* line.png in Resources */,
 				C4274B591F0200E800C7B379 /* Assets.xcassets in Resources */,
 				C4274BA21F035EE500C7B379 /* wjScanQRCodeVC.xib in Resources */,
+				C4280A791F03B56400EBEF45 /* iconChange@3x.png in Resources */,
 				C4274BAB1F03614D00C7B379 /* pick_bg@2x.png in Resources */,
 				C4274B571F0200E800C7B379 /* Main.storyboard in Resources */,
+				C4280A781F03B56400EBEF45 /* iconChange@2x.png in Resources */,
 				C4274BA91F03614D00C7B379 /* line@2x.png in Resources */,
 				C4274B8A1F02029700C7B379 /* wjQRCodeVC.xib in Resources */,
 			);

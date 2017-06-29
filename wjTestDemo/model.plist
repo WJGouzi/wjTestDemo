@@ -14,5 +14,11 @@
 		<key>imageName</key>
 		<string>scanQRCode</string>
 	</dict>
+	<dict>
+		<key>cellName</key>
+		<string>切换图标</string>
+		<key>imageName</key>
+		<string>changeIcon</string>
+	</dict>
 </array>
 </plist>
