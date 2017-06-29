@@ -42,13 +42,13 @@
  */
 - (void)wjCreat3DShortCutItemInAppicon {
     // 创建系统风格的快捷键
-    UIApplicationShortcutIcon *systemIcon = [UIApplicationShortcutIcon iconWithType:UIApplicationShortcutIconTypeSearch];
+    UIApplicationShortcutIcon *systemIcon = [UIApplicationShortcutIcon iconWithType:UIApplicationShortcutIconTypeShare];
     // 创建快捷选项
     UIApplicationShortcutItem *systemItem = [[UIApplicationShortcutItem alloc] initWithType:@"com.wangjun.wjTestDemo.3Dtouch.share" localizedTitle:@"分享" localizedSubtitle:@"一起分享" icon:systemIcon userInfo:nil];
     
     // 自定义的风格的快捷键
-    UIApplicationShortcutIcon *changeAppIcon = [UIApplicationShortcutIcon iconWithTemplateImageName:@"3DTouch_changeIcon"];
-    UIApplicationShortcutItem *changIconItem = [[UIApplicationShortcutItem alloc] initWithType:@"com.wangjun.wjTestDemo.3Dtouch.changeAppIcon" localizedTitle:@"切换应用图标" localizedSubtitle:@"试试吧" icon:changeAppIcon userInfo:nil];
+    UIApplicationShortcutIcon *changeAppIcon = [UIApplicationShortcutIcon iconWithTemplateImageName:@"扫描二维码"];
+    UIApplicationShortcutItem *changIconItem = [[UIApplicationShortcutItem alloc] initWithType:@"com.wangjun.wjTestDemo.3Dtouch.scanQRCode" localizedTitle:@"扫一扫" localizedSubtitle:@"试试吧" icon:changeAppIcon userInfo:nil];
     
     [UIApplication sharedApplication].shortcutItems = @[systemItem, changIconItem];
 }
@@ -93,9 +93,9 @@
     } else if ([item.type isEqualToString:@"com.wangjun.wjTestDemo.3Dtouch.changeAppIcon"]) {
         wjAlterAppIconVC *alterIconVC = [[wjAlterAppIconVC alloc] init];
         [nav pushViewController:alterIconVC animated:YES];
-    } else if ([item.type isEqualToString:@"com.wangjun.wjTestDemo.3Dtouch.changeAppIcon"]) {
-        wjAlterAppIconVC *alterIconVC = [[wjAlterAppIconVC alloc] init];
-        [nav pushViewController:alterIconVC animated:YES];
+    } else if ([item.type isEqualToString:@"com.wangjun.wjTestDemo.3Dtouch.scanQRCode"]) {
+        wjScanQRCodeVC *scanQRCodeVC = [[wjScanQRCodeVC alloc] init];
+        [nav pushViewController:scanQRCodeVC animated:YES];
     } else if ([item.type isEqualToString:@"com.wangjun.wjTestDemo.3Dtouch.creatQRCode"]) {
         wjQRCodeVC *creatQRCodeVC = [[wjQRCodeVC alloc] init];
         [nav pushViewController:creatQRCodeVC animated:YES];
