@@ -17,3 +17,30 @@ this is a test demo!
 
 ###2.扫描二维码
 扫描二维码也采用的是系统自带的方式进行扫描的，这样的效率更加的快。
+
+### 3.更换应用图标（10.3之后）
+
+更换应用的图标需要把图片资源放到工程目录中，在编译的时候会放到工程的bundle中，特别是真机运行的时候需要从bundle文件中读取图片资源。
+
+plist文件进行配置
+
+	<key>CFBundlePrimaryIcon</key>
+	<dict>
+		<key>CFBundleIconFiles</key>
+		<array>
+			<string>AppIcon</string>
+		</array>
+	</dict>
+	<key>CFBundleAlternateIcons</key>
+	<dict>
+		<key>iconChange</key>
+		<dict>
+			<key>CFBundleIconFiles</key>
+			<array>
+				<string>iconChange</string>
+			</array>
+			<key>UIPrerenderedIcon</key>
+			<false/>
+		</dict>
+	</dict>
+![plist文件配置](/Users/jerry/Desktop/屏幕快照 2017-06-29 上午10.43.32.png)
