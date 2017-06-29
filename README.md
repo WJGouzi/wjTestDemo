@@ -53,3 +53,34 @@ plist文件进行配置
 			<false/>
 		</dict>
 	</dict>
+
+### 4. 3Dtouch
+
+3Dtouch功能只有在一些的机型上可以使用，在6s之后的手机可以使用，在手机的应用图标进行用力点击，会出现一个列表，当选择某一个选项的时候会进入到相关的页面。
+
+3Dtouch中的peek操作以及手势的pop操作会在应用中将3Dtouch延续，可以在不进行跳转的页面的情况下预览下个页面的内容。上滑页面可以进行相关的操作，例如电话短信等操作。
+
+静态设置icon展示的内容需要在plist文件中进行设置
+
+	<dict>
+		<key>UIApplicationShortcutItemTitle</key>
+		<string>生成二维码</string>
+		<key>UIApplicationShortcutItemType</key>
+		<string>com.wangjun.wjTestDemo.3Dtouch.creatQRCode</string>
+	</dict>
+	<dict>
+		<key>UIApplicationShortcutItemIconType</key>
+		<string>UIApplicationShortcutIconTypeShuffle</string>
+		<key>UIApplicationShortcutItemSubtitle</key>
+		<string>应用图标更改</string>
+		<key>UIApplicationShortcutItemTitle</key>
+		<string>切换图标</string>
+		<key>UIApplicationShortcutItemType</key>
+		<string>com.wangjun.wjTestDemo.3Dtouch.changeAppIcon</string>
+		<key>UIApplicationShortcutItemUserInfo</key>
+		<dict>
+			<key>key1</key>
+			<string>value1</string>
+		</dict>
+	</dict>
+当然也可以在appDelegate中进行设置，可以设置成系统的样式，也可以设置成自定义的样式，图片可以自由的设置。
