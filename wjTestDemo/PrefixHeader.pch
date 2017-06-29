@@ -1,0 +1,20 @@
+//
+//  PrefixHeader.pch
+//  wjTestDemo
+//
+//  Created by jerry on 2017/6/29.
+//  Copyright © 2017年 wangjun. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#pragma mark - 引入一些类
+#import "wjQRCodeVC.h"          // 生成二维码
+#import "wjScanQRCodeVC.h"      // 扫描二维码
+#import "wjAlterAppIconVC.h"    // 更换应用图标
+
+#endif /* PrefixHeader_pch */

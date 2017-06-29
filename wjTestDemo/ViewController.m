@@ -7,8 +7,6 @@
 //
 
 #import "ViewController.h"
-#import "wjQRCodeVC.h"
-#import "wjScanQRCodeVC.h"
 #import "wjModel.h"
 
 #define wjScreenWidth [UIScreen mainScreen].bounds.size.width
@@ -85,8 +83,8 @@
         }
             break;
         case 2: {
-            wjScanQRCodeVC *scanQRCodeVC = [[wjScanQRCodeVC alloc] init];
-            [self.navigationController pushViewController:scanQRCodeVC animated:YES];
+            wjAlterAppIconVC *alterIconVC = [[wjAlterAppIconVC alloc] init];
+            [self.navigationController pushViewController:alterIconVC animated:YES];
         }
             break;
         default:
