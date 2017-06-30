@@ -84,3 +84,13 @@ plist文件进行配置
 		</dict>
 	</dict>
 当然也可以在appDelegate中进行设置，可以设置成系统的样式，也可以设置成自定义的样式，图片可以自由的设置。
+
+
+
+### 5 touchID的应用
+
+touchID，也是需要硬件的支持，有的时候需要在登录的时候验证身份，有的时候需要获取权限，往往在这种情景下会用到指纹识别。
+
+需要用到的框架是import \<LocalAuthentication/LocalAuthentication.h\>
+
+需要创建一个回话>> 如果设备支持>>开始识别指纹

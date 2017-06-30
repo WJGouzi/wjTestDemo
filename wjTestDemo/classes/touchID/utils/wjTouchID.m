@@ -50,10 +50,11 @@
                         self.errType = kErrorTypeAuthenticationFailed;
                         break;
                 }
+               
                 block(NO, self.errType, error);
             }
         }];
-    }else {
+    } else {
         // 不支持指纹识别
         switch (error.code) {
             case LAErrorTouchIDNotEnrolled:
@@ -66,6 +67,7 @@
                 self.errType = kErrorTypeTouchIDNotAvailable;
                 break;
         }
+        
         block(NO, self.errType, error);
     }
 }

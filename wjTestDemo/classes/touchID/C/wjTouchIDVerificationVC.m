@@ -20,7 +20,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.title = @"指纹识别";
     [self wjTouchIDVerifyAction];
 }
 
