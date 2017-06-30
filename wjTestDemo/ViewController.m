@@ -91,6 +91,11 @@
             [self.navigationController pushViewController:touchVC animated:YES];
         }
             break;
+        case 4: {
+            wjTouchIDVerificationVC *touchIDVC = [[wjTouchIDVerificationVC alloc] init];
+            [self.navigationController pushViewController:touchIDVC animated:YES];
+        }
+            break;
         default:
             break;
     }

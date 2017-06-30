@@ -26,5 +26,11 @@
 		<key>imageName</key>
 		<string>3DTouch</string>
 	</dict>
+	<dict>
+		<key>cellName</key>
+		<string>指纹识别</string>
+		<key>imageName</key>
+		<string>touchID</string>
+	</dict>
 </array>
 </plist>

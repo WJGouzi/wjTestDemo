@@ -13,11 +13,11 @@
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 
 #pragma mark - 引入一些类
-#import "wjQRCodeVC.h"          // 生成二维码
-#import "wjScanQRCodeVC.h"      // 扫描二维码
-#import "wjAlterAppIconVC.h"    // 更换应用图标
-#import "wj3DTouchVC.h"         // 3DTouch peek
-
+#import "wjQRCodeVC.h"              // 生成二维码
+#import "wjScanQRCodeVC.h"          // 扫描二维码
+#import "wjAlterAppIconVC.h"        // 更换应用图标
+#import "wj3DTouchVC.h"             // 3DTouch peek
+#import "wjTouchIDVerificationVC.h" // touchID的验证
 
 
 #pragma mark - 一些常规的设置

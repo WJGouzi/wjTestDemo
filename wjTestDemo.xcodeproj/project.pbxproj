@@ -37,6 +37,10 @@
 		C43691711F04DD0500F18340 /* wjTouchedVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C436916F1F04DD0500F18340 /* wjTouchedVC.m */; };
 		C43691721F04DD0500F18340 /* wjTouchedVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C43691701F04DD0500F18340 /* wjTouchedVC.xib */; };
 		C43691781F04FBE000F18340 /* icon.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C43691771F04FBE000F18340 /* icon.jpeg */; };
+		C43691B41F06213400F18340 /* wjTouchIDVerificationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C43691B21F06213400F18340 /* wjTouchIDVerificationVC.m */; };
+		C43691B51F06213400F18340 /* wjTouchIDVerificationVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C43691B31F06213400F18340 /* wjTouchIDVerificationVC.xib */; };
+		C43691B91F0622B700F18340 /* wjTouchID.m in Sources */ = {isa = PBXBuildFile; fileRef = C43691B81F0622B700F18340 /* wjTouchID.m */; };
+		C43691BC1F0626BB00F18340 /* 指纹.png in Resources */ = {isa = PBXBuildFile; fileRef = C43691BB1F0626BB00F18340 /* 指纹.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +97,12 @@
 		C436916F1F04DD0500F18340 /* wjTouchedVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = wjTouchedVC.m; sourceTree = "<group>"; };
 		C43691701F04DD0500F18340 /* wjTouchedVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = wjTouchedVC.xib; sourceTree = "<group>"; };
 		C43691771F04FBE000F18340 /* icon.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = icon.jpeg; sourceTree = "<group>"; };
+		C43691B11F06213400F18340 /* wjTouchIDVerificationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wjTouchIDVerificationVC.h; sourceTree = "<group>"; };
+		C43691B21F06213400F18340 /* wjTouchIDVerificationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = wjTouchIDVerificationVC.m; sourceTree = "<group>"; };
+		C43691B31F06213400F18340 /* wjTouchIDVerificationVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = wjTouchIDVerificationVC.xib; sourceTree = "<group>"; };
+		C43691B71F0622B700F18340 /* wjTouchID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wjTouchID.h; sourceTree = "<group>"; };
+		C43691B81F0622B700F18340 /* wjTouchID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = wjTouchID.m; sourceTree = "<group>"; };
+		C43691BB1F0626BB00F18340 /* 指纹.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "指纹.png"; sourceTree = "<group>"; };
 		C4AC5AE71F048AB90023DD13 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -169,6 +179,7 @@
 		C4274B761F0201D300C7B379 /* classes */ = {
 			isa = PBXGroup;
 			children = (
+				C43691AF1F06211200F18340 /* touchID */,
 				C43691601F04ADEE00F18340 /* 3DTouch */,
 				C4280A731F03B56400EBEF45 /* AlterAppIcon */,
 				C4274B9A1F0356FC00C7B379 /* ScanQRCode */,
@@ -357,6 +368,43 @@
 			path = V;
 			sourceTree = "<group>";
 		};
+		C43691AF1F06211200F18340 /* touchID */ = {
+			isa = PBXGroup;
+			children = (
+				C43691BA1F0626BB00F18340 /* res */,
+				C43691B61F0622B700F18340 /* utils */,
+				C43691B01F06211200F18340 /* C */,
+			);
+			path = touchID;
+			sourceTree = "<group>";
+		};
+		C43691B01F06211200F18340 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				C43691B11F06213400F18340 /* wjTouchIDVerificationVC.h */,
+				C43691B21F06213400F18340 /* wjTouchIDVerificationVC.m */,
+				C43691B31F06213400F18340 /* wjTouchIDVerificationVC.xib */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		C43691B61F0622B700F18340 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				C43691B71F0622B700F18340 /* wjTouchID.h */,
+				C43691B81F0622B700F18340 /* wjTouchID.m */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		C43691BA1F0626BB00F18340 /* res */ = {
+			isa = PBXGroup;
+			children = (
+				C43691BB1F0626BB00F18340 /* 指纹.png */,
+			);
+			path = res;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -446,6 +494,7 @@
 				C4274B5C1F0200E800C7B379 /* LaunchScreen.storyboard in Resources */,
 				C43691691F04D09900F18340 /* wj3DTouchVC.xib in Resources */,
 				C4274B991F023C4B00C7B379 /* icon.jpeg in Resources */,
+				C43691BC1F0626BB00F18340 /* 指纹.png in Resources */,
 				9BD0F8D71F0520D000B27648 /* 扫描二维码.png in Resources */,
 				C4274BA81F03614D00C7B379 /* line.png in Resources */,
 				C43691721F04DD0500F18340 /* wjTouchedVC.xib in Resources */,
@@ -459,6 +508,7 @@
 				C4280A781F03B56400EBEF45 /* iconChange@2x.png in Resources */,
 				C4274BA91F03614D00C7B379 /* line@2x.png in Resources */,
 				C4274B8A1F02029700C7B379 /* wjQRCodeVC.xib in Resources */,
+				C43691B51F06213400F18340 /* wjTouchIDVerificationVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,7 +530,9 @@
 				C4274B541F0200E800C7B379 /* ViewController.m in Sources */,
 				C436915D1F048D1600F18340 /* wjAlterAppIconVC.m in Sources */,
 				C43691681F04D09900F18340 /* wj3DTouchVC.m in Sources */,
+				C43691B41F06213400F18340 /* wjTouchIDVerificationVC.m in Sources */,
 				C4274B511F0200E800C7B379 /* AppDelegate.m in Sources */,
+				C43691B91F0622B700F18340 /* wjTouchID.m in Sources */,
 				C4274BA11F035EE500C7B379 /* wjScanQRCodeVC.m in Sources */,
 				C4274B4E1F0200E800C7B379 /* main.m in Sources */,
 				C4274B891F02029700C7B379 /* wjQRCodeVC.m in Sources */,
