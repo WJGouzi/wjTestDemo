@@ -18,6 +18,7 @@
 #import "wjAlterAppIconVC.h"        // 更换应用图标
 #import "wj3DTouchVC.h"             // 3DTouch peek
 #import "wjTouchIDVerificationVC.h" // touchID的验证
+#import "wjGestureLockVC.h"         // 手势解锁功能
 
 
 #pragma mark - 一些常规的设置

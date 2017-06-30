@@ -96,6 +96,11 @@
             [self.navigationController pushViewController:touchIDVC animated:YES];
         }
             break;
+        case 5: {
+            wjGestureLockVC *gestureVC = [[wjGestureLockVC alloc] init];
+            [self.navigationController pushViewController:gestureVC animated:YES];
+        }
+            break;
         default:
             break;
     }

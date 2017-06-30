@@ -41,6 +41,13 @@
 		C43691B51F06213400F18340 /* wjTouchIDVerificationVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C43691B31F06213400F18340 /* wjTouchIDVerificationVC.xib */; };
 		C43691B91F0622B700F18340 /* wjTouchID.m in Sources */ = {isa = PBXBuildFile; fileRef = C43691B81F0622B700F18340 /* wjTouchID.m */; };
 		C43691BC1F0626BB00F18340 /* 指纹.png in Resources */ = {isa = PBXBuildFile; fileRef = C43691BB1F0626BB00F18340 /* 指纹.png */; };
+		C43691C51F06539A00F18340 /* gesture_node_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = C43691C11F06539A00F18340 /* gesture_node_normal.png */; };
+		C43691C61F06539A00F18340 /* gesture_node_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C43691C21F06539A00F18340 /* gesture_node_normal@2x.png */; };
+		C43691C71F06539A00F18340 /* gesture_node_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = C43691C31F06539A00F18340 /* gesture_node_selected.png */; };
+		C43691C81F06539A00F18340 /* gesture_node_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C43691C41F06539A00F18340 /* gesture_node_selected@2x.png */; };
+		C43691CC1F0653C600F18340 /* wjGestureLockVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C43691CA1F0653C600F18340 /* wjGestureLockVC.m */; };
+		C43691CD1F0653C600F18340 /* wjGestureLockVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C43691CB1F0653C600F18340 /* wjGestureLockVC.xib */; };
+		C43691D01F06554F00F18340 /* wjGestureLockView.m in Sources */ = {isa = PBXBuildFile; fileRef = C43691CF1F06554F00F18340 /* wjGestureLockView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +110,15 @@
 		C43691B71F0622B700F18340 /* wjTouchID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wjTouchID.h; sourceTree = "<group>"; };
 		C43691B81F0622B700F18340 /* wjTouchID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = wjTouchID.m; sourceTree = "<group>"; };
 		C43691BB1F0626BB00F18340 /* 指纹.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "指纹.png"; sourceTree = "<group>"; };
+		C43691C11F06539A00F18340 /* gesture_node_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gesture_node_normal.png; sourceTree = "<group>"; };
+		C43691C21F06539A00F18340 /* gesture_node_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gesture_node_normal@2x.png"; sourceTree = "<group>"; };
+		C43691C31F06539A00F18340 /* gesture_node_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gesture_node_selected.png; sourceTree = "<group>"; };
+		C43691C41F06539A00F18340 /* gesture_node_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gesture_node_selected@2x.png"; sourceTree = "<group>"; };
+		C43691C91F0653C600F18340 /* wjGestureLockVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wjGestureLockVC.h; sourceTree = "<group>"; };
+		C43691CA1F0653C600F18340 /* wjGestureLockVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = wjGestureLockVC.m; sourceTree = "<group>"; };
+		C43691CB1F0653C600F18340 /* wjGestureLockVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = wjGestureLockVC.xib; sourceTree = "<group>"; };
+		C43691CE1F06554F00F18340 /* wjGestureLockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wjGestureLockView.h; sourceTree = "<group>"; };
+		C43691CF1F06554F00F18340 /* wjGestureLockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = wjGestureLockView.m; sourceTree = "<group>"; };
 		C4AC5AE71F048AB90023DD13 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -179,6 +195,7 @@
 		C4274B761F0201D300C7B379 /* classes */ = {
 			isa = PBXGroup;
 			children = (
+				C43691BD1F06532900F18340 /* gestureLock */,
 				C43691AF1F06211200F18340 /* touchID */,
 				C43691601F04ADEE00F18340 /* 3DTouch */,
 				C4280A731F03B56400EBEF45 /* AlterAppIcon */,
@@ -405,6 +422,46 @@
 			path = res;
 			sourceTree = "<group>";
 		};
+		C43691BD1F06532900F18340 /* gestureLock */ = {
+			isa = PBXGroup;
+			children = (
+				C43691BE1F06535C00F18340 /* res */,
+				C43691BF1F06535C00F18340 /* V */,
+				C43691C01F06535C00F18340 /* C */,
+			);
+			path = gestureLock;
+			sourceTree = "<group>";
+		};
+		C43691BE1F06535C00F18340 /* res */ = {
+			isa = PBXGroup;
+			children = (
+				C43691C11F06539A00F18340 /* gesture_node_normal.png */,
+				C43691C21F06539A00F18340 /* gesture_node_normal@2x.png */,
+				C43691C31F06539A00F18340 /* gesture_node_selected.png */,
+				C43691C41F06539A00F18340 /* gesture_node_selected@2x.png */,
+			);
+			path = res;
+			sourceTree = "<group>";
+		};
+		C43691BF1F06535C00F18340 /* V */ = {
+			isa = PBXGroup;
+			children = (
+				C43691CE1F06554F00F18340 /* wjGestureLockView.h */,
+				C43691CF1F06554F00F18340 /* wjGestureLockView.m */,
+			);
+			path = V;
+			sourceTree = "<group>";
+		};
+		C43691C01F06535C00F18340 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				C43691C91F0653C600F18340 /* wjGestureLockVC.h */,
+				C43691CA1F0653C600F18340 /* wjGestureLockVC.m */,
+				C43691CB1F0653C600F18340 /* wjGestureLockVC.xib */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -490,14 +547,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4274B971F020F8F00C7B379 /* model.plist in Resources */,
+				C43691C61F06539A00F18340 /* gesture_node_normal@2x.png in Resources */,
 				C4274BAA1F03614D00C7B379 /* pick_bg.png in Resources */,
+				C43691C51F06539A00F18340 /* gesture_node_normal.png in Resources */,
 				C4274B5C1F0200E800C7B379 /* LaunchScreen.storyboard in Resources */,
+				C43691C81F06539A00F18340 /* gesture_node_selected@2x.png in Resources */,
 				C43691691F04D09900F18340 /* wj3DTouchVC.xib in Resources */,
 				C4274B991F023C4B00C7B379 /* icon.jpeg in Resources */,
 				C43691BC1F0626BB00F18340 /* 指纹.png in Resources */,
 				9BD0F8D71F0520D000B27648 /* 扫描二维码.png in Resources */,
 				C4274BA81F03614D00C7B379 /* line.png in Resources */,
 				C43691721F04DD0500F18340 /* wjTouchedVC.xib in Resources */,
+				C43691C71F06539A00F18340 /* gesture_node_selected.png in Resources */,
 				C43691781F04FBE000F18340 /* icon.jpeg in Resources */,
 				C436915E1F048D1600F18340 /* wjAlterAppIconVC.xib in Resources */,
 				C4274B591F0200E800C7B379 /* Assets.xcassets in Resources */,
@@ -505,6 +566,7 @@
 				C4280A791F03B56400EBEF45 /* iconChange@3x.png in Resources */,
 				C4274BAB1F03614D00C7B379 /* pick_bg@2x.png in Resources */,
 				C4274B571F0200E800C7B379 /* Main.storyboard in Resources */,
+				C43691CD1F0653C600F18340 /* wjGestureLockVC.xib in Resources */,
 				C4280A781F03B56400EBEF45 /* iconChange@2x.png in Resources */,
 				C4274BA91F03614D00C7B379 /* line@2x.png in Resources */,
 				C4274B8A1F02029700C7B379 /* wjQRCodeVC.xib in Resources */,
@@ -528,11 +590,13 @@
 			files = (
 				C43691711F04DD0500F18340 /* wjTouchedVC.m in Sources */,
 				C4274B541F0200E800C7B379 /* ViewController.m in Sources */,
+				C43691CC1F0653C600F18340 /* wjGestureLockVC.m in Sources */,
 				C436915D1F048D1600F18340 /* wjAlterAppIconVC.m in Sources */,
 				C43691681F04D09900F18340 /* wj3DTouchVC.m in Sources */,
 				C43691B41F06213400F18340 /* wjTouchIDVerificationVC.m in Sources */,
 				C4274B511F0200E800C7B379 /* AppDelegate.m in Sources */,
 				C43691B91F0622B700F18340 /* wjTouchID.m in Sources */,
+				C43691D01F06554F00F18340 /* wjGestureLockView.m in Sources */,
 				C4274BA11F035EE500C7B379 /* wjScanQRCodeVC.m in Sources */,
 				C4274B4E1F0200E800C7B379 /* main.m in Sources */,
 				C4274B891F02029700C7B379 /* wjQRCodeVC.m in Sources */,

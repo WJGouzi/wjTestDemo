@@ -32,5 +32,11 @@
 		<key>imageName</key>
 		<string>touchID</string>
 	</dict>
+	<dict>
+		<key>cellName</key>
+		<string>手势解锁</string>
+		<key>imageName</key>
+		<string>gestureCode</string>
+	</dict>
 </array>
 </plist>

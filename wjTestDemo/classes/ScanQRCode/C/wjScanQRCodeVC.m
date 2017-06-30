@@ -13,8 +13,6 @@ typedef void(^actionBlock)(UIAlertAction *action);
 /**
  *  屏幕 高 宽 边界
  */
-
-
 #define TOP (SCREEN_HEIGHT-220)/2
 #define LEFT (SCREEN_WIDTH-220)/2
 
