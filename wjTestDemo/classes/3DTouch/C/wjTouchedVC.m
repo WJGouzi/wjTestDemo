@@ -24,14 +24,14 @@
     // setup a list of preview actions
     UIPreviewAction *action1 = [UIPreviewAction actionWithTitle:@"短信" style:UIPreviewActionStyleDefault handler:^(UIPreviewAction * _Nonnull action, UIViewController * _Nonnull previewViewController) {
         NSDictionary *info = @{@"msm" : @"你好"};
-        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"sms://%@", @"15982925521"]] options:info completionHandler:^(BOOL success) {
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"sms://%@", @"10086"]] options:info completionHandler:^(BOOL success) {
             
         }];
     }];
     
     UIPreviewAction *action2 = [UIPreviewAction actionWithTitle:@"电话" style:UIPreviewActionStyleDefault handler:^(UIPreviewAction * _Nonnull action, UIViewController * _Nonnull previewViewController) {
         // 打电话(系统会自动弹出提示框)
-        NSDictionary *info = @{@"tel" : @"15982925521"};
+        NSDictionary *info = @{@"tel" : @"10086"};
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"tel://%@", info[@"tel"]]] options:info completionHandler:^(BOOL success) {
             
         }];

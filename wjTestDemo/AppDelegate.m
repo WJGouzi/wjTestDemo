@@ -82,7 +82,7 @@
 }
 
 
-// 封装进入不同的控制器
+// 封装->进入不同的控制器
 - (void)wjIntoDifferentControllerWithItem:(UIApplicationShortcutItem *)item withNavgation:(UINavigationController *)nav{
     if ([item.type isEqualToString:@"com.wangjun.wjTestDemo.3Dtouch.share"]) {
         NSArray *shares = @[@"3d Touch"];
