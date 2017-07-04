@@ -8,9 +8,9 @@
 
 #import "ViewController.h"
 #import "wjModel.h"
-
-#define wjScreenWidth [UIScreen mainScreen].bounds.size.width
-#define wjScreenHeight [UIScreen mainScreen].bounds.size.height
+//
+//#define wjScreenWidth [UIScreen mainScreen].bounds.size.width
+//#define wjScreenHeight [UIScreen mainScreen].bounds.size.height
 
 
 @interface ViewController () <UITableViewDataSource, UITableViewDelegate>

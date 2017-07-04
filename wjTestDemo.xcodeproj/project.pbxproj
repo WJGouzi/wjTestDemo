@@ -48,6 +48,9 @@
 		C43691CC1F0653C600F18340 /* wjGestureLockVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C43691CA1F0653C600F18340 /* wjGestureLockVC.m */; };
 		C43691CD1F0653C600F18340 /* wjGestureLockVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C43691CB1F0653C600F18340 /* wjGestureLockVC.xib */; };
 		C43691D01F06554F00F18340 /* wjGestureLockView.m in Sources */ = {isa = PBXBuildFile; fileRef = C43691CF1F06554F00F18340 /* wjGestureLockView.m */; };
+		C45F94121F0B6BDC0021FFF0 /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C45F940D1F0B6BDC0021FFF0 /* ProgressHUD.bundle */; };
+		C45F94131F0B6BDC0021FFF0 /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = C45F940F1F0B6BDC0021FFF0 /* ProgressHUD.m */; };
+		C45F94141F0B6BDC0021FFF0 /* UIImage+animatedGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = C45F94111F0B6BDC0021FFF0 /* UIImage+animatedGIF.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,6 +122,11 @@
 		C43691CB1F0653C600F18340 /* wjGestureLockVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = wjGestureLockVC.xib; sourceTree = "<group>"; };
 		C43691CE1F06554F00F18340 /* wjGestureLockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wjGestureLockView.h; sourceTree = "<group>"; };
 		C43691CF1F06554F00F18340 /* wjGestureLockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = wjGestureLockView.m; sourceTree = "<group>"; };
+		C45F940D1F0B6BDC0021FFF0 /* ProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ProgressHUD.bundle; sourceTree = "<group>"; };
+		C45F940E1F0B6BDC0021FFF0 /* ProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressHUD.h; sourceTree = "<group>"; };
+		C45F940F1F0B6BDC0021FFF0 /* ProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressHUD.m; sourceTree = "<group>"; };
+		C45F94101F0B6BDC0021FFF0 /* UIImage+animatedGIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+animatedGIF.h"; sourceTree = "<group>"; };
+		C45F94111F0B6BDC0021FFF0 /* UIImage+animatedGIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+animatedGIF.m"; sourceTree = "<group>"; };
 		C4AC5AE71F048AB90023DD13 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -163,6 +171,7 @@
 		C4274B4B1F0200E800C7B379 /* wjTestDemo */ = {
 			isa = PBXGroup;
 			children = (
+				C45F940B1F0B6B8A0021FFF0 /* utils */,
 				C4280A721F03B3DA00EBEF45 /* main */,
 				C4274B761F0201D300C7B379 /* classes */,
 				C4274B4C1F0200E800C7B379 /* Supporting Files */,
@@ -462,6 +471,27 @@
 			path = C;
 			sourceTree = "<group>";
 		};
+		C45F940B1F0B6B8A0021FFF0 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				C45F940C1F0B6BDC0021FFF0 /* ProgressHud */,
+			);
+			name = utils;
+			path = classes/utils;
+			sourceTree = "<group>";
+		};
+		C45F940C1F0B6BDC0021FFF0 /* ProgressHud */ = {
+			isa = PBXGroup;
+			children = (
+				C45F940D1F0B6BDC0021FFF0 /* ProgressHUD.bundle */,
+				C45F940E1F0B6BDC0021FFF0 /* ProgressHUD.h */,
+				C45F940F1F0B6BDC0021FFF0 /* ProgressHUD.m */,
+				C45F94101F0B6BDC0021FFF0 /* UIImage+animatedGIF.h */,
+				C45F94111F0B6BDC0021FFF0 /* UIImage+animatedGIF.m */,
+			);
+			path = ProgressHud;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -562,6 +592,7 @@
 				C43691781F04FBE000F18340 /* icon.jpeg in Resources */,
 				C436915E1F048D1600F18340 /* wjAlterAppIconVC.xib in Resources */,
 				C4274B591F0200E800C7B379 /* Assets.xcassets in Resources */,
+				C45F94121F0B6BDC0021FFF0 /* ProgressHUD.bundle in Resources */,
 				C4274BA21F035EE500C7B379 /* wjScanQRCodeVC.xib in Resources */,
 				C4280A791F03B56400EBEF45 /* iconChange@3x.png in Resources */,
 				C4274BAB1F03614D00C7B379 /* pick_bg@2x.png in Resources */,
@@ -593,6 +624,7 @@
 				C43691CC1F0653C600F18340 /* wjGestureLockVC.m in Sources */,
 				C436915D1F048D1600F18340 /* wjAlterAppIconVC.m in Sources */,
 				C43691681F04D09900F18340 /* wj3DTouchVC.m in Sources */,
+				C45F94141F0B6BDC0021FFF0 /* UIImage+animatedGIF.m in Sources */,
 				C43691B41F06213400F18340 /* wjTouchIDVerificationVC.m in Sources */,
 				C4274B511F0200E800C7B379 /* AppDelegate.m in Sources */,
 				C43691B91F0622B700F18340 /* wjTouchID.m in Sources */,
@@ -600,6 +632,7 @@
 				C4274BA11F035EE500C7B379 /* wjScanQRCodeVC.m in Sources */,
 				C4274B4E1F0200E800C7B379 /* main.m in Sources */,
 				C4274B891F02029700C7B379 /* wjQRCodeVC.m in Sources */,
+				C45F94131F0B6BDC0021FFF0 /* ProgressHUD.m in Sources */,
 				C4274B951F020C7800C7B379 /* wjModel.m in Sources */,
 				C4274B8F1F02055D00C7B379 /* UIImage+wjQRCodeCreate.m in Sources */,
 			);

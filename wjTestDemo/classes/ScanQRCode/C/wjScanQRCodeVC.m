@@ -49,7 +49,8 @@ typedef void(^actionBlock)(UIAlertAction *action);
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     [self setCoverRect:kScanRect];
-    [self performSelector:@selector(wjCameraSettings) withObject:nil afterDelay:0.3];
+    [ProgressHUD show:@"相机正在加载中..."];
+    [self performSelector:@selector(wjCameraSettings) withObject:nil afterDelay:0.2];
 }
 
 - (void)dealloc {
@@ -159,6 +160,7 @@ typedef void(^actionBlock)(UIAlertAction *action);
     [self.view.layer insertSublayer:self.previewLayer atIndex:0];
     
     [self.session startRunning];
+    [ProgressHUD dismiss];
 }
 
 

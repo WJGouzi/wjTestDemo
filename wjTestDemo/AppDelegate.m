@@ -9,8 +9,8 @@
 #import "AppDelegate.h"
 #import "ViewController.h"
 
-#define wjScreenWidth [UIScreen mainScreen].bounds.size.width
-#define wjScreenHeight [UIScreen mainScreen].bounds.size.height
+//#define wjScreenWidth [UIScreen mainScreen].bounds.size.width
+//#define wjScreenHeight [UIScreen mainScreen].bounds.size.height
 
 
 
