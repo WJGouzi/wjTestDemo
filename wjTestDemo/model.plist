@@ -38,5 +38,11 @@
 		<key>imageName</key>
 		<string>gestureCode</string>
 	</dict>
+	<dict>
+		<key>cellName</key>
+		<string>医学影像</string>
+		<key>imageName</key>
+		<string>MedicalImaging</string>
+	</dict>
 </array>
 </plist>

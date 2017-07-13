@@ -123,6 +123,7 @@ typedef void(^actionBlock)(UIAlertAction *action);
     AVCaptureDevice *device = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
     if (!device) {
         [self wjShowAlertWithTitle:@"提示" message:@"设备没有摄像头" actionTitle:@"确认" actionStyle:UIAlertActionStyleDefault];
+        [ProgressHUD dismiss];
         return;
     }
     

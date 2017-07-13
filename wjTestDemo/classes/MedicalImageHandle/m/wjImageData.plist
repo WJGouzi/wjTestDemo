@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>头部CT</string>
+		<key>imageDataArray</key>
+		<array>
+			<string>head</string>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>手部CT</string>
+		<key>imageDataArray</key>
+		<array>
+			<string>hand</string>
+			<string>doubleHand</string>
+		</array>
+	</dict>
+</array>
+</plist>

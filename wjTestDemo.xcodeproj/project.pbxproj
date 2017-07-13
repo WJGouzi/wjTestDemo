@@ -51,6 +51,15 @@
 		C45F94121F0B6BDC0021FFF0 /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C45F940D1F0B6BDC0021FFF0 /* ProgressHUD.bundle */; };
 		C45F94131F0B6BDC0021FFF0 /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = C45F940F1F0B6BDC0021FFF0 /* ProgressHUD.m */; };
 		C45F94141F0B6BDC0021FFF0 /* UIImage+animatedGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = C45F94111F0B6BDC0021FFF0 /* UIImage+animatedGIF.m */; };
+		C4760ECB1F176F8F00F6DC09 /* wjHandleImageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C4760EC91F176F8F00F6DC09 /* wjHandleImageVC.m */; };
+		C4760ECC1F176F8F00F6DC09 /* wjHandleImageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4760ECA1F176F8F00F6DC09 /* wjHandleImageVC.xib */; };
+		C4760ECF1F17704900F6DC09 /* wjImageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C4760ECE1F17704900F6DC09 /* wjImageModel.m */; };
+		C4760ED11F17723600F6DC09 /* wjImageData.plist in Resources */ = {isa = PBXBuildFile; fileRef = C4760ED01F17723600F6DC09 /* wjImageData.plist */; };
+		C4760ED51F17745B00F6DC09 /* doubleHand in Resources */ = {isa = PBXBuildFile; fileRef = C4760ED21F17745B00F6DC09 /* doubleHand */; };
+		C4760ED61F17745B00F6DC09 /* hand in Resources */ = {isa = PBXBuildFile; fileRef = C4760ED31F17745B00F6DC09 /* hand */; };
+		C4760ED71F17745B00F6DC09 /* head in Resources */ = {isa = PBXBuildFile; fileRef = C4760ED41F17745B00F6DC09 /* head */; };
+		C4760EDB1F1778BD00F6DC09 /* wjImageDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C4760ED91F1778BD00F6DC09 /* wjImageDetailVC.m */; };
+		C4760EDC1F1778BD00F6DC09 /* wjImageDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4760EDA1F1778BD00F6DC09 /* wjImageDetailVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -127,6 +136,18 @@
 		C45F940F1F0B6BDC0021FFF0 /* ProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressHUD.m; sourceTree = "<group>"; };
 		C45F94101F0B6BDC0021FFF0 /* UIImage+animatedGIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+animatedGIF.h"; sourceTree = "<group>"; };
 		C45F94111F0B6BDC0021FFF0 /* UIImage+animatedGIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+animatedGIF.m"; sourceTree = "<group>"; };
+		C4760EC81F176F8F00F6DC09 /* wjHandleImageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wjHandleImageVC.h; sourceTree = "<group>"; };
+		C4760EC91F176F8F00F6DC09 /* wjHandleImageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = wjHandleImageVC.m; sourceTree = "<group>"; };
+		C4760ECA1F176F8F00F6DC09 /* wjHandleImageVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = wjHandleImageVC.xib; sourceTree = "<group>"; };
+		C4760ECD1F17704900F6DC09 /* wjImageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wjImageModel.h; sourceTree = "<group>"; };
+		C4760ECE1F17704900F6DC09 /* wjImageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = wjImageModel.m; sourceTree = "<group>"; };
+		C4760ED01F17723600F6DC09 /* wjImageData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = wjImageData.plist; sourceTree = "<group>"; };
+		C4760ED21F17745B00F6DC09 /* doubleHand */ = {isa = PBXFileReference; lastKnownFileType = file; path = doubleHand; sourceTree = "<group>"; };
+		C4760ED31F17745B00F6DC09 /* hand */ = {isa = PBXFileReference; lastKnownFileType = file; path = hand; sourceTree = "<group>"; };
+		C4760ED41F17745B00F6DC09 /* head */ = {isa = PBXFileReference; lastKnownFileType = file; path = head; sourceTree = "<group>"; };
+		C4760ED81F1778BD00F6DC09 /* wjImageDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wjImageDetailVC.h; sourceTree = "<group>"; };
+		C4760ED91F1778BD00F6DC09 /* wjImageDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = wjImageDetailVC.m; sourceTree = "<group>"; };
+		C4760EDA1F1778BD00F6DC09 /* wjImageDetailVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = wjImageDetailVC.xib; sourceTree = "<group>"; };
 		C4AC5AE71F048AB90023DD13 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -204,6 +225,7 @@
 		C4274B761F0201D300C7B379 /* classes */ = {
 			isa = PBXGroup;
 			children = (
+				C4760EBE1F176DCB00F6DC09 /* MedicalImageHandle */,
 				C43691BD1F06532900F18340 /* gestureLock */,
 				C43691AF1F06211200F18340 /* touchID */,
 				C43691601F04ADEE00F18340 /* 3DTouch */,
@@ -492,6 +514,57 @@
 			path = ProgressHud;
 			sourceTree = "<group>";
 		};
+		C4760EBE1F176DCB00F6DC09 /* MedicalImageHandle */ = {
+			isa = PBXGroup;
+			children = (
+				C4760EC71F176ECF00F6DC09 /* resource */,
+				C4760EBF1F176DCB00F6DC09 /* c */,
+				C4760EC01F176DCB00F6DC09 /* m */,
+				C4760EC11F176DCB00F6DC09 /* v */,
+			);
+			path = MedicalImageHandle;
+			sourceTree = "<group>";
+		};
+		C4760EBF1F176DCB00F6DC09 /* c */ = {
+			isa = PBXGroup;
+			children = (
+				C4760EC81F176F8F00F6DC09 /* wjHandleImageVC.h */,
+				C4760EC91F176F8F00F6DC09 /* wjHandleImageVC.m */,
+				C4760ECA1F176F8F00F6DC09 /* wjHandleImageVC.xib */,
+				C4760ED81F1778BD00F6DC09 /* wjImageDetailVC.h */,
+				C4760ED91F1778BD00F6DC09 /* wjImageDetailVC.m */,
+				C4760EDA1F1778BD00F6DC09 /* wjImageDetailVC.xib */,
+			);
+			path = c;
+			sourceTree = "<group>";
+		};
+		C4760EC01F176DCB00F6DC09 /* m */ = {
+			isa = PBXGroup;
+			children = (
+				C4760ECD1F17704900F6DC09 /* wjImageModel.h */,
+				C4760ECE1F17704900F6DC09 /* wjImageModel.m */,
+				C4760ED01F17723600F6DC09 /* wjImageData.plist */,
+			);
+			path = m;
+			sourceTree = "<group>";
+		};
+		C4760EC11F176DCB00F6DC09 /* v */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = v;
+			sourceTree = "<group>";
+		};
+		C4760EC71F176ECF00F6DC09 /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				C4760ED21F17745B00F6DC09 /* doubleHand */,
+				C4760ED31F17745B00F6DC09 /* hand */,
+				C4760ED41F17745B00F6DC09 /* head */,
+			);
+			path = resource;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -589,16 +662,22 @@
 				C4274BA81F03614D00C7B379 /* line.png in Resources */,
 				C43691721F04DD0500F18340 /* wjTouchedVC.xib in Resources */,
 				C43691C71F06539A00F18340 /* gesture_node_selected.png in Resources */,
+				C4760ED11F17723600F6DC09 /* wjImageData.plist in Resources */,
+				C4760ED51F17745B00F6DC09 /* doubleHand in Resources */,
 				C43691781F04FBE000F18340 /* icon.jpeg in Resources */,
+				C4760ECC1F176F8F00F6DC09 /* wjHandleImageVC.xib in Resources */,
 				C436915E1F048D1600F18340 /* wjAlterAppIconVC.xib in Resources */,
 				C4274B591F0200E800C7B379 /* Assets.xcassets in Resources */,
 				C45F94121F0B6BDC0021FFF0 /* ProgressHUD.bundle in Resources */,
+				C4760EDC1F1778BD00F6DC09 /* wjImageDetailVC.xib in Resources */,
 				C4274BA21F035EE500C7B379 /* wjScanQRCodeVC.xib in Resources */,
 				C4280A791F03B56400EBEF45 /* iconChange@3x.png in Resources */,
+				C4760ED71F17745B00F6DC09 /* head in Resources */,
 				C4274BAB1F03614D00C7B379 /* pick_bg@2x.png in Resources */,
 				C4274B571F0200E800C7B379 /* Main.storyboard in Resources */,
 				C43691CD1F0653C600F18340 /* wjGestureLockVC.xib in Resources */,
 				C4280A781F03B56400EBEF45 /* iconChange@2x.png in Resources */,
+				C4760ED61F17745B00F6DC09 /* hand in Resources */,
 				C4274BA91F03614D00C7B379 /* line@2x.png in Resources */,
 				C4274B8A1F02029700C7B379 /* wjQRCodeVC.xib in Resources */,
 				C43691B51F06213400F18340 /* wjTouchIDVerificationVC.xib in Resources */,
@@ -628,9 +707,12 @@
 				C43691B41F06213400F18340 /* wjTouchIDVerificationVC.m in Sources */,
 				C4274B511F0200E800C7B379 /* AppDelegate.m in Sources */,
 				C43691B91F0622B700F18340 /* wjTouchID.m in Sources */,
+				C4760EDB1F1778BD00F6DC09 /* wjImageDetailVC.m in Sources */,
 				C43691D01F06554F00F18340 /* wjGestureLockView.m in Sources */,
 				C4274BA11F035EE500C7B379 /* wjScanQRCodeVC.m in Sources */,
 				C4274B4E1F0200E800C7B379 /* main.m in Sources */,
+				C4760ECF1F17704900F6DC09 /* wjImageModel.m in Sources */,
+				C4760ECB1F176F8F00F6DC09 /* wjHandleImageVC.m in Sources */,
 				C4274B891F02029700C7B379 /* wjQRCodeVC.m in Sources */,
 				C45F94131F0B6BDC0021FFF0 /* ProgressHUD.m in Sources */,
 				C4274B951F020C7800C7B379 /* wjModel.m in Sources */,

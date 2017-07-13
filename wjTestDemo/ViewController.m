@@ -101,6 +101,11 @@
             [self.navigationController pushViewController:gestureVC animated:YES];
         }
             break;
+        case 6: {
+            wjHandleImageVC *handleVC = [[wjHandleImageVC alloc] init];
+            [self.navigationController pushViewController:handleVC animated:YES];
+        }
+            break;
         default:
             break;
     }
