@@ -54,7 +54,7 @@
     
     wjImageModel *model = self.dataArray[indexPath.row];
     cell.textLabel.text = model.name;
-    cell.detailTextLabel.text = [NSString stringWithFormat:@"一共有%ld张图片", model.imageDataArray.count];
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"共有%ld张图片", model.imageDataArray.count];
     
     return cell;
 }
@@ -65,7 +65,7 @@
     // 点击不同的cell传入不同的数据到之后的展示页面去
     wjImageDetailVC *imageDetailVC = [[wjImageDetailVC alloc] init];
     imageDetailVC.model = self.dataArray[indexPath.row];
-    imageDetailVC.hidesBottomBarWhenPushed = YES;
+//    imageDetailVC.hidesBottomBarWhenPushed = YES; // 项目中没有tableBar
     [self.navigationController pushViewController:imageDetailVC animated:YES];
 }
 

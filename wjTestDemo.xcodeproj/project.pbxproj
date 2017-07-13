@@ -7,6 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B6FE8071F17B92600660403 /* wjButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B6FE8061F17B92600660403 /* wjButton.m */; };
+		9B6FE80A1F17BBE200660403 /* wjButtonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B6FE8091F17BBE200660403 /* wjButtonModel.m */; };
+		9B6FE80C1F17BD7000660403 /* wjButton.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9B6FE80B1F17BD7000660403 /* wjButton.plist */; };
+		9B6FE81E1F17C4B600660403 /* alpha@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B6FE80E1F17C4B600660403 /* alpha@2x.png */; };
+		9B6FE81F1F17C4B600660403 /* alpha@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B6FE80F1F17C4B600660403 /* alpha@3x.png */; };
+		9B6FE8201F17C4B600660403 /* alpha_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B6FE8101F17C4B600660403 /* alpha_selected@2x.png */; };
+		9B6FE8211F17C4B600660403 /* alpha_selected@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B6FE8111F17C4B600660403 /* alpha_selected@3x.png */; };
+		9B6FE8221F17C4B600660403 /* 标注@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B6FE8121F17C4B600660403 /* 标注@2x.png */; };
+		9B6FE8231F17C4B600660403 /* 标注@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B6FE8131F17C4B600660403 /* 标注@3x.png */; };
+		9B6FE8241F17C4B600660403 /* 标注_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B6FE8141F17C4B600660403 /* 标注_selected@2x.png */; };
+		9B6FE8251F17C4B600660403 /* 标注_selected@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B6FE8151F17C4B600660403 /* 标注_selected@3x.png */; };
+		9B6FE8261F17C4B600660403 /* 调窗@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B6FE8161F17C4B600660403 /* 调窗@2x.png */; };
+		9B6FE8271F17C4B600660403 /* 调窗@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B6FE8171F17C4B600660403 /* 调窗@3x.png */; };
+		9B6FE8281F17C4B600660403 /* 调窗_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B6FE8181F17C4B600660403 /* 调窗_selected@2x.png */; };
+		9B6FE8291F17C4B600660403 /* 调窗_selected@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B6FE8191F17C4B600660403 /* 调窗_selected@3x.png */; };
+		9B6FE82A1F17C4B600660403 /* 重置@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B6FE81A1F17C4B600660403 /* 重置@2x.png */; };
+		9B6FE82B1F17C4B600660403 /* 重置@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B6FE81B1F17C4B600660403 /* 重置@3x.png */; };
+		9B6FE82C1F17C4B600660403 /* 重置_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B6FE81C1F17C4B600660403 /* 重置_selected@2x.png */; };
+		9B6FE82D1F17C4B600660403 /* 重置_selected@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B6FE81D1F17C4B600660403 /* 重置_selected@3x.png */; };
 		9BD0F8D71F0520D000B27648 /* 扫描二维码.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BD0F8D61F0520D000B27648 /* 扫描二维码.png */; };
 		C4274B4E1F0200E800C7B379 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C4274B4D1F0200E800C7B379 /* main.m */; };
 		C4274B511F0200E800C7B379 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C4274B501F0200E800C7B379 /* AppDelegate.m */; };
@@ -73,6 +92,27 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9B6FE8051F17B92600660403 /* wjButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wjButton.h; sourceTree = "<group>"; };
+		9B6FE8061F17B92600660403 /* wjButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = wjButton.m; sourceTree = "<group>"; };
+		9B6FE8081F17BBE200660403 /* wjButtonModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wjButtonModel.h; sourceTree = "<group>"; };
+		9B6FE8091F17BBE200660403 /* wjButtonModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = wjButtonModel.m; sourceTree = "<group>"; };
+		9B6FE80B1F17BD7000660403 /* wjButton.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = wjButton.plist; sourceTree = "<group>"; };
+		9B6FE80E1F17C4B600660403 /* alpha@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "alpha@2x.png"; sourceTree = "<group>"; };
+		9B6FE80F1F17C4B600660403 /* alpha@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "alpha@3x.png"; sourceTree = "<group>"; };
+		9B6FE8101F17C4B600660403 /* alpha_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "alpha_selected@2x.png"; sourceTree = "<group>"; };
+		9B6FE8111F17C4B600660403 /* alpha_selected@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "alpha_selected@3x.png"; sourceTree = "<group>"; };
+		9B6FE8121F17C4B600660403 /* 标注@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "标注@2x.png"; sourceTree = "<group>"; };
+		9B6FE8131F17C4B600660403 /* 标注@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "标注@3x.png"; sourceTree = "<group>"; };
+		9B6FE8141F17C4B600660403 /* 标注_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "标注_selected@2x.png"; sourceTree = "<group>"; };
+		9B6FE8151F17C4B600660403 /* 标注_selected@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "标注_selected@3x.png"; sourceTree = "<group>"; };
+		9B6FE8161F17C4B600660403 /* 调窗@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "调窗@2x.png"; sourceTree = "<group>"; };
+		9B6FE8171F17C4B600660403 /* 调窗@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "调窗@3x.png"; sourceTree = "<group>"; };
+		9B6FE8181F17C4B600660403 /* 调窗_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "调窗_selected@2x.png"; sourceTree = "<group>"; };
+		9B6FE8191F17C4B600660403 /* 调窗_selected@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "调窗_selected@3x.png"; sourceTree = "<group>"; };
+		9B6FE81A1F17C4B600660403 /* 重置@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "重置@2x.png"; sourceTree = "<group>"; };
+		9B6FE81B1F17C4B600660403 /* 重置@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "重置@3x.png"; sourceTree = "<group>"; };
+		9B6FE81C1F17C4B600660403 /* 重置_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "重置_selected@2x.png"; sourceTree = "<group>"; };
+		9B6FE81D1F17C4B600660403 /* 重置_selected@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "重置_selected@3x.png"; sourceTree = "<group>"; };
 		9BD0F8D61F0520D000B27648 /* 扫描二维码.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "扫描二维码.png"; sourceTree = "<group>"; };
 		C4274B491F0200E800C7B379 /* wjTestDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wjTestDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4274B4D1F0200E800C7B379 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -170,6 +210,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9B6FE80D1F17C4B600660403 /* button */ = {
+			isa = PBXGroup;
+			children = (
+				9B6FE80E1F17C4B600660403 /* alpha@2x.png */,
+				9B6FE80F1F17C4B600660403 /* alpha@3x.png */,
+				9B6FE8101F17C4B600660403 /* alpha_selected@2x.png */,
+				9B6FE8111F17C4B600660403 /* alpha_selected@3x.png */,
+				9B6FE8121F17C4B600660403 /* 标注@2x.png */,
+				9B6FE8131F17C4B600660403 /* 标注@3x.png */,
+				9B6FE8141F17C4B600660403 /* 标注_selected@2x.png */,
+				9B6FE8151F17C4B600660403 /* 标注_selected@3x.png */,
+				9B6FE8161F17C4B600660403 /* 调窗@2x.png */,
+				9B6FE8171F17C4B600660403 /* 调窗@3x.png */,
+				9B6FE8181F17C4B600660403 /* 调窗_selected@2x.png */,
+				9B6FE8191F17C4B600660403 /* 调窗_selected@3x.png */,
+				9B6FE81A1F17C4B600660403 /* 重置@2x.png */,
+				9B6FE81B1F17C4B600660403 /* 重置@3x.png */,
+				9B6FE81C1F17C4B600660403 /* 重置_selected@2x.png */,
+				9B6FE81D1F17C4B600660403 /* 重置_selected@3x.png */,
+			);
+			path = button;
+			sourceTree = "<group>";
+		};
 		C4274B401F0200E800C7B379 = {
 			isa = PBXGroup;
 			children = (
@@ -544,6 +607,9 @@
 				C4760ECD1F17704900F6DC09 /* wjImageModel.h */,
 				C4760ECE1F17704900F6DC09 /* wjImageModel.m */,
 				C4760ED01F17723600F6DC09 /* wjImageData.plist */,
+				9B6FE8081F17BBE200660403 /* wjButtonModel.h */,
+				9B6FE8091F17BBE200660403 /* wjButtonModel.m */,
+				9B6FE80B1F17BD7000660403 /* wjButton.plist */,
 			);
 			path = m;
 			sourceTree = "<group>";
@@ -551,6 +617,8 @@
 		C4760EC11F176DCB00F6DC09 /* v */ = {
 			isa = PBXGroup;
 			children = (
+				9B6FE8051F17B92600660403 /* wjButton.h */,
+				9B6FE8061F17B92600660403 /* wjButton.m */,
 			);
 			path = v;
 			sourceTree = "<group>";
@@ -558,6 +626,7 @@
 		C4760EC71F176ECF00F6DC09 /* resource */ = {
 			isa = PBXGroup;
 			children = (
+				9B6FE80D1F17C4B600660403 /* button */,
 				C4760ED21F17745B00F6DC09 /* doubleHand */,
 				C4760ED31F17745B00F6DC09 /* hand */,
 				C4760ED41F17745B00F6DC09 /* head */,
@@ -649,20 +718,33 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B6FE8261F17C4B600660403 /* 调窗@2x.png in Resources */,
 				C4274B971F020F8F00C7B379 /* model.plist in Resources */,
+				9B6FE81E1F17C4B600660403 /* alpha@2x.png in Resources */,
 				C43691C61F06539A00F18340 /* gesture_node_normal@2x.png in Resources */,
+				9B6FE8221F17C4B600660403 /* 标注@2x.png in Resources */,
 				C4274BAA1F03614D00C7B379 /* pick_bg.png in Resources */,
 				C43691C51F06539A00F18340 /* gesture_node_normal.png in Resources */,
 				C4274B5C1F0200E800C7B379 /* LaunchScreen.storyboard in Resources */,
 				C43691C81F06539A00F18340 /* gesture_node_selected@2x.png in Resources */,
+				9B6FE82A1F17C4B600660403 /* 重置@2x.png in Resources */,
 				C43691691F04D09900F18340 /* wj3DTouchVC.xib in Resources */,
 				C4274B991F023C4B00C7B379 /* icon.jpeg in Resources */,
 				C43691BC1F0626BB00F18340 /* 指纹.png in Resources */,
+				9B6FE8231F17C4B600660403 /* 标注@3x.png in Resources */,
 				9BD0F8D71F0520D000B27648 /* 扫描二维码.png in Resources */,
+				9B6FE82D1F17C4B600660403 /* 重置_selected@3x.png in Resources */,
 				C4274BA81F03614D00C7B379 /* line.png in Resources */,
+				9B6FE8241F17C4B600660403 /* 标注_selected@2x.png in Resources */,
 				C43691721F04DD0500F18340 /* wjTouchedVC.xib in Resources */,
+				9B6FE8271F17C4B600660403 /* 调窗@3x.png in Resources */,
+				9B6FE8211F17C4B600660403 /* alpha_selected@3x.png in Resources */,
+				9B6FE8251F17C4B600660403 /* 标注_selected@3x.png in Resources */,
+				9B6FE80C1F17BD7000660403 /* wjButton.plist in Resources */,
+				9B6FE82B1F17C4B600660403 /* 重置@3x.png in Resources */,
 				C43691C71F06539A00F18340 /* gesture_node_selected.png in Resources */,
 				C4760ED11F17723600F6DC09 /* wjImageData.plist in Resources */,
+				9B6FE8201F17C4B600660403 /* alpha_selected@2x.png in Resources */,
 				C4760ED51F17745B00F6DC09 /* doubleHand in Resources */,
 				C43691781F04FBE000F18340 /* icon.jpeg in Resources */,
 				C4760ECC1F176F8F00F6DC09 /* wjHandleImageVC.xib in Resources */,
@@ -671,12 +753,16 @@
 				C45F94121F0B6BDC0021FFF0 /* ProgressHUD.bundle in Resources */,
 				C4760EDC1F1778BD00F6DC09 /* wjImageDetailVC.xib in Resources */,
 				C4274BA21F035EE500C7B379 /* wjScanQRCodeVC.xib in Resources */,
+				9B6FE82C1F17C4B600660403 /* 重置_selected@2x.png in Resources */,
 				C4280A791F03B56400EBEF45 /* iconChange@3x.png in Resources */,
+				9B6FE8281F17C4B600660403 /* 调窗_selected@2x.png in Resources */,
 				C4760ED71F17745B00F6DC09 /* head in Resources */,
 				C4274BAB1F03614D00C7B379 /* pick_bg@2x.png in Resources */,
 				C4274B571F0200E800C7B379 /* Main.storyboard in Resources */,
+				9B6FE8291F17C4B600660403 /* 调窗_selected@3x.png in Resources */,
 				C43691CD1F0653C600F18340 /* wjGestureLockVC.xib in Resources */,
 				C4280A781F03B56400EBEF45 /* iconChange@2x.png in Resources */,
+				9B6FE81F1F17C4B600660403 /* alpha@3x.png in Resources */,
 				C4760ED61F17745B00F6DC09 /* hand in Resources */,
 				C4274BA91F03614D00C7B379 /* line@2x.png in Resources */,
 				C4274B8A1F02029700C7B379 /* wjQRCodeVC.xib in Resources */,
@@ -700,6 +786,7 @@
 			files = (
 				C43691711F04DD0500F18340 /* wjTouchedVC.m in Sources */,
 				C4274B541F0200E800C7B379 /* ViewController.m in Sources */,
+				9B6FE80A1F17BBE200660403 /* wjButtonModel.m in Sources */,
 				C43691CC1F0653C600F18340 /* wjGestureLockVC.m in Sources */,
 				C436915D1F048D1600F18340 /* wjAlterAppIconVC.m in Sources */,
 				C43691681F04D09900F18340 /* wj3DTouchVC.m in Sources */,
@@ -712,6 +799,7 @@
 				C4274BA11F035EE500C7B379 /* wjScanQRCodeVC.m in Sources */,
 				C4274B4E1F0200E800C7B379 /* main.m in Sources */,
 				C4760ECF1F17704900F6DC09 /* wjImageModel.m in Sources */,
+				9B6FE8071F17B92600660403 /* wjButton.m in Sources */,
 				C4760ECB1F176F8F00F6DC09 /* wjHandleImageVC.m in Sources */,
 				C4274B891F02029700C7B379 /* wjQRCodeVC.m in Sources */,
 				C45F94131F0B6BDC0021FFF0 /* ProgressHUD.m in Sources */,
