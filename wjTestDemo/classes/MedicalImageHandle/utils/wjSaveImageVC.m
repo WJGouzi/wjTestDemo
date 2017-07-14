@@ -27,17 +27,17 @@
             if(status == PHAuthorizationStatusDenied) { //用户拒绝（可能是之前拒绝的，有可能是刚才在系统弹框中选择的拒绝）
                 if (lastStatus == PHAuthorizationStatusNotDetermined) {
                     //说明，用户之前没有做决定，在弹出授权框中，选择了拒绝
-                    [self wjShowAlertNoticeWithTitle:@"提示" message:@"保存失败" actionTitle:@"确定"];
+                    [self wjShowNoticeWithText:@"保存失败"];
                     return;
                 }
                 // 说明，之前用户选择拒绝过，现在又点击保存按钮，说明想要使用该功能，需要提示用户打开授权
-                [self wjShowAlertNoticeWithTitle:@"提示" message:@"保存失败！请在系统设置中开启访问相册权限" actionTitle:@"确定"];
+                [self wjShowNoticeWithText:@"保存失败!请在系统设置中开启访问相册权限"];
             } else if(status == PHAuthorizationStatusAuthorized) {
                 //用户允许
                 //保存图片---调用上面封装的方法
                 [self saveImageToCustomAblumWithImage:image];
             } else if (status == PHAuthorizationStatusRestricted) {
-                [self wjShowAlertNoticeWithTitle:@"提示" message:@"无法访问相册" actionTitle:@"确定"];
+                [self wjShowNoticeWithText:@"无法访问相册"];
             }
         });
     }];
@@ -50,14 +50,14 @@
     //1 将图片保存到系统的【相机胶卷】中---调用刚才的方法
     PHFetchResult<PHAsset *> *assets = [self syncSaveImageWithPhotosWithImage:image];
     if (assets == nil) {
-        [self wjShowAlertNoticeWithTitle:@"提示" message:@"保存失败" actionTitle:@"确定"];
+        [self wjShowNoticeWithText:@"保存失败"];
         return;
     }
     
     //2 拥有自定义相册（与 APP 同名，如果没有则创建）--调用刚才的方法
     PHAssetCollection *assetCollection = [self getAssetCollectionWithAppNameAndCreateIfNo];
     if (assetCollection == nil) {
-        [self wjShowAlertNoticeWithTitle:@"提示" message:@"相册创建失败" actionTitle:@"确定"];
+        [self wjShowNoticeWithText:@"相册创建失败"];
         return;
     }
         
@@ -74,10 +74,10 @@
     
     
     if (error) {
-        [self wjShowAlertNoticeWithTitle:@"提示" message:@"保存失败" actionTitle:@"确定"];
+        [self wjShowNoticeWithText:@"保存失败"];
         return;
     }
-    [self wjShowAlertNoticeWithTitle:@"提示" message:@"保存成功" actionTitle:@"确定"];
+    [self wjShowNoticeWithText:@"保存成功"];
 }
 
 /**同步方式保存图片到系统的相机胶卷中---返回的是当前保存成功后相册图片对象集合*/
@@ -127,30 +127,26 @@
         createID = request.placeholderForCreatedAssetCollection.localIdentifier;
     } error:&error];
     if (error) {
-        [self wjShowAlertNoticeWithTitle:@"提示" message:@"相册创建失败" actionTitle:@"确定"];
+        [self wjShowNoticeWithText:@"相册创建失败"];
         return nil;
     } else {
-        [self wjShowAlertNoticeWithTitle:@"提示" message:@"相册创建成功" actionTitle:@"确定"];
-
+        [self wjShowNoticeWithText:@"相册创建成功"];
         //通过 ID 获取创建完成的相册 -- 是一个数组
         return [PHAssetCollection fetchAssetCollectionsWithLocalIdentifiers:@[createID] options:nil].firstObject;
     }
 }
 
 
-#pragma mark - 通用的方法
 /**
- 显示提示框
- 
- @param title 提示标题
- @param message 提示信息
- @param actionTitle 按钮文字
+ 提示
+
+ @param text 提示的文字
  */
-- (void)wjShowAlertNoticeWithTitle:(NSString *)title message:(NSString *)message actionTitle:(NSString *)actionTitle {
-    UIAlertController *alertVC = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert];
-    UIAlertAction *action = [UIAlertAction actionWithTitle:actionTitle style:UIAlertActionStyleDefault handler:nil];
-    [alertVC addAction:action];
-    [self presentViewController:alertVC animated:YES completion:nil];
+- (void)wjShowNoticeWithText:(NSString *)text {
+    [ProgressHUD show:text];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [ProgressHUD dismiss];
+    });
 }
 
 
