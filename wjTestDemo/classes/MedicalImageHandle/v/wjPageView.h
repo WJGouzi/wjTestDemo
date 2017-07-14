@@ -14,6 +14,9 @@
 @property (nonatomic, strong) NSArray *imageNames;
 
 
+/** 展示在scrollview上的图片*/
+@property (nonatomic, strong) UIImageView *imageView;
+
 /**
  类方法
  */

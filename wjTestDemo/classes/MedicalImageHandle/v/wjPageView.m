@@ -71,6 +71,7 @@
         imageView.image = [UIImage imageNamed:imageNames[i]];
         imageView.frame = CGRectMake(scrollViewW * i, 0, scrollViewW, scrollViewH);
         [self.wjScrollView addSubview:imageView];
+        self.imageView = imageView;
     }
     self.wjScrollView.contentSize = CGSizeMake(imageCount * scrollViewW, 0);
     self.wjScrollView.pagingEnabled = YES;
@@ -106,12 +107,13 @@
     
 }
 
+// 暂时关掉自动轮播
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
-    [self stopTimer];
+//    [self stopTimer];
 }
 
 - (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate {
-    [self startTimer];
+//    [self startTimer];
 }
 
 

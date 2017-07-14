@@ -12,14 +12,15 @@
 #import "wjButton.h"
 #import "wjPageView.h" // 展示图片的scrollview
 
-static NSInteger selectedTag = 0;
-
 @interface wjImageDetailVC ()
 
 @property (nonatomic, strong) NSMutableArray *buttonsArray;
 
 // 选中的按钮
 @property (nonatomic, weak) UIButton *selectedBtn;
+
+/** 展示图片的view */
+@property (nonatomic, strong) wjPageView *wjPageView;
 
 @end
 
@@ -85,9 +86,10 @@ static NSInteger selectedTag = 0;
  */
 - (void)wjScrollViewUISettings {
     wjPageView *pageView = [wjPageView pageView];
-    pageView.frame = CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_HEIGHT - 64 - 49);
+    pageView.frame = CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_HEIGHT - 49 - 64);
     pageView.imageNames = self.model.imageDataArray;
     [self.view addSubview:pageView];
+    self.wjPageView = pageView;
 }
 
 
@@ -102,7 +104,7 @@ static NSInteger selectedTag = 0;
         self.selectedBtn.selected = NO;
         self.selectedBtn = btn;
     }
-    self.selectedBtn.selected = YES;
+    self.selectedBtn.selected = !self.selectedBtn.selected;
 }
 
 
@@ -112,10 +114,44 @@ static NSInteger selectedTag = 0;
  */
 - (void)wjSaveImageAction:(UIBarButtonItem *)item {
     NSLog(@"保存了");
+    UIGraphicsBeginImageContextWithOptions(self.wjPageView.imageView.bounds.size, NO, 0);
+    CGContextRef ctx = UIGraphicsGetCurrentContext();
+    [self.wjPageView.imageView.layer renderInContext:ctx];
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    // 判断有没有进行绘画
+//    if (self.doodleBoardView.allPathArray.count > 0) {
+//        // 有就进行保存
+//    } else {
+//        // 给出提示，还没进行绘画
+//        [self wjShowAlertNoticeWithTitle:@"提示" message:@"您还未在画布上进行绘制\n保存无法执行!" actionTitle:@"知道了"];
+//    }
+    UIImageWriteToSavedPhotosAlbum(image, self, @selector(image: didFinishSavingWithError: contextInfo:), nil);
     
 }
 
+// 代理方法
+- (void)image:(UIImage *)image didFinishSavingWithError:(NSError *)error contextInfo:(void *)contextInfo {
+    [self wjShowAlertNoticeWithTitle:@"保存成功!" message:@"你可以到相册中查看" actionTitle:@"确定"];
+}
 
+
+
+
+#pragma mark - 通用方法
+/**
+ 显示提示框
+ 
+ @param title 提示标题
+ @param message 提示信息
+ @param actionTitle 按钮文字
+ */
+- (void)wjShowAlertNoticeWithTitle:(NSString *)title message:(NSString *)message actionTitle:(NSString *)actionTitle {
+    UIAlertController *alertVC = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *action = [UIAlertAction actionWithTitle:actionTitle style:UIAlertActionStyleDefault handler:nil];
+    [alertVC addAction:action];
+    [self presentViewController:alertVC animated:YES completion:nil];
+}
 
 
 
