@@ -70,6 +70,10 @@
 		C45F94121F0B6BDC0021FFF0 /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C45F940D1F0B6BDC0021FFF0 /* ProgressHUD.bundle */; };
 		C45F94131F0B6BDC0021FFF0 /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = C45F940F1F0B6BDC0021FFF0 /* ProgressHUD.m */; };
 		C45F94141F0B6BDC0021FFF0 /* UIImage+animatedGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = C45F94111F0B6BDC0021FFF0 /* UIImage+animatedGIF.m */; };
+		C46294141F186AD400A233B3 /* wjPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = C46294121F186AD400A233B3 /* wjPageView.m */; };
+		C46294151F186AD400A233B3 /* wjPageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C46294131F186AD400A233B3 /* wjPageView.xib */; };
+		C46294181F18706800A233B3 /* 开始@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C46294161F18706800A233B3 /* 开始@2x.png */; };
+		C46294191F18706800A233B3 /* 暂停@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C46294171F18706800A233B3 /* 暂停@2x.png */; };
 		C4760ECB1F176F8F00F6DC09 /* wjHandleImageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C4760EC91F176F8F00F6DC09 /* wjHandleImageVC.m */; };
 		C4760ECC1F176F8F00F6DC09 /* wjHandleImageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4760ECA1F176F8F00F6DC09 /* wjHandleImageVC.xib */; };
 		C4760ECF1F17704900F6DC09 /* wjImageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C4760ECE1F17704900F6DC09 /* wjImageModel.m */; };
@@ -176,6 +180,11 @@
 		C45F940F1F0B6BDC0021FFF0 /* ProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressHUD.m; sourceTree = "<group>"; };
 		C45F94101F0B6BDC0021FFF0 /* UIImage+animatedGIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+animatedGIF.h"; sourceTree = "<group>"; };
 		C45F94111F0B6BDC0021FFF0 /* UIImage+animatedGIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+animatedGIF.m"; sourceTree = "<group>"; };
+		C46294111F186AD400A233B3 /* wjPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wjPageView.h; sourceTree = "<group>"; };
+		C46294121F186AD400A233B3 /* wjPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = wjPageView.m; sourceTree = "<group>"; };
+		C46294131F186AD400A233B3 /* wjPageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = wjPageView.xib; sourceTree = "<group>"; };
+		C46294161F18706800A233B3 /* 开始@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "开始@2x.png"; sourceTree = "<group>"; };
+		C46294171F18706800A233B3 /* 暂停@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "暂停@2x.png"; sourceTree = "<group>"; };
 		C4760EC81F176F8F00F6DC09 /* wjHandleImageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wjHandleImageVC.h; sourceTree = "<group>"; };
 		C4760EC91F176F8F00F6DC09 /* wjHandleImageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = wjHandleImageVC.m; sourceTree = "<group>"; };
 		C4760ECA1F176F8F00F6DC09 /* wjHandleImageVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = wjHandleImageVC.xib; sourceTree = "<group>"; };
@@ -213,6 +222,8 @@
 		9B6FE80D1F17C4B600660403 /* button */ = {
 			isa = PBXGroup;
 			children = (
+				C46294161F18706800A233B3 /* 开始@2x.png */,
+				C46294171F18706800A233B3 /* 暂停@2x.png */,
 				9B6FE80E1F17C4B600660403 /* alpha@2x.png */,
 				9B6FE80F1F17C4B600660403 /* alpha@3x.png */,
 				9B6FE8101F17C4B600660403 /* alpha_selected@2x.png */,
@@ -619,6 +630,9 @@
 			children = (
 				9B6FE8051F17B92600660403 /* wjButton.h */,
 				9B6FE8061F17B92600660403 /* wjButton.m */,
+				C46294111F186AD400A233B3 /* wjPageView.h */,
+				C46294121F186AD400A233B3 /* wjPageView.m */,
+				C46294131F186AD400A233B3 /* wjPageView.xib */,
 			);
 			path = v;
 			sourceTree = "<group>";
@@ -730,12 +744,14 @@
 				9B6FE82A1F17C4B600660403 /* 重置@2x.png in Resources */,
 				C43691691F04D09900F18340 /* wj3DTouchVC.xib in Resources */,
 				C4274B991F023C4B00C7B379 /* icon.jpeg in Resources */,
+				C46294191F18706800A233B3 /* 暂停@2x.png in Resources */,
 				C43691BC1F0626BB00F18340 /* 指纹.png in Resources */,
 				9B6FE8231F17C4B600660403 /* 标注@3x.png in Resources */,
 				9BD0F8D71F0520D000B27648 /* 扫描二维码.png in Resources */,
 				9B6FE82D1F17C4B600660403 /* 重置_selected@3x.png in Resources */,
 				C4274BA81F03614D00C7B379 /* line.png in Resources */,
 				9B6FE8241F17C4B600660403 /* 标注_selected@2x.png in Resources */,
+				C46294181F18706800A233B3 /* 开始@2x.png in Resources */,
 				C43691721F04DD0500F18340 /* wjTouchedVC.xib in Resources */,
 				9B6FE8271F17C4B600660403 /* 调窗@3x.png in Resources */,
 				9B6FE8211F17C4B600660403 /* alpha_selected@3x.png in Resources */,
@@ -758,6 +774,7 @@
 				9B6FE8281F17C4B600660403 /* 调窗_selected@2x.png in Resources */,
 				C4760ED71F17745B00F6DC09 /* head in Resources */,
 				C4274BAB1F03614D00C7B379 /* pick_bg@2x.png in Resources */,
+				C46294151F186AD400A233B3 /* wjPageView.xib in Resources */,
 				C4274B571F0200E800C7B379 /* Main.storyboard in Resources */,
 				9B6FE8291F17C4B600660403 /* 调窗_selected@3x.png in Resources */,
 				C43691CD1F0653C600F18340 /* wjGestureLockVC.xib in Resources */,
@@ -798,6 +815,7 @@
 				C43691D01F06554F00F18340 /* wjGestureLockView.m in Sources */,
 				C4274BA11F035EE500C7B379 /* wjScanQRCodeVC.m in Sources */,
 				C4274B4E1F0200E800C7B379 /* main.m in Sources */,
+				C46294141F186AD400A233B3 /* wjPageView.m in Sources */,
 				C4760ECF1F17704900F6DC09 /* wjImageModel.m in Sources */,
 				9B6FE8071F17B92600660403 /* wjButton.m in Sources */,
 				C4760ECB1F176F8F00F6DC09 /* wjHandleImageVC.m in Sources */,
