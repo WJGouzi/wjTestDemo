@@ -41,7 +41,7 @@
     return _buttonsArray;
 }
 
-
+#pragma mark - 生命周期
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"图像处理";
@@ -93,7 +93,6 @@
 }
 
 
-#pragma mark - 通用的方法
 #pragma mark - 按钮的一些点击事件
 /**
  底部按钮的点击事件
@@ -126,19 +125,19 @@
 //        // 给出提示，还没进行绘画
 //        [self wjShowAlertNoticeWithTitle:@"提示" message:@"您还未在画布上进行绘制\n保存无法执行!" actionTitle:@"知道了"];
 //    }
-    UIImageWriteToSavedPhotosAlbum(image, self, @selector(image: didFinishSavingWithError: contextInfo:), nil);
-    
+    // C语言的方法
+//    UIImageWriteToSavedPhotosAlbum(image, self, @selector(image: didFinishSavingWithError: contextInfo:), nil);
+    wjSaveImageVC *saveImageVC = [[wjSaveImageVC alloc] init];
+    [saveImageVC saveWithImage:image];
 }
 
 // 代理方法
-- (void)image:(UIImage *)image didFinishSavingWithError:(NSError *)error contextInfo:(void *)contextInfo {
-    [self wjShowAlertNoticeWithTitle:@"保存成功!" message:@"你可以到相册中查看" actionTitle:@"确定"];
-}
+//- (void)image:(UIImage *)image didFinishSavingWithError:(NSError *)error contextInfo:(void *)contextInfo {
+//    [self wjShowAlertNoticeWithTitle:@"保存成功!" message:@"你可以到相册中查看" actionTitle:@"确定"];
+//}
 
 
-
-
-#pragma mark - 通用方法
+#pragma mark - 通用的方法
 /**
  显示提示框
  

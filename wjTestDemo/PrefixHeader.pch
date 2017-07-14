@@ -13,7 +13,8 @@
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 
 #pragma mark - 引入一些系统的类
-
+//PHAsset、PHAssetCollection 和 PHLibrary。
+#import <Photos/Photos.h>
 
 
 #pragma mark - 引入一些类
@@ -24,7 +25,7 @@
 #import "wjTouchIDVerificationVC.h" // touchID的验证
 #import "wjGestureLockVC.h"         // 手势解锁功能
 #import "wjHandleImageVC.h"         // 医学图片的处理
-
+#import "wjSaveImageVC.h"           // 保存图片到自定义的相册
 
 #pragma mark - 引入的三方类库
 #import "ProgressHUD.h"

@@ -83,6 +83,7 @@
 		C4760EDC1F1778BD00F6DC09 /* wjImageDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4760EDA1F1778BD00F6DC09 /* wjImageDetailVC.xib */; };
 		C4B2F1631F1875B30028796B /* 开始@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C4B2F1611F1875B30028796B /* 开始@2x.png */; };
 		C4B2F1641F1875B30028796B /* 暂停@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C4B2F1621F1875B30028796B /* 暂停@2x.png */; };
+		C4B2F1681F18A2E30028796B /* wjSaveImageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C4B2F1671F18A2E30028796B /* wjSaveImageVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -198,6 +199,8 @@
 		C4AC5AE71F048AB90023DD13 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		C4B2F1611F1875B30028796B /* 开始@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "开始@2x.png"; sourceTree = "<group>"; };
 		C4B2F1621F1875B30028796B /* 暂停@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "暂停@2x.png"; sourceTree = "<group>"; };
+		C4B2F1661F18A2E30028796B /* wjSaveImageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wjSaveImageVC.h; sourceTree = "<group>"; };
+		C4B2F1671F18A2E30028796B /* wjSaveImageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = wjSaveImageVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -589,6 +592,7 @@
 		C4760EBE1F176DCB00F6DC09 /* MedicalImageHandle */ = {
 			isa = PBXGroup;
 			children = (
+				C4B2F1651F18A2A90028796B /* utils */,
 				C4760EC71F176ECF00F6DC09 /* resource */,
 				C4760EBF1F176DCB00F6DC09 /* c */,
 				C4760EC01F176DCB00F6DC09 /* m */,
@@ -646,6 +650,15 @@
 				C4B2F1621F1875B30028796B /* 暂停@2x.png */,
 			);
 			path = resource;
+			sourceTree = "<group>";
+		};
+		C4B2F1651F18A2A90028796B /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				C4B2F1661F18A2E30028796B /* wjSaveImageVC.h */,
+				C4B2F1671F18A2E30028796B /* wjSaveImageVC.m */,
+			);
+			path = utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -820,6 +833,7 @@
 				9B6FE8071F17B92600660403 /* wjButton.m in Sources */,
 				C4760ECB1F176F8F00F6DC09 /* wjHandleImageVC.m in Sources */,
 				C4274B891F02029700C7B379 /* wjQRCodeVC.m in Sources */,
+				C4B2F1681F18A2E30028796B /* wjSaveImageVC.m in Sources */,
 				C45F94131F0B6BDC0021FFF0 /* ProgressHUD.m in Sources */,
 				C4274B951F020C7800C7B379 /* wjModel.m in Sources */,
 				C4274B8F1F02055D00C7B379 /* UIImage+wjQRCodeCreate.m in Sources */,
