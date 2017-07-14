@@ -66,12 +66,11 @@
 
     for (int i = 0; i < imageCount; i++) {
         // 1.添加图片
-        UIImageView *imageView = [[UIImageView alloc] init];
-        imageView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight; // 适配尺寸
-        imageView.image = [UIImage imageNamed:imageNames[i]];
-        imageView.frame = CGRectMake(scrollViewW * i, 0, scrollViewW, scrollViewH);
-        [self.wjScrollView addSubview:imageView];
-        self.imageView = imageView;
+        self.imageView = [[UIImageView alloc] init];
+        self.imageView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight; // 适配尺寸
+        self.imageView.image = [UIImage imageNamed:imageNames[i]];
+        self.imageView.frame = CGRectMake(scrollViewW * i, 0, scrollViewW, scrollViewH);
+        [self.wjScrollView addSubview:self.imageView];
     }
     self.wjScrollView.contentSize = CGSizeMake(imageCount * scrollViewW, 0);
     self.wjScrollView.pagingEnabled = YES;
@@ -89,15 +88,14 @@
     NSInteger count = self.wjPageControl.numberOfPages;
     for (int i = 0; i < count; i++) {
         // 1.添加图片
-        UIImageView *imageView = self.wjScrollView.subviews[i];
-        CGRect rect = imageView.frame;
+        self.imageView = self.wjScrollView.subviews[i];
+        CGRect rect = self.imageView.frame;
         rect.origin.x = i * scrollViewW;
-        imageView.frame = rect;
+        self.imageView.frame = rect;
     }
     // 更新contentSize
     self.wjScrollView.contentSize = CGSizeMake(count * scrollViewW, 0);
 }
-
 
 
 #pragma mark - UIScrollViewDelegate

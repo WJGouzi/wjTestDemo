@@ -12,7 +12,7 @@
 #import "wjButton.h"
 #import "wjPageView.h" // 展示图片的scrollview
 
-@interface wjImageDetailVC ()
+@interface wjImageDetailVC () <UIGestureRecognizerDelegate>
 
 @property (nonatomic, strong) NSMutableArray *buttonsArray;
 
@@ -104,6 +104,46 @@
         self.selectedBtn = btn;
     }
     self.selectedBtn.selected = !self.selectedBtn.selected;
+    
+    switch (btn.tag) {
+        case 100: { // 调窗点击
+            if (btn.selected) {
+                // 展示toolBar
+                
+            } else {
+                // 隐藏toolBar
+            }
+        }
+            break;
+        case 101: { // 缩放
+            if (btn.selected) {
+                // 允许平移、缩放等操作
+//                self.wjPageView.imageView.userInteractionEnabled = YES;
+//                [self handleViewWithGesture];
+            } else {
+//                self.wjPageView.imageView.userInteractionEnabled = NO;
+            }
+        }
+            break;
+        case 102: { // 标注
+            if (btn.selected) {
+                // 展示toolBar
+                
+            } else {
+                // 隐藏toolBar
+            }
+        }
+            break;
+        case 103: { // 重置
+            if (btn.selected) {
+            } else {
+            }
+        }
+            break;
+        default:
+            break;
+    }
+    
 }
 
 
@@ -113,9 +153,9 @@
  */
 - (void)wjSaveImageAction:(UIBarButtonItem *)item {
     NSLog(@"保存了");
-    UIGraphicsBeginImageContextWithOptions(self.wjPageView.imageView.bounds.size, NO, 0);
+    UIGraphicsBeginImageContextWithOptions(self.wjPageView.bounds.size, NO, 0);
     CGContextRef ctx = UIGraphicsGetCurrentContext();
-    [self.wjPageView.imageView.layer renderInContext:ctx];
+    [self.wjPageView.layer renderInContext:ctx];
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     // 判断有没有进行绘画
@@ -135,6 +175,61 @@
 //- (void)image:(UIImage *)image didFinishSavingWithError:(NSError *)error contextInfo:(void *)contextInfo {
 //    [self wjShowAlertNoticeWithTitle:@"保存成功!" message:@"你可以到相册中查看" actionTitle:@"确定"];
 //}
+
+
+
+
+#pragma mark
+
+#pragma mark - 手势添加
+- (void)handleViewWithGesture {
+    UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panAction:)];
+    [self.wjPageView.imageView addGestureRecognizer:pan];
+    
+    UIPinchGestureRecognizer *pinch = [[UIPinchGestureRecognizer alloc] initWithTarget:self action:@selector(pinchAction:)];
+    pinch.delegate = self;
+    [self.wjPageView.imageView addGestureRecognizer:pinch];
+    
+}
+
+#pragma mark - UIGestureRecognizerDelegate
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer {
+    return YES;
+}
+
+- (void)panAction:(UIPanGestureRecognizer *)pan {
+    CGPoint currentPoint = [pan translationInView:pan.view];
+    pan.view.transform = CGAffineTransformTranslate(pan.view.transform, currentPoint.x, currentPoint.y);
+    // 复位操作
+    [pan setTranslation:CGPointZero inView:pan.view];
+}
+
+- (void)pinchAction:(UIPinchGestureRecognizer *)pinch {
+    pinch.view.transform = CGAffineTransformScale(pinch.view.transform, pinch.scale, pinch.scale);
+    pinch.scale = 1.0f;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 #pragma mark - 通用的方法

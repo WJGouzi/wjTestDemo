@@ -24,8 +24,7 @@
         //回到主线程
         dispatch_async(dispatch_get_main_queue(), ^{
             
-            if(status == PHAuthorizationStatusDenied) {
-                //用户拒绝（可能是之前拒绝的，有可能是刚才在系统弹框中选择的拒绝）
+            if(status == PHAuthorizationStatusDenied) { //用户拒绝（可能是之前拒绝的，有可能是刚才在系统弹框中选择的拒绝）
                 if (lastStatus == PHAuthorizationStatusNotDetermined) {
                     //说明，用户之前没有做决定，在弹出授权框中，选择了拒绝
                     [self wjShowAlertNoticeWithTitle:@"提示" message:@"保存失败" actionTitle:@"确定"];

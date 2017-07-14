@@ -12,11 +12,11 @@
 	</dict>
 	<dict>
 		<key>name</key>
-		<string>Alpha通道</string>
+		<string>缩放</string>
 		<key>imageName</key>
-		<string>alpha</string>
+		<string>缩放</string>
 		<key>selectedImageName</key>
-		<string>alpha_selected</string>
+		<string>缩放_selected</string>
 	</dict>
 	<dict>
 		<key>name</key>
