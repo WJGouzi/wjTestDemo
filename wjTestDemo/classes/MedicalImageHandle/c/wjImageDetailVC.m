@@ -11,11 +11,14 @@
 #import "wjButtonModel.h"
 #import "wjButton.h"
 
+static NSInteger selectedTag = 0;
 
 @interface wjImageDetailVC ()
 
 @property (nonatomic, strong) NSMutableArray *buttonsArray;
 
+// 选中的按钮
+@property (nonatomic, weak) UIButton *selectedBtn;
 
 @end
 
@@ -65,17 +68,12 @@
 }
 
 
-static bool isClicked = NO;
 - (void)btnClickAction:(UIButton *)btn {
-    NSLog(@"%ld", btn.tag);
-//    if (!isClicked) {
-//        btn.backgroundColor = [UIColor blueColor];
-//        
-//        isClicked = !isClicked;
-//    }
-    btn.backgroundColor = isClicked ? [UIColor whiteColor] : [UIColor blueColor];
-    isClicked = !isClicked;
-    
+    if (btn != self.selectedBtn) {
+        self.selectedBtn.selected = NO;
+        self.selectedBtn = btn;
+    }
+    self.selectedBtn.selected = YES;
 }
 
 
