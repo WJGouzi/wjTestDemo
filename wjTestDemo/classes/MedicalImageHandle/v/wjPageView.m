@@ -10,7 +10,7 @@
 
 @interface wjPageView () <UIScrollViewDelegate>
 
-@property (weak, nonatomic) IBOutlet UIScrollView *wjScrollView;
+//@property (weak, nonatomic) IBOutlet UIScrollView *wjScrollView;
 
 @property (weak, nonatomic) IBOutlet UIPageControl *wjPageControl;
 

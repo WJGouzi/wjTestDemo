@@ -13,6 +13,8 @@
 /** 图片名*/
 @property (nonatomic, strong) NSArray *imageNames;
 
+@property (weak, nonatomic) IBOutlet UIScrollView *wjScrollView;
+
 
 /** 展示在scrollview上的图片*/
 @property (nonatomic, strong) UIImageView *imageView;

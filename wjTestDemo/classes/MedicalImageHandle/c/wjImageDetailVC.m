@@ -22,6 +22,10 @@
 /** 展示图片的view */
 @property (nonatomic, strong) wjPageView *wjPageView;
 
+/** 展示标注的view*/
+@property (nonatomic,strong) UIView *wjSignView;
+
+
 @end
 
 @implementation wjImageDetailVC
@@ -128,9 +132,10 @@
         case 102: { // 标注
             if (btn.selected) {
                 // 展示toolBar
-                
+                [self wjShowSignBar];
             } else {
                 // 隐藏toolBar
+//                [self wjHideSignBar];
             }
         }
             break;
@@ -144,7 +149,37 @@
             break;
     }
     
+    // 如果是非标注的按钮被点击 则标注的bar也要隐藏掉
+    UIButton *signBtn = (UIButton *)[btn viewWithTag:102];
+    if (!signBtn.selected) {
+        [self wjHideSignBar];
+    }
 }
+
+
+
+/**
+ 展示标注的view
+ */
+- (void)wjShowSignBar {
+    self.wjSignView = [[UIView alloc] initWithFrame:CGRectMake(0, SCREEN_HEIGHT - 49 - 44, SCREEN_WIDTH, 44)];
+    self.wjSignView.backgroundColor = [UIColor lightGrayColor];
+    [self.view addSubview:self.wjSignView];
+    // scrollview就不能进行滑动了
+    self.wjPageView.wjScrollView.scrollEnabled = NO;
+}
+
+
+/**
+ 隐藏标注的view
+ */
+- (void)wjHideSignBar {
+    [self.wjSignView removeFromSuperview];
+    // scrollview可以进滚动
+    self.wjPageView.wjScrollView.scrollEnabled = YES;
+}
+
+
 
 
 /**
@@ -158,15 +193,10 @@
     [self.wjPageView.layer renderInContext:ctx];
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
-    // 判断有没有进行绘画
-//    if (self.doodleBoardView.allPathArray.count > 0) {
-//        // 有就进行保存
-//    } else {
-//        // 给出提示，还没进行绘画
-//        [self wjShowAlertNoticeWithTitle:@"提示" message:@"您还未在画布上进行绘制\n保存无法执行!" actionTitle:@"知道了"];
-//    }
+    
     // C语言的方法
 //    UIImageWriteToSavedPhotosAlbum(image, self, @selector(image: didFinishSavingWithError: contextInfo:), nil);
+    // 利用的是<Photos/Photos.h>来进行保存的图片
     wjSaveImageVC *saveImageVC = [[wjSaveImageVC alloc] init];
     [saveImageVC saveWithImage:image];
 }
