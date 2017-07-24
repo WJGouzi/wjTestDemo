@@ -106,6 +106,11 @@
             [self.navigationController pushViewController:handleVC animated:YES];
         }
             break;
+        case 7: {
+            wjDataEncryptionVC *dataEncryptionVC = [[wjDataEncryptionVC alloc] init];
+            [self.navigationController pushViewController:dataEncryptionVC animated:YES];
+        }
+            break;
         default:
             break;
     }

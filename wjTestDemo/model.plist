@@ -44,5 +44,11 @@
 		<key>imageName</key>
 		<string>MedicalImaging</string>
 	</dict>
+	<dict>
+		<key>cellName</key>
+		<string>数据加密</string>
+		<key>imageName</key>
+		<string>encryption</string>
+	</dict>
 </array>
 </plist>
