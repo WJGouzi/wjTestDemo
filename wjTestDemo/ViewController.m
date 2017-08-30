@@ -111,6 +111,11 @@
             [self.navigationController pushViewController:dataEncryptionVC animated:YES];
         }
             break;
+        case 8: {
+            wjKeyWordVC *keywordVC = [[wjKeyWordVC alloc] init];
+            [self.navigationController pushViewController:keywordVC animated:YES];
+        }
+        break;
         default:
             break;
     }

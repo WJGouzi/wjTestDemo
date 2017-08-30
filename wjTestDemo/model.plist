@@ -50,5 +50,11 @@
 		<key>imageName</key>
 		<string>encryption</string>
 	</dict>
+	<dict>
+		<key>cellName</key>
+		<string>选取关键字</string>
+		<key>imageName</key>
+		<string>keyWord</string>
+	</dict>
 </array>
 </plist>
