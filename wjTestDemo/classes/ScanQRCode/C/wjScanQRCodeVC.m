@@ -186,6 +186,15 @@ typedef void(^actionBlock)(UIAlertAction *action);
             if (self.session != nil && timer != nil) {
                 [self.session startRunning];
                 [timer setFireDate:[NSDate date]];
+                UIPasteboard *paste = [UIPasteboard generalPasteboard];
+                paste.URL = [NSURL URLWithString:scanResult];
+                NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"weixin://%@", scanResult]];
+                BOOL canOpen = [[UIApplication sharedApplication] canOpenURL:url];
+                if (canOpen) {
+                    [[UIApplication sharedApplication] openURL:url options:@{@"dict":@"handle"} completionHandler:nil];
+                } else {
+                    NSLog(@"不能进行跳转");
+                }
             }
         }];
     } else {

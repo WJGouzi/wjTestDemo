@@ -794,7 +794,7 @@
 				TargetAttributes = {
 					C4274B481F0200E800C7B379 = {
 						CreatedOnToolsVersion = 8.3.1;
-						DevelopmentTeam = 684VKU9G29;
+						DevelopmentTeam = 7J4WTLH3PU;
 						ProvisioningStyle = Automatic;
 					};
 					C4274B611F0200E800C7B379 = {
@@ -1112,7 +1112,7 @@
 			baseConfigurationReference = E2F2F86FC9BB0C5E41E26943 /* Pods-wjTestDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 684VKU9G29;
+				DEVELOPMENT_TEAM = 7J4WTLH3PU;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/wjTestDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = wjTestDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1126,7 +1126,7 @@
 			baseConfigurationReference = 60F6166E19535B33CFEC2059 /* Pods-wjTestDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 684VKU9G29;
+				DEVELOPMENT_TEAM = 7J4WTLH3PU;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/wjTestDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = wjTestDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
