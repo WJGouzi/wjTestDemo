@@ -56,5 +56,11 @@
 		<key>imageName</key>
 		<string>keyWord</string>
 	</dict>
+	<dict>
+		<key>cellName</key>
+		<string>web缓存</string>
+		<key>imageName</key>
+		<string>webCache</string>
+	</dict>
 </array>
 </plist>

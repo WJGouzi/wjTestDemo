@@ -28,6 +28,7 @@
 #import "wjSaveImageVC.h"           // 保存图片到自定义的相册
 #import "wjDataEncryptionVC.h"      // 数据加密、解密
 #import "wjKeyWordVC.h"             // 根据关键字搜索文字
+#import "wjWebCacheVC.h"            // web缓存
 
 #pragma mark - 引入的三方类库
 #import "ProgressHUD.h"

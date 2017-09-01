@@ -116,7 +116,10 @@
             [self.navigationController pushViewController:keywordVC animated:YES];
         }
         break;
-        default:
+        case 9: {
+            wjWebCacheVC *webCache = [[wjWebCacheVC alloc] init];
+            [self.navigationController pushViewController:webCache animated:YES];
+        }
             break;
     }
 }
