@@ -98,6 +98,10 @@
 		C4A0F6131F6134B6009D5718 /* scroll2 in Resources */ = {isa = PBXBuildFile; fileRef = C4A0F60E1F6134B5009D5718 /* scroll2 */; };
 		C4A0F6141F6134B6009D5718 /* scroll1 in Resources */ = {isa = PBXBuildFile; fileRef = C4A0F60F1F6134B5009D5718 /* scroll1 */; };
 		C4A0F6151F6134B6009D5718 /* scroll0 in Resources */ = {isa = PBXBuildFile; fileRef = C4A0F6101F6134B5009D5718 /* scroll0 */; };
+		C4A0F61E1F614454009D5718 /* health_lunboxian_hlt@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C4A0F61A1F614454009D5718 /* health_lunboxian_hlt@2x.png */; };
+		C4A0F61F1F614454009D5718 /* health_lunboxian_hlt@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C4A0F61B1F614454009D5718 /* health_lunboxian_hlt@3x.png */; };
+		C4A0F6201F614454009D5718 /* health_lunboxian_nor@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C4A0F61C1F614454009D5718 /* health_lunboxian_nor@2x.png */; };
+		C4A0F6211F614454009D5718 /* health_lunboxian_nor@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C4A0F61D1F614454009D5718 /* health_lunboxian_nor@3x.png */; };
 		C4B2F1631F1875B30028796B /* 开始@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C4B2F1611F1875B30028796B /* 开始@2x.png */; };
 		C4B2F1641F1875B30028796B /* 暂停@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C4B2F1621F1875B30028796B /* 暂停@2x.png */; };
 		C4B2F1681F18A2E30028796B /* wjSaveImageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C4B2F1671F18A2E30028796B /* wjSaveImageVC.m */; };
@@ -248,6 +252,10 @@
 		C4A0F60E1F6134B5009D5718 /* scroll2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = scroll2; sourceTree = "<group>"; };
 		C4A0F60F1F6134B5009D5718 /* scroll1 */ = {isa = PBXFileReference; lastKnownFileType = file; path = scroll1; sourceTree = "<group>"; };
 		C4A0F6101F6134B5009D5718 /* scroll0 */ = {isa = PBXFileReference; lastKnownFileType = file; path = scroll0; sourceTree = "<group>"; };
+		C4A0F61A1F614454009D5718 /* health_lunboxian_hlt@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "health_lunboxian_hlt@2x.png"; sourceTree = "<group>"; };
+		C4A0F61B1F614454009D5718 /* health_lunboxian_hlt@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "health_lunboxian_hlt@3x.png"; sourceTree = "<group>"; };
+		C4A0F61C1F614454009D5718 /* health_lunboxian_nor@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "health_lunboxian_nor@2x.png"; sourceTree = "<group>"; };
+		C4A0F61D1F614454009D5718 /* health_lunboxian_nor@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "health_lunboxian_nor@3x.png"; sourceTree = "<group>"; };
 		C4AC5AE71F048AB90023DD13 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		C4B2F1611F1875B30028796B /* 开始@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "开始@2x.png"; sourceTree = "<group>"; };
 		C4B2F1621F1875B30028796B /* 暂停@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "暂停@2x.png"; sourceTree = "<group>"; };
@@ -690,6 +698,10 @@
 		C4682D191F612539003AB3A8 /* imgs */ = {
 			isa = PBXGroup;
 			children = (
+				C4A0F61A1F614454009D5718 /* health_lunboxian_hlt@2x.png */,
+				C4A0F61B1F614454009D5718 /* health_lunboxian_hlt@3x.png */,
+				C4A0F61C1F614454009D5718 /* health_lunboxian_nor@2x.png */,
+				C4A0F61D1F614454009D5718 /* health_lunboxian_nor@3x.png */,
 				C4A0F60C1F6134B5009D5718 /* scroll3 */,
 				C4A0F60D1F6134B5009D5718 /* scroll4 */,
 				C4A0F60E1F6134B5009D5718 /* scroll2 */,
@@ -927,10 +939,13 @@
 				C4274B971F020F8F00C7B379 /* model.plist in Resources */,
 				C43691C61F06539A00F18340 /* gesture_node_normal@2x.png in Resources */,
 				9B6FE8221F17C4B600660403 /* 标注@2x.png in Resources */,
+				C4A0F61F1F614454009D5718 /* health_lunboxian_hlt@3x.png in Resources */,
 				C4274BAA1F03614D00C7B379 /* pick_bg.png in Resources */,
 				C43691C51F06539A00F18340 /* gesture_node_normal.png in Resources */,
 				C4274B5C1F0200E800C7B379 /* LaunchScreen.storyboard in Resources */,
 				C4B2F16E1F18B6180028796B /* 缩放_selected@3x.png in Resources */,
+				C4A0F6211F614454009D5718 /* health_lunboxian_nor@3x.png in Resources */,
+				C4A0F6201F614454009D5718 /* health_lunboxian_nor@2x.png in Resources */,
 				C4A0F6151F6134B6009D5718 /* scroll0 in Resources */,
 				C4A0F6131F6134B6009D5718 /* scroll2 in Resources */,
 				C43691C81F06539A00F18340 /* gesture_node_selected@2x.png in Resources */,
@@ -947,6 +962,7 @@
 				9B6FE8241F17C4B600660403 /* 标注_selected@2x.png in Resources */,
 				C43691721F04DD0500F18340 /* wjTouchedVC.xib in Resources */,
 				9B6FE8271F17C4B600660403 /* 调窗@3x.png in Resources */,
+				C4A0F61E1F614454009D5718 /* health_lunboxian_hlt@2x.png in Resources */,
 				9B6FE8251F17C4B600660403 /* 标注_selected@3x.png in Resources */,
 				C4B2F1701F18B6180028796B /* 缩放@3x.png in Resources */,
 				9B6FE80C1F17BD7000660403 /* wjButton.plist in Resources */,

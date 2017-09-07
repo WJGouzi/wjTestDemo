@@ -38,8 +38,6 @@
     self.title = @"卡片式轮播图";
     self.view.backgroundColor = [UIColor whiteColor];
     NSArray *imgArr = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"imgsModel" ofType:@"plist"]];
-    NSLog(@"%@", imgArr);
-    
     [self.images addObjectsFromArray:imgArr];
     // UI设置
     [self setUpScrollView];
@@ -56,7 +54,7 @@
 - (void)setUpScrollView {
     self.automaticallyAdjustsScrollViewInsets = NO;
     
-    NewPagedFlowView *pageFlowView = [[NewPagedFlowView alloc] initWithFrame:CGRectMake(0, 72, Width, Width * 9 / 16)];
+    NewPagedFlowView *pageFlowView = [[NewPagedFlowView alloc] initWithFrame:CGRectMake(0, 64, Width, Width * 9 / 16)];
     pageFlowView.backgroundColor = [UIColor whiteColor];
     pageFlowView.minimumPageAlpha = 0.4;
     pageFlowView.delegate = self;
@@ -68,9 +66,10 @@
     pageFlowView.autoTime = 3.0f;
     
     // UIPageControl
-    UIPageControl *pageControl = [[UIPageControl alloc] initWithFrame:CGRectMake(0, pageFlowView.frame.size.height - 24, Width, 8)];
-//    [pageControl setValue:[UIImage imageNamed:@"current"] forKeyPath:@"_currentPageImage"];
-//    [pageControl setValue:[UIImage imageNamed:@"other"] forKeyPath:@"_pageImage"];
+    UIPageControl *pageControl = [[UIPageControl alloc] initWithFrame:CGRectMake(0, pageFlowView.frame.size.height - 12, Width, 8)];
+    [pageControl setValue:[UIImage imageNamed:@"health_lunboxian_hlt"] forKeyPath:@"_currentPageImage"];
+    [pageControl setValue:[UIImage imageNamed:@"health_lunboxian_nor"] forKeyPath:@"_pageImage"];
+    pageControl.hidesForSinglePage = YES;
     pageFlowView.pageControl = pageControl;
     [pageFlowView addSubview:pageControl];
     [pageFlowView reloadData];
