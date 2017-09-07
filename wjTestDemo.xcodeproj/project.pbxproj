@@ -1221,6 +1221,7 @@
 				DEVELOPMENT_TEAM = 7J4WTLH3PU;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/wjTestDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = wjTestDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wangjun.wjTestDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1235,6 +1236,7 @@
 				DEVELOPMENT_TEAM = 7J4WTLH3PU;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/wjTestDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = wjTestDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wangjun.wjTestDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -65,7 +65,8 @@
     pageFlowView.topBottomMargin = 30;
     pageFlowView.isOpenAutoScroll = YES;
     pageFlowView.pageCount = self.images.count;
-
+    pageFlowView.autoTime = 3.0f;
+    
     // UIPageControl
     UIPageControl *pageControl = [[UIPageControl alloc] initWithFrame:CGRectMake(0, pageFlowView.frame.size.height - 24, Width, 8)];
 //    [pageControl setValue:[UIImage imageNamed:@"current"] forKeyPath:@"_currentPageImage"];
@@ -120,35 +121,4 @@
 
 
 @end
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

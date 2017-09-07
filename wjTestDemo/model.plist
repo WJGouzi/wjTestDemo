@@ -94,9 +94,9 @@
 		<key>viewController</key>
 		<string>WJCardScrollViewController</string>
 		<key>cellName</key>
-		<string>背景渐变</string>
+		<string>卡片式轮播</string>
 		<key>imageName</key>
-		<string>graduallyChange</string>
+		<string>轮播</string>
 	</dict>
 </array>
 </plist>

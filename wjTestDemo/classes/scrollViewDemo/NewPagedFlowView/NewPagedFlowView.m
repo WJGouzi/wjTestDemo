@@ -82,9 +82,7 @@ static NSString *subviewClassName;
         NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:self.autoTime target:self selector:@selector(autoNextPage) userInfo:nil repeats:YES];
         self.timer = timer;
         [[NSRunLoop mainRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
-
     }
-    
 }
 
 - (void)stopTimer {
@@ -97,8 +95,6 @@ static NSString *subviewClassName;
 - (void)autoNextPage {
     
     self.page ++;
-    
-    
     
     switch (self.orientation) {
         case NewPagedFlowViewOrientationHorizontal:{
