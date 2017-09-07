@@ -3,64 +3,92 @@
 <plist version="1.0">
 <array>
 	<dict>
+		<key>viewController</key>
+		<string>wjQRCodeVC</string>
 		<key>cellName</key>
 		<string>生成二维码</string>
 		<key>imageName</key>
 		<string>generateQRCode</string>
 	</dict>
 	<dict>
+		<key>viewController</key>
+		<string>wjScanQRCodeVC</string>
 		<key>cellName</key>
 		<string>扫描二维码</string>
 		<key>imageName</key>
 		<string>scanQRCode</string>
 	</dict>
 	<dict>
+		<key>viewController</key>
+		<string>wjAlterAppIconVC</string>
 		<key>cellName</key>
 		<string>切换图标</string>
 		<key>imageName</key>
 		<string>changeIcon</string>
 	</dict>
 	<dict>
+		<key>viewController</key>
+		<string>wj3DTouchVC</string>
 		<key>cellName</key>
 		<string>3D touch 展示</string>
 		<key>imageName</key>
 		<string>3DTouch</string>
 	</dict>
 	<dict>
+		<key>viewController</key>
+		<string>wjTouchIDVerificationVC</string>
 		<key>cellName</key>
 		<string>指纹识别</string>
 		<key>imageName</key>
 		<string>touchID</string>
 	</dict>
 	<dict>
+		<key>viewController</key>
+		<string>wjGestureLockVC</string>
 		<key>cellName</key>
 		<string>手势解锁</string>
 		<key>imageName</key>
 		<string>gestureCode</string>
 	</dict>
 	<dict>
+		<key>viewController</key>
+		<string>wjHandleImageVC</string>
 		<key>cellName</key>
 		<string>医学影像</string>
 		<key>imageName</key>
 		<string>MedicalImaging</string>
 	</dict>
 	<dict>
+		<key>viewController</key>
+		<string>wjDataEncryptionVC</string>
 		<key>cellName</key>
 		<string>数据加密</string>
 		<key>imageName</key>
 		<string>encryption</string>
 	</dict>
 	<dict>
+		<key>viewController</key>
+		<string>wjKeyWordVC</string>
 		<key>cellName</key>
 		<string>选取关键字</string>
 		<key>imageName</key>
 		<string>keyWord</string>
 	</dict>
 	<dict>
+		<key>viewController</key>
+		<string>wjWebCacheVC</string>
 		<key>cellName</key>
 		<string>web缓存</string>
 		<key>imageName</key>
 		<string>webCache</string>
+	</dict>
+	<dict>
+		<key>viewController</key>
+		<string>WJGraduallyChangeVC</string>
+		<key>cellName</key>
+		<string>背景渐变</string>
+		<key>imageName</key>
+		<string>graduallyChange</string>
 	</dict>
 </array>
 </plist>

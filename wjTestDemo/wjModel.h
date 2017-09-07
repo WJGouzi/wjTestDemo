@@ -14,6 +14,8 @@
 @property (nonatomic,strong) NSString * cellName;
 /** 图标*/
 @property (nonatomic,strong) NSString * imageName;
+/** 控制器*/
+@property (nonatomic, strong) NSString * viewController;
 
 + (instancetype)modelWithDictionary:(NSDictionary *)dict;
 

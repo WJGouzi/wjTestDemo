@@ -70,58 +70,10 @@
 
 #pragma mark - UITableViewDelegate 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    switch (indexPath.row) {
-        case 0: {
-            wjQRCodeVC *qrvc = [[wjQRCodeVC alloc] init];
-            [self.navigationController pushViewController:qrvc animated:YES];
-        }
-            break;
-        case 1: {
-            wjScanQRCodeVC *scanQRCodeVC = [[wjScanQRCodeVC alloc] init];
-            [self.navigationController pushViewController:scanQRCodeVC animated:YES];
-        }
-            break;
-        case 2: {
-            wjAlterAppIconVC *alterIconVC = [[wjAlterAppIconVC alloc] init];
-            [self.navigationController pushViewController:alterIconVC animated:YES];
-        }
-            break;
-        case 3: {
-            wj3DTouchVC *touchVC = [[wj3DTouchVC alloc] init];
-            [self.navigationController pushViewController:touchVC animated:YES];
-        }
-            break;
-        case 4: {
-            wjTouchIDVerificationVC *touchIDVC = [[wjTouchIDVerificationVC alloc] init];
-            [self.navigationController pushViewController:touchIDVC animated:YES];
-        }
-            break;
-        case 5: {
-            wjGestureLockVC *gestureVC = [[wjGestureLockVC alloc] init];
-            [self.navigationController pushViewController:gestureVC animated:YES];
-        }
-            break;
-        case 6: {
-            wjHandleImageVC *handleVC = [[wjHandleImageVC alloc] init];
-            [self.navigationController pushViewController:handleVC animated:YES];
-        }
-            break;
-        case 7: {
-            wjDataEncryptionVC *dataEncryptionVC = [[wjDataEncryptionVC alloc] init];
-            [self.navigationController pushViewController:dataEncryptionVC animated:YES];
-        }
-            break;
-        case 8: {
-            wjKeyWordVC *keywordVC = [[wjKeyWordVC alloc] init];
-            [self.navigationController pushViewController:keywordVC animated:YES];
-        }
-        break;
-        case 9: {
-            wjWebCacheVC *webCache = [[wjWebCacheVC alloc] init];
-            [self.navigationController pushViewController:webCache animated:YES];
-        }
-            break;
-    }
+    wjModel *model = self.dataArray[indexPath.row];
+    NSString *vcStr = model.viewController;
+    id vc = [[NSClassFromString(vcStr) alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 
