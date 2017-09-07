@@ -25,6 +25,7 @@
         NSMutableArray *imageDataArray = [NSMutableArray arrayWithCapacity:0];
         for (NSDictionary *dict in data) {
             wjImageModel *model = [wjImageModel modelWithDictionary:dict];
+            
             [imageDataArray addObject:model];
         }
         _dataArray = [imageDataArray copy];

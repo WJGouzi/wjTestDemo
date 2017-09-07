@@ -90,5 +90,13 @@
 		<key>imageName</key>
 		<string>graduallyChange</string>
 	</dict>
+	<dict>
+		<key>viewController</key>
+		<string>WJCardScrollViewController</string>
+		<key>cellName</key>
+		<string>背景渐变</string>
+		<key>imageName</key>
+		<string>graduallyChange</string>
+	</dict>
 </array>
 </plist>
