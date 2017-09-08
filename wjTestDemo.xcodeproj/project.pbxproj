@@ -85,10 +85,6 @@
 		C4760ED71F17745B00F6DC09 /* head in Resources */ = {isa = PBXBuildFile; fileRef = C4760ED41F17745B00F6DC09 /* head */; };
 		C4760EDB1F1778BD00F6DC09 /* wjImageDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C4760ED91F1778BD00F6DC09 /* wjImageDetailVC.m */; };
 		C4760EDC1F1778BD00F6DC09 /* wjImageDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4760EDA1F1778BD00F6DC09 /* wjImageDetailVC.xib */; };
-		C48BB0051F258CD100FBFE87 /* wjDataEncryptionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C48BB0031F258CD100FBFE87 /* wjDataEncryptionVC.m */; };
-		C48BB0061F258CD100FBFE87 /* wjDataEncryptionVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C48BB0041F258CD100FBFE87 /* wjDataEncryptionVC.xib */; };
-		C48BB00B1F258F1F00FBFE87 /* wjEncryptionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C48BB0091F258F1F00FBFE87 /* wjEncryptionVC.m */; };
-		C48BB00C1F258F1F00FBFE87 /* wjEncryptionVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C48BB00A1F258F1F00FBFE87 /* wjEncryptionVC.xib */; };
 		C48BB0101F25912500FBFE87 /* NSString+wjEncryptionData.m in Sources */ = {isa = PBXBuildFile; fileRef = C48BB00F1F25912500FBFE87 /* NSString+wjEncryptionData.m */; };
 		C48BB0141F2591C200FBFE87 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = C48BB0121F2591C200FBFE87 /* GTMBase64.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		C48E2DF91F5908490078260B /* wjWebCacheVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C48E2DF81F5908490078260B /* wjWebCacheVC.m */; };
@@ -104,6 +100,10 @@
 		C4A0F6211F614454009D5718 /* health_lunboxian_nor@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C4A0F61D1F614454009D5718 /* health_lunboxian_nor@3x.png */; };
 		C4A0F6231F622AC1009D5718 /* torch_on@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C4A0F6221F622AC1009D5718 /* torch_on@2x.png */; };
 		C4A0F6251F622B44009D5718 /* torch_off@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C4A0F6241F622B44009D5718 /* torch_off@2x.png */; };
+		C4A0F62D1F626CD3009D5718 /* wjDataEncryptionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C4A0F6281F626CD3009D5718 /* wjDataEncryptionVC.m */; };
+		C4A0F62E1F626CD3009D5718 /* wjDataEncryptionVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4A0F6291F626CD3009D5718 /* wjDataEncryptionVC.xib */; };
+		C4A0F62F1F626CD3009D5718 /* wjEncryptionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C4A0F62B1F626CD3009D5718 /* wjEncryptionVC.m */; };
+		C4A0F6301F626CD3009D5718 /* wjEncryptionVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4A0F62C1F626CD3009D5718 /* wjEncryptionVC.xib */; };
 		C4B2F1631F1875B30028796B /* 开始@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C4B2F1611F1875B30028796B /* 开始@2x.png */; };
 		C4B2F1641F1875B30028796B /* 暂停@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C4B2F1621F1875B30028796B /* 暂停@2x.png */; };
 		C4B2F1681F18A2E30028796B /* wjSaveImageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C4B2F1671F18A2E30028796B /* wjSaveImageVC.m */; };
@@ -234,12 +234,6 @@
 		C4760ED81F1778BD00F6DC09 /* wjImageDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wjImageDetailVC.h; sourceTree = "<group>"; };
 		C4760ED91F1778BD00F6DC09 /* wjImageDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = wjImageDetailVC.m; sourceTree = "<group>"; };
 		C4760EDA1F1778BD00F6DC09 /* wjImageDetailVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = wjImageDetailVC.xib; sourceTree = "<group>"; };
-		C48BB0021F258CD100FBFE87 /* wjDataEncryptionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wjDataEncryptionVC.h; path = V/wjDataEncryptionVC.h; sourceTree = "<group>"; };
-		C48BB0031F258CD100FBFE87 /* wjDataEncryptionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = wjDataEncryptionVC.m; path = V/wjDataEncryptionVC.m; sourceTree = "<group>"; };
-		C48BB0041F258CD100FBFE87 /* wjDataEncryptionVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = wjDataEncryptionVC.xib; path = V/wjDataEncryptionVC.xib; sourceTree = "<group>"; };
-		C48BB0081F258F1F00FBFE87 /* wjEncryptionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wjEncryptionVC.h; path = V/wjEncryptionVC.h; sourceTree = "<group>"; };
-		C48BB0091F258F1F00FBFE87 /* wjEncryptionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = wjEncryptionVC.m; path = V/wjEncryptionVC.m; sourceTree = "<group>"; };
-		C48BB00A1F258F1F00FBFE87 /* wjEncryptionVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = wjEncryptionVC.xib; path = V/wjEncryptionVC.xib; sourceTree = "<group>"; };
 		C48BB00E1F25912500FBFE87 /* NSString+wjEncryptionData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+wjEncryptionData.h"; sourceTree = "<group>"; };
 		C48BB00F1F25912500FBFE87 /* NSString+wjEncryptionData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+wjEncryptionData.m"; sourceTree = "<group>"; };
 		C48BB0111F2591C200FBFE87 /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
@@ -260,6 +254,12 @@
 		C4A0F61D1F614454009D5718 /* health_lunboxian_nor@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "health_lunboxian_nor@3x.png"; sourceTree = "<group>"; };
 		C4A0F6221F622AC1009D5718 /* torch_on@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "torch_on@2x.png"; sourceTree = "<group>"; };
 		C4A0F6241F622B44009D5718 /* torch_off@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "torch_off@2x.png"; sourceTree = "<group>"; };
+		C4A0F6271F626CD3009D5718 /* wjDataEncryptionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wjDataEncryptionVC.h; sourceTree = "<group>"; };
+		C4A0F6281F626CD3009D5718 /* wjDataEncryptionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = wjDataEncryptionVC.m; sourceTree = "<group>"; };
+		C4A0F6291F626CD3009D5718 /* wjDataEncryptionVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = wjDataEncryptionVC.xib; sourceTree = "<group>"; };
+		C4A0F62A1F626CD3009D5718 /* wjEncryptionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wjEncryptionVC.h; sourceTree = "<group>"; };
+		C4A0F62B1F626CD3009D5718 /* wjEncryptionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = wjEncryptionVC.m; sourceTree = "<group>"; };
+		C4A0F62C1F626CD3009D5718 /* wjEncryptionVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = wjEncryptionVC.xib; sourceTree = "<group>"; };
 		C4AC5AE71F048AB90023DD13 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		C4B2F1611F1875B30028796B /* 开始@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "开始@2x.png"; sourceTree = "<group>"; };
 		C4B2F1621F1875B30028796B /* 暂停@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "暂停@2x.png"; sourceTree = "<group>"; };
@@ -803,22 +803,9 @@
 			isa = PBXGroup;
 			children = (
 				C48BB00D1F25910700FBFE87 /* Utils */,
-				C48BB0071F258EDA00FBFE87 /* V */,
+				C4A0F6261F626CD3009D5718 /* VC */,
 			);
 			path = dataEncryption;
-			sourceTree = "<group>";
-		};
-		C48BB0071F258EDA00FBFE87 /* V */ = {
-			isa = PBXGroup;
-			children = (
-				C48BB0021F258CD100FBFE87 /* wjDataEncryptionVC.h */,
-				C48BB0031F258CD100FBFE87 /* wjDataEncryptionVC.m */,
-				C48BB0041F258CD100FBFE87 /* wjDataEncryptionVC.xib */,
-				C48BB0081F258F1F00FBFE87 /* wjEncryptionVC.h */,
-				C48BB0091F258F1F00FBFE87 /* wjEncryptionVC.m */,
-				C48BB00A1F258F1F00FBFE87 /* wjEncryptionVC.xib */,
-			);
-			name = V;
 			sourceTree = "<group>";
 		};
 		C48BB00D1F25910700FBFE87 /* Utils */ = {
@@ -842,6 +829,19 @@
 				C48E2DFB1F59089C0078260B /* wjWebCacheURLProtocal.m */,
 			);
 			path = webCache;
+			sourceTree = "<group>";
+		};
+		C4A0F6261F626CD3009D5718 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				C4A0F6271F626CD3009D5718 /* wjDataEncryptionVC.h */,
+				C4A0F6281F626CD3009D5718 /* wjDataEncryptionVC.m */,
+				C4A0F6291F626CD3009D5718 /* wjDataEncryptionVC.xib */,
+				C4A0F62A1F626CD3009D5718 /* wjEncryptionVC.h */,
+				C4A0F62B1F626CD3009D5718 /* wjEncryptionVC.m */,
+				C4A0F62C1F626CD3009D5718 /* wjEncryptionVC.xib */,
+			);
+			path = VC;
 			sourceTree = "<group>";
 		};
 		C4B2F1651F18A2A90028796B /* utils */ = {
@@ -961,7 +961,6 @@
 				C43691691F04D09900F18340 /* wj3DTouchVC.xib in Resources */,
 				C4274B991F023C4B00C7B379 /* icon.jpeg in Resources */,
 				C43691BC1F0626BB00F18340 /* 指纹.png in Resources */,
-				C48BB00C1F258F1F00FBFE87 /* wjEncryptionVC.xib in Resources */,
 				9B6FE8231F17C4B600660403 /* 标注@3x.png in Resources */,
 				9BD0F8D71F0520D000B27648 /* 扫描二维码.png in Resources */,
 				9B6FE82D1F17C4B600660403 /* 重置_selected@3x.png in Resources */,
@@ -986,7 +985,9 @@
 				C4760EDC1F1778BD00F6DC09 /* wjImageDetailVC.xib in Resources */,
 				C4274BA21F035EE500C7B379 /* wjScanQRCodeVC.xib in Resources */,
 				9B6FE82C1F17C4B600660403 /* 重置_selected@2x.png in Resources */,
+				C4A0F62E1F626CD3009D5718 /* wjDataEncryptionVC.xib in Resources */,
 				C4A0F6121F6134B6009D5718 /* scroll4 in Resources */,
+				C4A0F6301F626CD3009D5718 /* wjEncryptionVC.xib in Resources */,
 				C4280A791F03B56400EBEF45 /* iconChange@3x.png in Resources */,
 				C4A0F6111F6134B5009D5718 /* scroll3 in Resources */,
 				9B6FE8281F17C4B600660403 /* 调窗_selected@2x.png in Resources */,
@@ -995,7 +996,6 @@
 				C4274BAB1F03614D00C7B379 /* pick_bg@2x.png in Resources */,
 				C46294151F186AD400A233B3 /* wjPageView.xib in Resources */,
 				C4274B571F0200E800C7B379 /* Main.storyboard in Resources */,
-				C48BB0061F258CD100FBFE87 /* wjDataEncryptionVC.xib in Resources */,
 				9B6FE8291F17C4B600660403 /* 调窗_selected@3x.png in Resources */,
 				C43691CD1F0653C600F18340 /* wjGestureLockVC.xib in Resources */,
 				C4280A781F03B56400EBEF45 /* iconChange@2x.png in Resources */,
@@ -1073,6 +1073,7 @@
 			files = (
 				C43691711F04DD0500F18340 /* wjTouchedVC.m in Sources */,
 				C4274B541F0200E800C7B379 /* ViewController.m in Sources */,
+				C4A0F62D1F626CD3009D5718 /* wjDataEncryptionVC.m in Sources */,
 				C48E2DFC1F59089C0078260B /* wjWebCacheURLProtocal.m in Sources */,
 				9B6FE80A1F17BBE200660403 /* wjButtonModel.m in Sources */,
 				C46EEC4A1F56B48B0007A952 /* wjKeyWordVC.m in Sources */,
@@ -1085,14 +1086,13 @@
 				C4274B511F0200E800C7B379 /* AppDelegate.m in Sources */,
 				C43691B91F0622B700F18340 /* wjTouchID.m in Sources */,
 				C4760EDB1F1778BD00F6DC09 /* wjImageDetailVC.m in Sources */,
+				C4A0F62F1F626CD3009D5718 /* wjEncryptionVC.m in Sources */,
 				C43691D01F06554F00F18340 /* wjGestureLockView.m in Sources */,
 				C4274BA11F035EE500C7B379 /* wjScanQRCodeVC.m in Sources */,
 				C48BB0101F25912500FBFE87 /* NSString+wjEncryptionData.m in Sources */,
 				C4274B4E1F0200E800C7B379 /* main.m in Sources */,
-				C48BB0051F258CD100FBFE87 /* wjDataEncryptionVC.m in Sources */,
 				C46294141F186AD400A233B3 /* wjPageView.m in Sources */,
 				C4760ECF1F17704900F6DC09 /* wjImageModel.m in Sources */,
-				C48BB00B1F258F1F00FBFE87 /* wjEncryptionVC.m in Sources */,
 				9B6FE8071F17B92600660403 /* wjButton.m in Sources */,
 				C4760ECB1F176F8F00F6DC09 /* wjHandleImageVC.m in Sources */,
 				C4274B891F02029700C7B379 /* wjQRCodeVC.m in Sources */,

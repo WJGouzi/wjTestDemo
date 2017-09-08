@@ -46,6 +46,7 @@ typedef void(^actionBlock)(UIAlertAction *action);
     self.title = @"扫描二维码";
     [self wjScanViewSettings];
     [self navigationsSettings];
+    NSLog(@"%s", __func__);
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -54,6 +55,7 @@ typedef void(^actionBlock)(UIAlertAction *action);
     [self setCoverRect:kScanRect];
     [ProgressHUD show:@"相机正在加载中..."];
     [self performSelector:@selector(wjCameraSettings) withObject:nil afterDelay:0.2];
+    NSLog(@"%s", __func__);
 }
 
 - (void)viewDidDisappear:(BOOL)animated {
@@ -67,12 +69,10 @@ typedef void(^actionBlock)(UIAlertAction *action);
     self.torchBtn.selected = NO;
 }
 
-
 - (void)dealloc {
     [timer invalidate];
     [self.session stopRunning];
 }
-
 
 
 /**
@@ -162,6 +162,8 @@ typedef void(^actionBlock)(UIAlertAction *action);
 
 #pragma mark - 设置蒙层
 - (void)setCoverRect:(CGRect)coverRect {
+    // 移除之前的蒙层
+    [cropLayer removeFromSuperlayer];
     cropLayer = [[CAShapeLayer alloc] init];
     CGMutablePathRef path = CGPathCreateMutable();
     CGPathAddRect(path, nil, coverRect);
@@ -214,13 +216,13 @@ typedef void(^actionBlock)(UIAlertAction *action);
     
     // 初步设置了二维码和条形码
     [self.output setMetadataObjectTypes:[NSArray arrayWithObjects:AVMetadataObjectTypeQRCode, AVMetadataObjectTypeEAN13Code, AVMetadataObjectTypeEAN8Code, AVMetadataObjectTypeCode128Code, nil]];
-    
+    // 将之前的图像layer移除
+    [self.previewLayer removeFromSuperlayer];
     // 插入图像到view中
     self.previewLayer = [AVCaptureVideoPreviewLayer layerWithSession:self.session];
     self.previewLayer.videoGravity = AVLayerVideoGravityResizeAspectFill;
     self.previewLayer.frame = self.view.bounds;
     [self.view.layer insertSublayer:self.previewLayer atIndex:0];
-    
     [self.session startRunning];
     [ProgressHUD dismiss];
 }

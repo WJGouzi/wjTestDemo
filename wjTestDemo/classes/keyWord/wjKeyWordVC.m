@@ -46,7 +46,7 @@
 -(NSAttributedString *)titleLabText:(NSString *)title {
     NSMutableAttributedString *attributeString = [[NSMutableAttributedString alloc] initWithString:title];
     //匹配搜索关键字，并且改变颜色
-    if(self.textFiled.text.length >0) {
+    if(self.textFiled.text.length > 0) {
         [title enumerateStringsMatchedByRegex:self.textFiled.text usingBlock:^(NSInteger captureCount, NSString *const __unsafe_unretained *capturedStrings, const NSRange *capturedRanges, volatile BOOL *const stop) {
             [attributeString addAttribute:NSForegroundColorAttributeName value:[UIColor redColor] range:*capturedRanges];
         }];
