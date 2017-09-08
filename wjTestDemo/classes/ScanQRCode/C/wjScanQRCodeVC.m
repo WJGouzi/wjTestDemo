@@ -16,6 +16,7 @@ typedef void(^actionBlock)(UIAlertAction *action);
 #define TOP (SCREEN_HEIGHT-220)/2
 #define LEFT (SCREEN_WIDTH-220)/2
 
+
 #define kScanRect CGRectMake(LEFT, TOP, 220, 220)
 
 @interface wjScanQRCodeVC () <AVCaptureMetadataOutputObjectsDelegate> {
@@ -31,7 +32,7 @@ typedef void(^actionBlock)(UIAlertAction *action);
 @property (strong,nonatomic) AVCaptureSession *session;
 @property (strong,nonatomic) AVCaptureVideoPreviewLayer *previewLayer;
 @property (nonatomic, strong) UIImageView * scanLine;
-
+@property (nonatomic, strong) UIButton *torchBtn;
 @property (nonatomic,strong) actionBlock actionblock;
 
 @end
@@ -44,19 +45,79 @@ typedef void(^actionBlock)(UIAlertAction *action);
     [super viewDidLoad];
     self.title = @"扫描二维码";
     [self wjScanViewSettings];
+    [self navigationsSettings];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
+    
     [self setCoverRect:kScanRect];
     [ProgressHUD show:@"相机正在加载中..."];
     [self performSelector:@selector(wjCameraSettings) withObject:nil afterDelay:0.2];
 }
 
+- (void)viewDidDisappear:(BOOL)animated {
+    [super viewDidDisappear:YES];
+    [self.device lockForConfiguration:nil];
+    if ([self.device hasFlash]) {
+        self.device.flashMode = AVCaptureFlashModeOff;
+        self.device.torchMode = AVCaptureTorchModeOff;
+    }
+    [self.device unlockForConfiguration];
+    self.torchBtn.selected = NO;
+}
+
+
 - (void)dealloc {
     [timer invalidate];
     [self.session stopRunning];
 }
+
+
+
+/**
+ 创建导航栏上的右边的按钮
+ */
+- (void)navigationsSettings {
+    UIButton *openTorchBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    openTorchBtn.frame = CGRectMake(0, 0, 45, 45);
+    [openTorchBtn setImage:[UIImage imageNamed:@"torch_off"] forState:UIControlStateNormal];
+    [openTorchBtn setImage:[UIImage imageNamed:@"torch_on"] forState:UIControlStateSelected];
+    [openTorchBtn addTarget:self action:@selector(openTorchBtnClick:) forControlEvents:UIControlEventTouchUpInside];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:openTorchBtn];
+    self.torchBtn = openTorchBtn;
+}
+
+- (void)openTorchBtnClick:(UIButton *)btn {
+    btn.selected = !btn.selected;
+    [self openLight:btn];
+}
+
+
+/**
+ 开启闪光灯
+ @param sender 按钮
+ */
+- (void)openLight:(UIButton *)sender{
+    AVCaptureDevice *device = self.device;
+    //修改前必须先锁定
+    [self.device lockForConfiguration:nil];
+    //必须判定是否有闪光灯，否则如果没有闪光灯会崩溃
+    if ([self.device hasFlash]) {
+        if (sender.selected == YES) {
+            self.device.flashMode = AVCaptureFlashModeOn;
+            self.device.torchMode = AVCaptureTorchModeOn;
+        } else if (sender.selected == NO) {
+            self.device.flashMode = AVCaptureFlashModeOff;
+            self.device.torchMode = AVCaptureTorchModeOff;
+        }
+        
+    }
+    [device unlockForConfiguration];
+}
+
+
+
 
 /**
  扫描界面的显示
@@ -104,7 +165,7 @@ typedef void(^actionBlock)(UIAlertAction *action);
     cropLayer = [[CAShapeLayer alloc] init];
     CGMutablePathRef path = CGPathCreateMutable();
     CGPathAddRect(path, nil, coverRect);
-    CGPathAddRect(path, nil, self.view.bounds);
+    CGPathAddRect(path, nil, CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_HEIGHT - 64));
     
     [cropLayer setFillRule:kCAFillRuleEvenOdd];
     [cropLayer setPath:path];
@@ -200,7 +261,6 @@ typedef void(^actionBlock)(UIAlertAction *action);
     } else {
         [self wjShowAlertWithTitle:@"提示" message:@"无扫描信息" actionTitle:@"确定" actionStyle:UIAlertActionStyleDefault];
     }
-    
 }
 
 
