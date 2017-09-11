@@ -7,7 +7,7 @@
 //
 
 #import "wjKeyWordVC.h"
-#import <RegexKitLite.h>
+#import "RegexKitLite.h"
 
 
 @interface wjKeyWordVC ()

@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>KissXML.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-wjTestDemo.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -17,12 +22,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0DA2C9481374AF7AD3E8CBB65E5BC12E</key>
+		<key>2F9238902DB2B28026AEE012016BE349</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8BE934B7ABD5EA12CF7E95482740CA0F</key>
+		<key>A08AA1A07C5035D2C5AEB442215534A5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EC2602E3FE5C49E5E29A8372701872BE</key>
 		<dict>
 			<key>primary</key>
 			<true/>

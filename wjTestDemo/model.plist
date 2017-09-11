@@ -98,5 +98,13 @@
 		<key>imageName</key>
 		<string>轮播</string>
 	</dict>
+	<dict>
+		<key>viewController</key>
+		<string>WJModifyXMLFileVC</string>
+		<key>cellName</key>
+		<string>修改xml文件</string>
+		<key>imageName</key>
+		<string>xml</string>
+	</dict>
 </array>
 </plist>
