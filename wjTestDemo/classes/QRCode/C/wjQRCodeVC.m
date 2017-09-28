@@ -56,7 +56,7 @@
 // 自定义二维码的创建
 - (IBAction)wjCustomQRCodeCreatAction:(UIButton *)sender {
     // 二维码
-    UIImage *qrCodeImage = [UIImage qrCodeImageWithContent:@"How are you?"
+    UIImage *qrCodeImage = [UIImage qrCodeImageWithContent:@"http://www.baidu.com"
                                                codeImageSize:150
                                                         logo:[UIImage imageNamed:@"icon.jpeg"]
                                                    logoFrame:CGRectMake(50, 50, 50, 50)

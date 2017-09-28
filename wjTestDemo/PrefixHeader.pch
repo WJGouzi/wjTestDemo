@@ -37,7 +37,7 @@
 #import "RegexKitLite.h"
 #import "DDXML.h"
 #import "DDXMLElementAdditions.h"
-
+#import "NSString+verifyInfo.h"
 
 #pragma mark - 一些常规的设置
 #define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height

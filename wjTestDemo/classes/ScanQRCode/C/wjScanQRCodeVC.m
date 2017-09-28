@@ -249,6 +249,10 @@ typedef void(^actionBlock)(UIAlertAction *action);
             if (self.session != nil && timer != nil) {
                 [self.session startRunning];
                 [timer setFireDate:[NSDate date]];
+                
+                if ([scanResult isValidUrl] == NO) {
+                    return ;
+                }
                 UIPasteboard *paste = [UIPasteboard generalPasteboard];
                 paste.URL = [NSURL URLWithString:scanResult];
                 NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"weixin://%@", scanResult]];
