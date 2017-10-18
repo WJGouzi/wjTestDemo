@@ -13,6 +13,7 @@
 @interface wjQRCodeVC ()
 // 二维码图片
 @property (weak, nonatomic) IBOutlet UIImageView *wjQRCodeImageView;
+@property (weak, nonatomic) IBOutlet UITextView *textInputView;
 
 @end
 
@@ -20,9 +21,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    self.title = @"扫描二维码";
+    [self setUpUI];
 }
+
+- (void)setUpUI {
+    self.title = @"扫描二维码";
+    
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    [self.view endEditing:YES];
+}
+
+
 
 // 系统创建二维码
 - (IBAction)wjCreatQRCodeAction:(UIButton *)sender {
@@ -38,7 +49,7 @@
     [filter setDefaults];
     
     // 3. 给过滤器添加数据
-    NSString *dataString = @"二维码测试数据";
+    NSString *dataString = self.textInputView.text;
     NSData *data = [dataString dataUsingEncoding:NSUTF8StringEncoding];
     // 注意，这里的value必须是NSData类型
     [filter setValue:data forKeyPath:@"inputMessage"];
@@ -55,10 +66,28 @@
 
 // 自定义二维码的创建
 - (IBAction)wjCustomQRCodeCreatAction:(UIButton *)sender {
+    // 选择一张照片设置
+    UIView *backView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 50, 50)];
+    backView.backgroundColor = [UIColor colorWithRed:253/255.0f green:245/255.0f blue:230/255.0f alpha:1.0f];
+    backView.layer.masksToBounds = YES;
+    backView.layer.cornerRadius = 5.f;
+    UIImageView *imageView = [[UIImageView alloc] init];
+    imageView.frame = CGRectMake(2, 2, 46, 46);
+    imageView.image = [UIImage imageNamed:@"icon.jpeg"];
+    imageView.layer.masksToBounds = YES;
+    imageView.layer.cornerRadius = 5.f;
+    [backView addSubview:imageView];
+    
+    UIGraphicsBeginImageContextWithOptions(backView.bounds.size, NO, 0);
+    CGContextRef ctx = UIGraphicsGetCurrentContext();
+    [backView.layer renderInContext:ctx];
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
     // 二维码
-    UIImage *qrCodeImage = [UIImage qrCodeImageWithContent:@"http://www.baidu.com"
+    UIImage *qrCodeImage = [UIImage qrCodeImageWithContent:self.textInputView.text
                                                codeImageSize:150
-                                                        logo:[UIImage imageNamed:@"icon.jpeg"]
+                                                        logo:image
                                                    logoFrame:CGRectMake(50, 50, 50, 50)
                                                          red:0.0f
                                                        green:139/255.0f
