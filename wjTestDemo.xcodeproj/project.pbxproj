@@ -23,6 +23,7 @@
 		9B6FE82B1F17C4B600660403 /* 重置@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B6FE81B1F17C4B600660403 /* 重置@3x.png */; };
 		9B6FE82C1F17C4B600660403 /* 重置_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B6FE81C1F17C4B600660403 /* 重置_selected@2x.png */; };
 		9B6FE82D1F17C4B600660403 /* 重置_selected@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B6FE81D1F17C4B600660403 /* 重置_selected@3x.png */; };
+		9B89F9F61F983866005BDB8A /* lib@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B89F9F51F983866005BDB8A /* lib@2x.png */; };
 		9BD0F8D71F0520D000B27648 /* 扫描二维码.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BD0F8D61F0520D000B27648 /* 扫描二维码.png */; };
 		C4274B4E1F0200E800C7B379 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C4274B4D1F0200E800C7B379 /* main.m */; };
 		C4274B511F0200E800C7B379 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C4274B501F0200E800C7B379 /* AppDelegate.m */; };
@@ -145,6 +146,7 @@
 		9B6FE81B1F17C4B600660403 /* 重置@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "重置@3x.png"; sourceTree = "<group>"; };
 		9B6FE81C1F17C4B600660403 /* 重置_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "重置_selected@2x.png"; sourceTree = "<group>"; };
 		9B6FE81D1F17C4B600660403 /* 重置_selected@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "重置_selected@3x.png"; sourceTree = "<group>"; };
+		9B89F9F51F983866005BDB8A /* lib@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lib@2x.png"; sourceTree = "<group>"; };
 		9BD0F8D61F0520D000B27648 /* 扫描二维码.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "扫描二维码.png"; sourceTree = "<group>"; };
 		C4274B491F0200E800C7B379 /* wjTestDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wjTestDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4274B4D1F0200E800C7B379 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -491,6 +493,7 @@
 			children = (
 				C4A0F6241F622B44009D5718 /* torch_off@2x.png */,
 				C4A0F6221F622AC1009D5718 /* torch_on@2x.png */,
+				9B89F9F51F983866005BDB8A /* lib@2x.png */,
 				C4274BA41F03614D00C7B379 /* line.png */,
 				C4274BA51F03614D00C7B379 /* line@2x.png */,
 				C4274BA61F03614D00C7B379 /* pick_bg.png */,
@@ -987,6 +990,7 @@
 				C4A0F6131F6134B6009D5718 /* scroll2 in Resources */,
 				C43691C81F06539A00F18340 /* gesture_node_selected@2x.png in Resources */,
 				C4B2F16F1F18B6180028796B /* 缩放@2x.png in Resources */,
+				9B89F9F61F983866005BDB8A /* lib@2x.png in Resources */,
 				9B6FE82A1F17C4B600660403 /* 重置@2x.png in Resources */,
 				C43691691F04D09900F18340 /* wj3DTouchVC.xib in Resources */,
 				C4274B991F023C4B00C7B379 /* icon.jpeg in Resources */,

@@ -8,6 +8,7 @@
 
 #import "wjScanQRCodeVC.h"
 #import <AVFoundation/AVFoundation.h>
+#import <CoreImage/CoreImage.h>
 
 typedef void(^actionBlock)(UIAlertAction *action);
 /**
@@ -19,7 +20,7 @@ typedef void(^actionBlock)(UIAlertAction *action);
 
 #define kScanRect CGRectMake(LEFT, TOP, 220, 220)
 
-@interface wjScanQRCodeVC () <AVCaptureMetadataOutputObjectsDelegate> {
+@interface wjScanQRCodeVC () <AVCaptureMetadataOutputObjectsDelegate, UINavigationControllerDelegate, UIImagePickerControllerDelegate> {
     int num;
     BOOL upOrdown;
     NSTimer * timer;
@@ -79,18 +80,42 @@ typedef void(^actionBlock)(UIAlertAction *action);
  创建导航栏上的右边的按钮
  */
 - (void)navigationsSettings {
+    // 开灯的按钮
     UIButton *openTorchBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     openTorchBtn.frame = CGRectMake(0, 0, 45, 45);
     [openTorchBtn setImage:[UIImage imageNamed:@"torch_off"] forState:UIControlStateNormal];
     [openTorchBtn setImage:[UIImage imageNamed:@"torch_on"] forState:UIControlStateSelected];
     [openTorchBtn addTarget:self action:@selector(openTorchBtnClick:) forControlEvents:UIControlEventTouchUpInside];
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:openTorchBtn];
+    UIBarButtonItem *openTorchItem = [[UIBarButtonItem alloc] initWithCustomView:openTorchBtn];
+    
+    // 从相册中获取二维码进行扫描
+    UIButton *openQRCodeImageBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    openQRCodeImageBtn.frame = CGRectMake(0, 0, 45, 45);
+    [openQRCodeImageBtn setImage:[UIImage imageNamed:@"lib"] forState:UIControlStateNormal];
+    [openQRCodeImageBtn setImage:[UIImage imageNamed:@"lib"] forState:UIControlStateHighlighted];
+    [openQRCodeImageBtn addTarget:self action:@selector(openQRCodeImageClick:) forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem *openQRCodeImageItem = [[UIBarButtonItem alloc] initWithCustomView:openQRCodeImageBtn];
+    
+    self.navigationItem.rightBarButtonItems = @[openTorchItem, openQRCodeImageItem];
     self.torchBtn = openTorchBtn;
 }
 
 - (void)openTorchBtnClick:(UIButton *)btn {
     btn.selected = !btn.selected;
     [self openLight:btn];
+}
+
+
+- (void)openQRCodeImageClick:(UIButton *)btn {
+    UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
+    if (imagePicker.sourceType == UIImagePickerControllerSourceTypePhotoLibrary) {
+        imagePicker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+        imagePicker.delegate = self;
+        [self presentViewController:imagePicker animated:YES completion:nil];
+    } else {
+        [self wjShowAlertWithTitle:@"提示" message:@"您的相册不能被访问" actionTitle:@"确定" actionStyle:UIAlertActionStyleDefault];
+    }
+    
 }
 
 
@@ -115,9 +140,6 @@ typedef void(^actionBlock)(UIAlertAction *action);
     }
     [device unlockForConfiguration];
 }
-
-
-
 
 /**
  扫描界面的显示
@@ -176,6 +198,38 @@ typedef void(^actionBlock)(UIAlertAction *action);
     [cropLayer setNeedsDisplay];
     [self.view.layer addSublayer:cropLayer];
 }
+
+
+#pragma mark - 从图片中识别二维码
+#pragma makr - UIImagePickerControllerDelegate
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info {
+    [picker dismissViewControllerAnimated:YES completion:nil];
+//    NSLog(@"info is %@", info);
+    
+    CIContext *context = [CIContext contextWithOptions:@{kCIContextUseSoftwareRenderer : @(YES)}]; // 软件渲染
+    CIDetector *detector = [CIDetector detectorOfType:CIDetectorTypeQRCode context:context options:@{CIDetectorAccuracy : CIDetectorAccuracyHigh}];// 二维码识别
+    UIImage *selectedImage = info[UIImagePickerControllerOriginalImage];
+    CGImageRef theSelectedCGImage = [selectedImage CGImage];
+    CIImage *theSelectedCIImage = [CIImage imageWithCGImage:theSelectedCGImage];
+    // 注意这里的CIDetectorTypeQRCode
+    NSArray *features = [detector featuresInImage:theSelectedCIImage];
+    NSLog(@"features = %@",features); // 识别后的结果集
+    for (CIQRCodeFeature *feature in features) {
+        NSLog(@"msg = %@",feature.messageString); // 打印二维码中的信息
+    }
+
+    // 显示二维码中的信息
+    NSMutableString *str = [[NSMutableString alloc] init];
+    [features enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        CIQRCodeFeature *temp = (CIQRCodeFeature *)obj;
+        [str appendFormat:@"信息:%@",temp.messageString];
+    }];
+
+    [self wjShowAlertWithTitle:@"信息" message:str actionTitle:@"确定" actionStyle:UIAlertActionStyleDefault];
+    
+}
+
+
 
 
 
@@ -281,8 +335,8 @@ typedef void(^actionBlock)(UIAlertAction *action);
  @param style action的样式
  */
 - (void)wjShowAlertWithTitle:(NSString *)title message:(NSString *)message actionTitle:(NSString *)actionTitle actionStyle:(UIAlertActionStyle)style  {
-    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"提示" message:@"设备没有摄像头" preferredStyle:UIAlertControllerStyleAlert];
-    UIAlertAction *action = [UIAlertAction actionWithTitle:@"确认" style:UIAlertActionStyleDefault handler:nil];
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *action = [UIAlertAction actionWithTitle:actionTitle style:UIAlertActionStyleDefault handler:nil];
     [alert addAction:action];
     [self presentViewController:alert animated:YES completion:nil];
 }
