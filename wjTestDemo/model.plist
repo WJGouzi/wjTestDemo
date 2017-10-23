@@ -106,5 +106,13 @@
 		<key>imageName</key>
 		<string>xml</string>
 	</dict>
+	<dict>
+		<key>viewController</key>
+		<string>WJGetContacts</string>
+		<key>cellName</key>
+		<string>获取本机通讯录</string>
+		<key>imageName</key>
+		<string>xml</string>
+	</dict>
 </array>
 </plist>

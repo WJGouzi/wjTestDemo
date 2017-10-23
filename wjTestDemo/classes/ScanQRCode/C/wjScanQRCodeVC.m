@@ -223,15 +223,11 @@ typedef void(^actionBlock)(UIAlertAction *action);
     [features enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         CIQRCodeFeature *temp = (CIQRCodeFeature *)obj;
         [str appendFormat:@"信息:%@",temp.messageString];
+        [self wjShowAlertWithTitle:@"信息" message:str actionTitle:@"确定" actionStyle:UIAlertActionStyleDefault];
     }];
 
-    [self wjShowAlertWithTitle:@"信息" message:str actionTitle:@"确定" actionStyle:UIAlertActionStyleDefault];
     
 }
-
-
-
-
 
 
 #pragma mark - 设置相机

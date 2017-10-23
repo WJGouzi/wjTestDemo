@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
+#import <Contacts/Contacts.h>
 
 //#define wjScreenWidth [UIScreen mainScreen].bounds.size.width
 //#define wjScreenHeight [UIScreen mainScreen].bounds.size.height
@@ -29,11 +30,34 @@
     self.window.rootViewController = nav;
     [self.window makeKeyAndVisible];
     
+    // 获取手机通讯录
+    [self requestAuthorizationForAddressBook];
+    
     // 3DTOUCH
     [self wjCreat3DShortCutItemInAppicon];
     [self wjAccordingToFlagIntoDifferentControllerWithOptions:launchOptions navigation:nav];
     return YES;
 }
+
+#pragma mark - --------------------------------------获取手机通讯录 相关-------------------------------------------------
+- (void)requestAuthorizationForAddressBook {
+    CNAuthorizationStatus authorizationStatus = [CNContactStore authorizationStatusForEntityType:CNEntityTypeContacts];
+    if (authorizationStatus == CNAuthorizationStatusNotDetermined) {
+        CNContactStore *contactStore = [[CNContactStore alloc] init];
+        [contactStore requestAccessForEntityType:CNEntityTypeContacts completionHandler:^(BOOL granted, NSError * _Nullable error) {
+            if (granted) {
+                
+            } else {
+                NSLog(@"授权失败, error=%@", error);
+            }
+        }];
+    }
+}
+
+
+#pragma mark - -------------------------------------------------------------------------------------------------------
+
+
 
 #pragma mark - -------------------------------------------3DTouch 相关-------------------------------------------------
 

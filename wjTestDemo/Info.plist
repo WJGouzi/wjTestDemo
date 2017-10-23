@@ -83,6 +83,8 @@
 	<string>需要使用摄像机</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>需要使用相册</string>
+	<key>NSContactsUsageDescription</key>
+	<string>申请调用通讯录获取联系人</string>
 	<key>UIApplicationShortcutItems</key>
 	<array>
 		<dict>
