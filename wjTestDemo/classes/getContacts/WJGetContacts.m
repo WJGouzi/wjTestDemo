@@ -133,8 +133,8 @@
     CNPhoneNumber *phoneNumber = (CNPhoneNumber *)contactProperty.value;
     self.contactLabel.text = [NSString stringWithFormat:@"%@ - %@", name, phoneNumber.stringValue];
 }
+
 /*
- 
  // 选中多个联系人
  - (void)contactPicker:(CNContactPickerViewController *)picker didSelectContacts:(NSArray<CNContact *> *)contacts {
  

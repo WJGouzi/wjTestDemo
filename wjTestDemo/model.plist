@@ -112,7 +112,7 @@
 		<key>cellName</key>
 		<string>获取本机通讯录</string>
 		<key>imageName</key>
-		<string>xml</string>
+		<string>contactBook</string>
 	</dict>
 </array>
 </plist>
