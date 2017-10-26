@@ -25,6 +25,10 @@
 		9B6FE82D1F17C4B600660403 /* 重置_selected@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B6FE81D1F17C4B600660403 /* 重置_selected@3x.png */; };
 		9B89F9F61F983866005BDB8A /* lib@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B89F9F51F983866005BDB8A /* lib@2x.png */; };
 		9B8B0D4D1F9D903600031086 /* WJGetContacts.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B8B0D4C1F9D903600031086 /* WJGetContacts.m */; };
+		9BB20B011FA1C82000326012 /* WJChartSpeciesVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB20B001FA1C82000326012 /* WJChartSpeciesVC.m */; };
+		9BB20B041FA1CADA00326012 /* WJChartDisplayVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB20B031FA1CADA00326012 /* WJChartDisplayVC.m */; };
+		9BB20B0A1FA1CAEB00326012 /* WJChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB20B071FA1CAEB00326012 /* WJChart.m */; };
+		9BB20B0B1FA1CAEB00326012 /* WJLineChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB20B091FA1CAEB00326012 /* WJLineChart.m */; };
 		9BD0F8D71F0520D000B27648 /* 扫描二维码.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BD0F8D61F0520D000B27648 /* 扫描二维码.png */; };
 		C4274B4E1F0200E800C7B379 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C4274B4D1F0200E800C7B379 /* main.m */; };
 		C4274B511F0200E800C7B379 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C4274B501F0200E800C7B379 /* AppDelegate.m */; };
@@ -150,6 +154,14 @@
 		9B89F9F51F983866005BDB8A /* lib@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lib@2x.png"; sourceTree = "<group>"; };
 		9B8B0D4B1F9D903600031086 /* WJGetContacts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WJGetContacts.h; sourceTree = "<group>"; };
 		9B8B0D4C1F9D903600031086 /* WJGetContacts.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WJGetContacts.m; sourceTree = "<group>"; };
+		9BB20AFF1FA1C82000326012 /* WJChartSpeciesVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WJChartSpeciesVC.h; sourceTree = "<group>"; };
+		9BB20B001FA1C82000326012 /* WJChartSpeciesVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WJChartSpeciesVC.m; sourceTree = "<group>"; };
+		9BB20B021FA1CADA00326012 /* WJChartDisplayVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WJChartDisplayVC.h; sourceTree = "<group>"; };
+		9BB20B031FA1CADA00326012 /* WJChartDisplayVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WJChartDisplayVC.m; sourceTree = "<group>"; };
+		9BB20B061FA1CAEB00326012 /* WJChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJChart.h; sourceTree = "<group>"; };
+		9BB20B071FA1CAEB00326012 /* WJChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJChart.m; sourceTree = "<group>"; };
+		9BB20B081FA1CAEB00326012 /* WJLineChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJLineChart.h; sourceTree = "<group>"; };
+		9BB20B091FA1CAEB00326012 /* WJLineChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJLineChart.m; sourceTree = "<group>"; };
 		9BD0F8D61F0520D000B27648 /* 扫描二维码.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "扫描二维码.png"; sourceTree = "<group>"; };
 		C4274B491F0200E800C7B379 /* wjTestDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wjTestDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4274B4D1F0200E800C7B379 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -346,6 +358,29 @@
 			path = getContacts;
 			sourceTree = "<group>";
 		};
+		9BB20AFE1FA1C7C900326012 /* chartDisplay */ = {
+			isa = PBXGroup;
+			children = (
+				9BB20B051FA1CAEB00326012 /* Uitls */,
+				9BB20AFF1FA1C82000326012 /* WJChartSpeciesVC.h */,
+				9BB20B001FA1C82000326012 /* WJChartSpeciesVC.m */,
+				9BB20B021FA1CADA00326012 /* WJChartDisplayVC.h */,
+				9BB20B031FA1CADA00326012 /* WJChartDisplayVC.m */,
+			);
+			path = chartDisplay;
+			sourceTree = "<group>";
+		};
+		9BB20B051FA1CAEB00326012 /* Uitls */ = {
+			isa = PBXGroup;
+			children = (
+				9BB20B061FA1CAEB00326012 /* WJChart.h */,
+				9BB20B071FA1CAEB00326012 /* WJChart.m */,
+				9BB20B081FA1CAEB00326012 /* WJLineChart.h */,
+				9BB20B091FA1CAEB00326012 /* WJLineChart.m */,
+			);
+			path = Uitls;
+			sourceTree = "<group>";
+		};
 		C4274B401F0200E800C7B379 = {
 			isa = PBXGroup;
 			children = (
@@ -402,6 +437,7 @@
 		C4274B761F0201D300C7B379 /* classes */ = {
 			isa = PBXGroup;
 			children = (
+				9BB20AFE1FA1C7C900326012 /* chartDisplay */,
 				9B8B0D4A1F9D901E00031086 /* getContacts */,
 				C469064E1F666B1D00258805 /* modifyXmlFile */,
 				C4682D0E1F612327003AB3A8 /* scrollViewDemo */,
@@ -1125,9 +1161,11 @@
 				9B6FE80A1F17BBE200660403 /* wjButtonModel.m in Sources */,
 				C46906511F666B4200258805 /* WJModifyXMLFileVC.m in Sources */,
 				C46EEC4A1F56B48B0007A952 /* wjKeyWordVC.m in Sources */,
+				9BB20B041FA1CADA00326012 /* WJChartDisplayVC.m in Sources */,
 				C4682D2A1F612AA2003AB3A8 /* WJCarBannerView.m in Sources */,
 				C43691CC1F0653C600F18340 /* wjGestureLockVC.m in Sources */,
 				C436915D1F048D1600F18340 /* wjAlterAppIconVC.m in Sources */,
+				9BB20B0A1FA1CAEB00326012 /* WJChart.m in Sources */,
 				9B8B0D4D1F9D903600031086 /* WJGetContacts.m in Sources */,
 				C43691681F04D09900F18340 /* wj3DTouchVC.m in Sources */,
 				C45F94141F0B6BDC0021FFF0 /* UIImage+animatedGIF.m in Sources */,
@@ -1137,6 +1175,7 @@
 				C4760EDB1F1778BD00F6DC09 /* wjImageDetailVC.m in Sources */,
 				C4A0F62F1F626CD3009D5718 /* wjEncryptionVC.m in Sources */,
 				C43691D01F06554F00F18340 /* wjGestureLockView.m in Sources */,
+				9BB20B0B1FA1CAEB00326012 /* WJLineChart.m in Sources */,
 				C4274BA11F035EE500C7B379 /* wjScanQRCodeVC.m in Sources */,
 				C48BB0101F25912500FBFE87 /* NSString+wjEncryptionData.m in Sources */,
 				C4274B4E1F0200E800C7B379 /* main.m in Sources */,
@@ -1153,6 +1192,7 @@
 				C48E2DF91F5908490078260B /* wjWebCacheVC.m in Sources */,
 				C4274B951F020C7800C7B379 /* wjModel.m in Sources */,
 				C4682D111F612351003AB3A8 /* WJCardScrollViewController.m in Sources */,
+				9BB20B011FA1C82000326012 /* WJChartSpeciesVC.m in Sources */,
 				C48BB0141F2591C200FBFE87 /* GTMBase64.m in Sources */,
 				C4682D181F612445003AB3A8 /* PGIndexBannerSubiew.m in Sources */,
 				C4274B8F1F02055D00C7B379 /* UIImage+wjQRCodeCreate.m in Sources */,

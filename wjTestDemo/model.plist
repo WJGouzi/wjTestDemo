@@ -114,5 +114,13 @@
 		<key>imageName</key>
 		<string>contactBook</string>
 	</dict>
+	<dict>
+		<key>viewController</key>
+		<string>WJChartSpeciesVC</string>
+		<key>cellName</key>
+		<string>图表展示</string>
+		<key>imageName</key>
+		<string>contactBook</string>
+	</dict>
 </array>
 </plist>
