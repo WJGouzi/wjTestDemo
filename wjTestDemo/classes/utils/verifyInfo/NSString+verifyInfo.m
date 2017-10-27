@@ -12,7 +12,6 @@
 
 
 
-
 ///////////////////////////// 正则表达式相关  ///////////////////////////////
 
 - (BOOL)isValidateWithRegex:(NSString *)regex {
@@ -34,6 +33,23 @@
     NSPredicate *phoneTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",phoneRegex];
     return [phoneTest evaluateWithObject:self];
 }
+
+/** 座机号的验证*/
+- (BOOL)isValidTelePhoneNumber {
+    //验证输入的固话中不带符号
+    NSString * teleRegex = @"^(0[0-9]{2,3})?([2-9][0-9]{6,7})+(-[0-9]{1,4})?$|(^(13[0-9]|15[0|3|6|7|8|9]|18[8|9])\\d{8}$)";
+    //验证输入的固话中带 "-"符号
+    NSString * teleRegexM = @"^(0[0-9]{2,3}-)?([2-9][0-9]{6,7})+(-[0-9]{1,4})?$|(^(13[0-9]|15[0|3|6|7|8|9]|18[8|9])\\d{8}$)";
+    //验证输入的固话中带 " "符号
+    NSString * teleRegex_ = @"^(0[0-9]{2,3} )?([2-9][0-9]{6,7})+(-[0-9]{1,4})?$|(^(13[0-9]|15[0|3|6|7|8|9]|18[8|9])\\d{8}$)";
+    
+    NSPredicate *teleTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", teleRegex];
+    NSPredicate *teleTestM = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", teleRegexM];
+    NSPredicate *teleTest_ = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", teleRegex_];
+    BOOL isTelePhoneNmuber = [teleTest evaluateWithObject:self] || [teleTestM evaluateWithObject:self] || [teleTest_ evaluateWithObject:self];
+    return isTelePhoneNmuber;
+}
+
 
 /* 车牌号验证 MODIFIED BY HELENSONG */
 - (BOOL)isValidCarNo {

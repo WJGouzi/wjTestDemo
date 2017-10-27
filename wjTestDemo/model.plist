@@ -120,7 +120,7 @@
 		<key>cellName</key>
 		<string>图表展示</string>
 		<key>imageName</key>
-		<string>contactBook</string>
+		<string>chart</string>
 	</dict>
 </array>
 </plist>

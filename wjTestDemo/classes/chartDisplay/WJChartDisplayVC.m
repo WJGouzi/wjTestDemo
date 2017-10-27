@@ -20,6 +20,7 @@
     self.title = @"曲线图";
     self.view.backgroundColor = [UIColor whiteColor];
     [self showFirstQuardrant];
+    NSLog(@"%d", [@"0838 2874056" isValidTelePhoneNumber]);
 }
 
 //第一象限折线图

@@ -18,6 +18,9 @@
 /** 手机号码验证 */
 - (BOOL)isValidPhoneNum;
 
+/** 座机号的验证*/
+- (BOOL)isValidTelePhoneNumber;
+
 /** 车牌号验证 */
 - (BOOL)isValidCarNo;
 
