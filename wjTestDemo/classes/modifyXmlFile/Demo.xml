@@ -1,26 +1,26 @@
 <students count="4" grade="7">
-    <student>
+    <student id="12">
         <name>张三</name>
         <gender>男</gender>
-        <age>99</age>
+        <id>99</id>
         <nickname>三张</nickname>
     </student>
     <student>
         <name>李四</name>
         <gender>男</gender>
-        <age>99</age>
+        <id>99</id>
         <nickname>四李</nickname>
     </student>
     <student>
         <name>王五</name>
         <gender>男</gender>
-        <age>1</age>
+        <id>1</id>
         <nickname>五王</nickname>
     </student>
     <student>
         <name>赵六</name>
         <gender>女</gender>
-        <age>1</age>
+        <id>1</id>
         <nickname>六赵</nickname>
     </student>
 </students>

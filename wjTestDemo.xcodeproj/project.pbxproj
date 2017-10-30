@@ -29,6 +29,9 @@
 		9BB20B041FA1CADA00326012 /* WJChartDisplayVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB20B031FA1CADA00326012 /* WJChartDisplayVC.m */; };
 		9BB20B0A1FA1CAEB00326012 /* WJChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB20B071FA1CAEB00326012 /* WJChart.m */; };
 		9BB20B0B1FA1CAEB00326012 /* WJLineChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB20B091FA1CAEB00326012 /* WJLineChart.m */; };
+		9BB20B141FA6B65500326012 /* XMLReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB20B131FA6B65500326012 /* XMLReader.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9BB20B1A1FA6B76F00326012 /* WJXMLToJsonVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB20B181FA6B76F00326012 /* WJXMLToJsonVC.m */; };
+		9BB20B1B1FA6B76F00326012 /* WJXMLToJsonVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BB20B191FA6B76F00326012 /* WJXMLToJsonVC.xib */; };
 		9BD0F8D71F0520D000B27648 /* 扫描二维码.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BD0F8D61F0520D000B27648 /* 扫描二维码.png */; };
 		C4274B4E1F0200E800C7B379 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C4274B4D1F0200E800C7B379 /* main.m */; };
 		C4274B511F0200E800C7B379 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C4274B501F0200E800C7B379 /* AppDelegate.m */; };
@@ -162,6 +165,11 @@
 		9BB20B071FA1CAEB00326012 /* WJChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJChart.m; sourceTree = "<group>"; };
 		9BB20B081FA1CAEB00326012 /* WJLineChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJLineChart.h; sourceTree = "<group>"; };
 		9BB20B091FA1CAEB00326012 /* WJLineChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJLineChart.m; sourceTree = "<group>"; };
+		9BB20B121FA6B65500326012 /* XMLReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLReader.h; sourceTree = "<group>"; };
+		9BB20B131FA6B65500326012 /* XMLReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLReader.m; sourceTree = "<group>"; };
+		9BB20B171FA6B76F00326012 /* WJXMLToJsonVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WJXMLToJsonVC.h; sourceTree = "<group>"; };
+		9BB20B181FA6B76F00326012 /* WJXMLToJsonVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WJXMLToJsonVC.m; sourceTree = "<group>"; };
+		9BB20B191FA6B76F00326012 /* WJXMLToJsonVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WJXMLToJsonVC.xib; sourceTree = "<group>"; };
 		9BD0F8D61F0520D000B27648 /* 扫描二维码.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "扫描二维码.png"; sourceTree = "<group>"; };
 		C4274B491F0200E800C7B379 /* wjTestDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wjTestDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4274B4D1F0200E800C7B379 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -381,6 +389,26 @@
 			path = Uitls;
 			sourceTree = "<group>";
 		};
+		9BB20B0D1FA6B61D00326012 /* xmlToJson */ = {
+			isa = PBXGroup;
+			children = (
+				9BB20B111FA6B65500326012 /* XMLReader */,
+				9BB20B171FA6B76F00326012 /* WJXMLToJsonVC.h */,
+				9BB20B181FA6B76F00326012 /* WJXMLToJsonVC.m */,
+				9BB20B191FA6B76F00326012 /* WJXMLToJsonVC.xib */,
+			);
+			path = xmlToJson;
+			sourceTree = "<group>";
+		};
+		9BB20B111FA6B65500326012 /* XMLReader */ = {
+			isa = PBXGroup;
+			children = (
+				9BB20B121FA6B65500326012 /* XMLReader.h */,
+				9BB20B131FA6B65500326012 /* XMLReader.m */,
+			);
+			path = XMLReader;
+			sourceTree = "<group>";
+		};
 		C4274B401F0200E800C7B379 = {
 			isa = PBXGroup;
 			children = (
@@ -437,6 +465,7 @@
 		C4274B761F0201D300C7B379 /* classes */ = {
 			isa = PBXGroup;
 			children = (
+				9BB20B0D1FA6B61D00326012 /* xmlToJson */,
 				9BB20AFE1FA1C7C900326012 /* chartDisplay */,
 				9B8B0D4A1F9D901E00031086 /* getContacts */,
 				C469064E1F666B1D00258805 /* modifyXmlFile */,
@@ -1061,6 +1090,7 @@
 				C4760ED51F17745B00F6DC09 /* doubleHand in Resources */,
 				C43691781F04FBE000F18340 /* icon.jpeg in Resources */,
 				C4760ECC1F176F8F00F6DC09 /* wjHandleImageVC.xib in Resources */,
+				9BB20B1B1FA6B76F00326012 /* WJXMLToJsonVC.xib in Resources */,
 				C436915E1F048D1600F18340 /* wjAlterAppIconVC.xib in Resources */,
 				C4274B591F0200E800C7B379 /* Assets.xcassets in Resources */,
 				C45F94121F0B6BDC0021FFF0 /* ProgressHUD.bundle in Resources */,
@@ -1160,6 +1190,7 @@
 				C48E2DFC1F59089C0078260B /* wjWebCacheURLProtocal.m in Sources */,
 				9B6FE80A1F17BBE200660403 /* wjButtonModel.m in Sources */,
 				C46906511F666B4200258805 /* WJModifyXMLFileVC.m in Sources */,
+				9BB20B141FA6B65500326012 /* XMLReader.m in Sources */,
 				C46EEC4A1F56B48B0007A952 /* wjKeyWordVC.m in Sources */,
 				9BB20B041FA1CADA00326012 /* WJChartDisplayVC.m in Sources */,
 				C4682D2A1F612AA2003AB3A8 /* WJCarBannerView.m in Sources */,
@@ -1171,6 +1202,7 @@
 				C45F94141F0B6BDC0021FFF0 /* UIImage+animatedGIF.m in Sources */,
 				C43691B41F06213400F18340 /* wjTouchIDVerificationVC.m in Sources */,
 				C4274B511F0200E800C7B379 /* AppDelegate.m in Sources */,
+				9BB20B1A1FA6B76F00326012 /* WJXMLToJsonVC.m in Sources */,
 				C43691B91F0622B700F18340 /* wjTouchID.m in Sources */,
 				C4760EDB1F1778BD00F6DC09 /* wjImageDetailVC.m in Sources */,
 				C4A0F62F1F626CD3009D5718 /* wjEncryptionVC.m in Sources */,

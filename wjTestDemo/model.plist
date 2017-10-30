@@ -122,5 +122,13 @@
 		<key>imageName</key>
 		<string>chart</string>
 	</dict>
+	<dict>
+		<key>viewController</key>
+		<string>WJXMLToJsonVC</string>
+		<key>cellName</key>
+		<string>xml 转 json</string>
+		<key>imageName</key>
+		<string>xmlToJson</string>
+	</dict>
 </array>
 </plist>
