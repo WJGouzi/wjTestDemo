@@ -130,5 +130,13 @@
 		<key>imageName</key>
 		<string>xmlToJson</string>
 	</dict>
+	<dict>
+		<key>viewController</key>
+		<string>WJSelectedImageVC</string>
+		<key>cellName</key>
+		<string>自定义编辑图片</string>
+		<key>imageName</key>
+		<string>editPhoto</string>
+	</dict>
 </array>
 </plist>

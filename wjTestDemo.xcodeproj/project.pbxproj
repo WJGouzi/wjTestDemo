@@ -123,6 +123,8 @@
 		C4B2F16E1F18B6180028796B /* 缩放_selected@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C4B2F16A1F18B6180028796B /* 缩放_selected@3x.png */; };
 		C4B2F16F1F18B6180028796B /* 缩放@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C4B2F16B1F18B6180028796B /* 缩放@2x.png */; };
 		C4B2F1701F18B6180028796B /* 缩放@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C4B2F16C1F18B6180028796B /* 缩放@3x.png */; };
+		DA875D931FCD5FF400F4F5C9 /* WJEditPhotoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DA875D8F1FCD5FF400F4F5C9 /* WJEditPhotoVC.m */; };
+		DA875D941FCD5FF400F4F5C9 /* WJSelectedImageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DA875D921FCD5FF400F4F5C9 /* WJSelectedImageVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -302,6 +304,10 @@
 		C4B2F16B1F18B6180028796B /* 缩放@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "缩放@2x.png"; sourceTree = "<group>"; };
 		C4B2F16C1F18B6180028796B /* 缩放@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "缩放@3x.png"; sourceTree = "<group>"; };
 		D82EB3AA493BD64263734750 /* Pods_wjTestDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_wjTestDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA875D8F1FCD5FF400F4F5C9 /* WJEditPhotoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJEditPhotoVC.m; sourceTree = "<group>"; };
+		DA875D901FCD5FF400F4F5C9 /* WJEditPhotoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJEditPhotoVC.h; sourceTree = "<group>"; };
+		DA875D911FCD5FF400F4F5C9 /* WJSelectedImageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJSelectedImageVC.h; sourceTree = "<group>"; };
+		DA875D921FCD5FF400F4F5C9 /* WJSelectedImageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJSelectedImageVC.m; sourceTree = "<group>"; };
 		E2F2F86FC9BB0C5E41E26943 /* Pods-wjTestDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wjTestDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-wjTestDemo/Pods-wjTestDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -465,6 +471,7 @@
 		C4274B761F0201D300C7B379 /* classes */ = {
 			isa = PBXGroup;
 			children = (
+				DA875D8E1FCD5FDD00F4F5C9 /* editPhoto */,
 				9BB20B0D1FA6B61D00326012 /* xmlToJson */,
 				9BB20AFE1FA1C7C900326012 /* chartDisplay */,
 				9B8B0D4A1F9D901E00031086 /* getContacts */,
@@ -963,6 +970,17 @@
 			path = utils;
 			sourceTree = "<group>";
 		};
+		DA875D8E1FCD5FDD00F4F5C9 /* editPhoto */ = {
+			isa = PBXGroup;
+			children = (
+				DA875D911FCD5FF400F4F5C9 /* WJSelectedImageVC.h */,
+				DA875D921FCD5FF400F4F5C9 /* WJSelectedImageVC.m */,
+				DA875D901FCD5FF400F4F5C9 /* WJEditPhotoVC.h */,
+				DA875D8F1FCD5FF400F4F5C9 /* WJEditPhotoVC.m */,
+			);
+			path = editPhoto;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1201,8 +1219,10 @@
 				C43691681F04D09900F18340 /* wj3DTouchVC.m in Sources */,
 				C45F94141F0B6BDC0021FFF0 /* UIImage+animatedGIF.m in Sources */,
 				C43691B41F06213400F18340 /* wjTouchIDVerificationVC.m in Sources */,
+				DA875D931FCD5FF400F4F5C9 /* WJEditPhotoVC.m in Sources */,
 				C4274B511F0200E800C7B379 /* AppDelegate.m in Sources */,
 				9BB20B1A1FA6B76F00326012 /* WJXMLToJsonVC.m in Sources */,
+				DA875D941FCD5FF400F4F5C9 /* WJSelectedImageVC.m in Sources */,
 				C43691B91F0622B700F18340 /* wjTouchID.m in Sources */,
 				C4760EDB1F1778BD00F6DC09 /* wjImageDetailVC.m in Sources */,
 				C4A0F62F1F626CD3009D5718 /* wjEncryptionVC.m in Sources */,
