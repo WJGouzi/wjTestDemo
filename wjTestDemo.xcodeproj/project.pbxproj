@@ -123,6 +123,9 @@
 		C4B2F16E1F18B6180028796B /* 缩放_selected@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C4B2F16A1F18B6180028796B /* 缩放_selected@3x.png */; };
 		C4B2F16F1F18B6180028796B /* 缩放@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C4B2F16B1F18B6180028796B /* 缩放@2x.png */; };
 		C4B2F1701F18B6180028796B /* 缩放@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C4B2F16C1F18B6180028796B /* 缩放@3x.png */; };
+		DA4AB9D920439FDC004FFBCE /* WJCornerButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4AB9D820439FDC004FFBCE /* WJCornerButton.m */; };
+		DA4AB9DD2043A061004FFBCE /* WJCornerButtonVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4AB9DB2043A061004FFBCE /* WJCornerButtonVC.m */; };
+		DA4AB9DE2043A061004FFBCE /* WJCornerButtonVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA4AB9DC2043A061004FFBCE /* WJCornerButtonVC.xib */; };
 		DA875D931FCD5FF400F4F5C9 /* WJEditPhotoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DA875D8F1FCD5FF400F4F5C9 /* WJEditPhotoVC.m */; };
 		DA875D941FCD5FF400F4F5C9 /* WJSelectedImageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DA875D921FCD5FF400F4F5C9 /* WJSelectedImageVC.m */; };
 /* End PBXBuildFile section */
@@ -304,6 +307,11 @@
 		C4B2F16B1F18B6180028796B /* 缩放@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "缩放@2x.png"; sourceTree = "<group>"; };
 		C4B2F16C1F18B6180028796B /* 缩放@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "缩放@3x.png"; sourceTree = "<group>"; };
 		D82EB3AA493BD64263734750 /* Pods_wjTestDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_wjTestDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA4AB9D720439FDC004FFBCE /* WJCornerButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WJCornerButton.h; sourceTree = "<group>"; };
+		DA4AB9D820439FDC004FFBCE /* WJCornerButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WJCornerButton.m; sourceTree = "<group>"; };
+		DA4AB9DA2043A061004FFBCE /* WJCornerButtonVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WJCornerButtonVC.h; sourceTree = "<group>"; };
+		DA4AB9DB2043A061004FFBCE /* WJCornerButtonVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WJCornerButtonVC.m; sourceTree = "<group>"; };
+		DA4AB9DC2043A061004FFBCE /* WJCornerButtonVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WJCornerButtonVC.xib; sourceTree = "<group>"; };
 		DA875D8F1FCD5FF400F4F5C9 /* WJEditPhotoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJEditPhotoVC.m; sourceTree = "<group>"; };
 		DA875D901FCD5FF400F4F5C9 /* WJEditPhotoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJEditPhotoVC.h; sourceTree = "<group>"; };
 		DA875D911FCD5FF400F4F5C9 /* WJSelectedImageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJSelectedImageVC.h; sourceTree = "<group>"; };
@@ -471,6 +479,7 @@
 		C4274B761F0201D300C7B379 /* classes */ = {
 			isa = PBXGroup;
 			children = (
+				DA4AB9D320439F81004FFBCE /* cornerButton */,
 				DA875D8E1FCD5FDD00F4F5C9 /* editPhoto */,
 				9BB20B0D1FA6B61D00326012 /* xmlToJson */,
 				9BB20AFE1FA1C7C900326012 /* chartDisplay */,
@@ -970,6 +979,18 @@
 			path = utils;
 			sourceTree = "<group>";
 		};
+		DA4AB9D320439F81004FFBCE /* cornerButton */ = {
+			isa = PBXGroup;
+			children = (
+				DA4AB9D720439FDC004FFBCE /* WJCornerButton.h */,
+				DA4AB9D820439FDC004FFBCE /* WJCornerButton.m */,
+				DA4AB9DA2043A061004FFBCE /* WJCornerButtonVC.h */,
+				DA4AB9DB2043A061004FFBCE /* WJCornerButtonVC.m */,
+				DA4AB9DC2043A061004FFBCE /* WJCornerButtonVC.xib */,
+			);
+			path = cornerButton;
+			sourceTree = "<group>";
+		};
 		DA875D8E1FCD5FDD00F4F5C9 /* editPhoto */ = {
 			isa = PBXGroup;
 			children = (
@@ -1072,6 +1093,7 @@
 				C4682D2C1F612DA0003AB3A8 /* imgsModel.plist in Resources */,
 				C4274B971F020F8F00C7B379 /* model.plist in Resources */,
 				C43691C61F06539A00F18340 /* gesture_node_normal@2x.png in Resources */,
+				DA4AB9DE2043A061004FFBCE /* WJCornerButtonVC.xib in Resources */,
 				9B6FE8221F17C4B600660403 /* 标注@2x.png in Resources */,
 				C4A0F61F1F614454009D5718 /* health_lunboxian_hlt@3x.png in Resources */,
 				C4274BAA1F03614D00C7B379 /* pick_bg.png in Resources */,
@@ -1203,6 +1225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C43691711F04DD0500F18340 /* wjTouchedVC.m in Sources */,
+				DA4AB9D920439FDC004FFBCE /* WJCornerButton.m in Sources */,
 				C4274B541F0200E800C7B379 /* ViewController.m in Sources */,
 				C4A0F62D1F626CD3009D5718 /* wjDataEncryptionVC.m in Sources */,
 				C48E2DFC1F59089C0078260B /* wjWebCacheURLProtocal.m in Sources */,
@@ -1245,6 +1268,7 @@
 				C4274B951F020C7800C7B379 /* wjModel.m in Sources */,
 				C4682D111F612351003AB3A8 /* WJCardScrollViewController.m in Sources */,
 				9BB20B011FA1C82000326012 /* WJChartSpeciesVC.m in Sources */,
+				DA4AB9DD2043A061004FFBCE /* WJCornerButtonVC.m in Sources */,
 				C48BB0141F2591C200FBFE87 /* GTMBase64.m in Sources */,
 				C4682D181F612445003AB3A8 /* PGIndexBannerSubiew.m in Sources */,
 				C4274B8F1F02055D00C7B379 /* UIImage+wjQRCodeCreate.m in Sources */,

@@ -138,5 +138,13 @@
 		<key>imageName</key>
 		<string>editPhoto</string>
 	</dict>
+	<dict>
+		<key>viewController</key>
+		<string>WJCornerButtonVC</string>
+		<key>cellName</key>
+		<string>圆角按钮</string>
+		<key>imageName</key>
+		<string>cornerBtn</string>
+	</dict>
 </array>
 </plist>
