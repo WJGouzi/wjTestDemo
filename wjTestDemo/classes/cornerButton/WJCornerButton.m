@@ -14,8 +14,7 @@
 - (void)makeCorner {
     UIRectCorner corners;
     
-    switch ( self.style )
-    {
+    switch ( self.style ) {
         case 0:
             corners = UIRectCornerBottomLeft;
             break;

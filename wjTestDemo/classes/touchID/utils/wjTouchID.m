@@ -50,7 +50,6 @@
                         self.errType = kErrorTypeAuthenticationFailed;
                         break;
                 }
-               
                 block(NO, self.errType, error);
             }
         }];

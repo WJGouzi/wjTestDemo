@@ -126,6 +126,8 @@
 		DA4AB9D920439FDC004FFBCE /* WJCornerButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4AB9D820439FDC004FFBCE /* WJCornerButton.m */; };
 		DA4AB9DD2043A061004FFBCE /* WJCornerButtonVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4AB9DB2043A061004FFBCE /* WJCornerButtonVC.m */; };
 		DA4AB9DE2043A061004FFBCE /* WJCornerButtonVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA4AB9DC2043A061004FFBCE /* WJCornerButtonVC.xib */; };
+		DA619F2C212A5AD400F8C1B2 /* WJSelectDateTimeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DA619F2B212A5AD400F8C1B2 /* WJSelectDateTimeVC.m */; };
+		DA619F2F212A5AF900F8C1B2 /* WJDateTimeSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = DA619F2E212A5AF900F8C1B2 /* WJDateTimeSelectView.m */; };
 		DA875D931FCD5FF400F4F5C9 /* WJEditPhotoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DA875D8F1FCD5FF400F4F5C9 /* WJEditPhotoVC.m */; };
 		DA875D941FCD5FF400F4F5C9 /* WJSelectedImageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DA875D921FCD5FF400F4F5C9 /* WJSelectedImageVC.m */; };
 /* End PBXBuildFile section */
@@ -312,6 +314,10 @@
 		DA4AB9DA2043A061004FFBCE /* WJCornerButtonVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WJCornerButtonVC.h; sourceTree = "<group>"; };
 		DA4AB9DB2043A061004FFBCE /* WJCornerButtonVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WJCornerButtonVC.m; sourceTree = "<group>"; };
 		DA4AB9DC2043A061004FFBCE /* WJCornerButtonVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WJCornerButtonVC.xib; sourceTree = "<group>"; };
+		DA619F2A212A5AD400F8C1B2 /* WJSelectDateTimeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WJSelectDateTimeVC.h; sourceTree = "<group>"; };
+		DA619F2B212A5AD400F8C1B2 /* WJSelectDateTimeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WJSelectDateTimeVC.m; sourceTree = "<group>"; };
+		DA619F2D212A5AF900F8C1B2 /* WJDateTimeSelectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJDateTimeSelectView.h; sourceTree = "<group>"; };
+		DA619F2E212A5AF900F8C1B2 /* WJDateTimeSelectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJDateTimeSelectView.m; sourceTree = "<group>"; };
 		DA875D8F1FCD5FF400F4F5C9 /* WJEditPhotoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJEditPhotoVC.m; sourceTree = "<group>"; };
 		DA875D901FCD5FF400F4F5C9 /* WJEditPhotoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJEditPhotoVC.h; sourceTree = "<group>"; };
 		DA875D911FCD5FF400F4F5C9 /* WJSelectedImageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJSelectedImageVC.h; sourceTree = "<group>"; };
@@ -479,6 +485,7 @@
 		C4274B761F0201D300C7B379 /* classes */ = {
 			isa = PBXGroup;
 			children = (
+				DA619F29212A5AB300F8C1B2 /* selectDateTime */,
 				DA4AB9D320439F81004FFBCE /* cornerButton */,
 				DA875D8E1FCD5FDD00F4F5C9 /* editPhoto */,
 				9BB20B0D1FA6B61D00326012 /* xmlToJson */,
@@ -991,6 +998,17 @@
 			path = cornerButton;
 			sourceTree = "<group>";
 		};
+		DA619F29212A5AB300F8C1B2 /* selectDateTime */ = {
+			isa = PBXGroup;
+			children = (
+				DA619F2A212A5AD400F8C1B2 /* WJSelectDateTimeVC.h */,
+				DA619F2B212A5AD400F8C1B2 /* WJSelectDateTimeVC.m */,
+				DA619F2D212A5AF900F8C1B2 /* WJDateTimeSelectView.h */,
+				DA619F2E212A5AF900F8C1B2 /* WJDateTimeSelectView.m */,
+			);
+			path = selectDateTime;
+			sourceTree = "<group>";
+		};
 		DA875D8E1FCD5FDD00F4F5C9 /* editPhoto */ = {
 			isa = PBXGroup;
 			children = (
@@ -1266,9 +1284,11 @@
 				C45F94131F0B6BDC0021FFF0 /* ProgressHUD.m in Sources */,
 				C48E2DF91F5908490078260B /* wjWebCacheVC.m in Sources */,
 				C4274B951F020C7800C7B379 /* wjModel.m in Sources */,
+				DA619F2F212A5AF900F8C1B2 /* WJDateTimeSelectView.m in Sources */,
 				C4682D111F612351003AB3A8 /* WJCardScrollViewController.m in Sources */,
 				9BB20B011FA1C82000326012 /* WJChartSpeciesVC.m in Sources */,
 				DA4AB9DD2043A061004FFBCE /* WJCornerButtonVC.m in Sources */,
+				DA619F2C212A5AD400F8C1B2 /* WJSelectDateTimeVC.m in Sources */,
 				C48BB0141F2591C200FBFE87 /* GTMBase64.m in Sources */,
 				C4682D181F612445003AB3A8 /* PGIndexBannerSubiew.m in Sources */,
 				C4274B8F1F02055D00C7B379 /* UIImage+wjQRCodeCreate.m in Sources */,

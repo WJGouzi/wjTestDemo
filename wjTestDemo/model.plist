@@ -146,5 +146,13 @@
 		<key>imageName</key>
 		<string>cornerBtn</string>
 	</dict>
+	<dict>
+		<key>viewController</key>
+		<string>WJSelectDateTimeVC</string>
+		<key>cellName</key>
+		<string>选择时间日期</string>
+		<key>imageName</key>
+		<string>selectDate</string>
+	</dict>
 </array>
 </plist>

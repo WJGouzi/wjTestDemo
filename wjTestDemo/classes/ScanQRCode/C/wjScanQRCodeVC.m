@@ -217,7 +217,8 @@ typedef void(^actionBlock)(UIAlertAction *action);
     for (CIQRCodeFeature *feature in features) {
         NSLog(@"msg = %@",feature.messageString); // 打印二维码中的信息
     }
-
+    
+    
     // 显示二维码中的信息
     NSMutableString *str = [[NSMutableString alloc] init];
     [features enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
