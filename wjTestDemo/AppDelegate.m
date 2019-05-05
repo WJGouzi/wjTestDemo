@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
+#import "WJHomepageVC.h"
 #import <Contacts/Contacts.h>
 
 //#define wjScreenWidth [UIScreen mainScreen].bounds.size.width
@@ -25,7 +26,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
-    ViewController *vc = [[ViewController alloc] init];
+    WJHomepageVC *vc = [[WJHomepageVC alloc] init];
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
     self.window.rootViewController = nav;
     [self.window makeKeyAndVisible];

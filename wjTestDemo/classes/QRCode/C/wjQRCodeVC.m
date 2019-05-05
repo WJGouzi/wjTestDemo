@@ -73,7 +73,7 @@
     backView.layer.cornerRadius = 5.f;
     UIImageView *imageView = [[UIImageView alloc] init];
     imageView.frame = CGRectMake(2, 2, 46, 46);
-    imageView.image = [UIImage imageNamed:@"icon.jpeg"];
+    imageView.image = [UIImage imageNamed:@"backgroundImageGakki.jpeg"];
     imageView.layer.masksToBounds = YES;
     imageView.layer.cornerRadius = 5.f;
     [backView addSubview:imageView];

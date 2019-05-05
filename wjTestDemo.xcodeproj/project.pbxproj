@@ -35,7 +35,6 @@
 		9BD0F8D71F0520D000B27648 /* 扫描二维码.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BD0F8D61F0520D000B27648 /* 扫描二维码.png */; };
 		C4274B4E1F0200E800C7B379 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C4274B4D1F0200E800C7B379 /* main.m */; };
 		C4274B511F0200E800C7B379 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C4274B501F0200E800C7B379 /* AppDelegate.m */; };
-		C4274B541F0200E800C7B379 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4274B531F0200E800C7B379 /* ViewController.m */; };
 		C4274B571F0200E800C7B379 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4274B551F0200E800C7B379 /* Main.storyboard */; };
 		C4274B591F0200E800C7B379 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4274B581F0200E800C7B379 /* Assets.xcassets */; };
 		C4274B5C1F0200E800C7B379 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4274B5A1F0200E800C7B379 /* LaunchScreen.storyboard */; };
@@ -46,7 +45,7 @@
 		C4274B921F02081700C7B379 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4274B911F02081700C7B379 /* CoreImage.framework */; };
 		C4274B951F020C7800C7B379 /* wjModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C4274B941F020C7800C7B379 /* wjModel.m */; };
 		C4274B971F020F8F00C7B379 /* model.plist in Resources */ = {isa = PBXBuildFile; fileRef = C4274B961F020F8F00C7B379 /* model.plist */; };
-		C4274B991F023C4B00C7B379 /* icon.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C4274B981F023C4B00C7B379 /* icon.jpeg */; };
+		C4274B991F023C4B00C7B379 /* backgroundImageGakki.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C4274B981F023C4B00C7B379 /* backgroundImageGakki.jpeg */; };
 		C4274BA11F035EE500C7B379 /* wjScanQRCodeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C4274B9F1F035EE500C7B379 /* wjScanQRCodeVC.m */; };
 		C4274BA21F035EE500C7B379 /* wjScanQRCodeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4274BA01F035EE500C7B379 /* wjScanQRCodeVC.xib */; };
 		C4274BA81F03614D00C7B379 /* line.png in Resources */ = {isa = PBXBuildFile; fileRef = C4274BA41F03614D00C7B379 /* line.png */; };
@@ -130,6 +129,8 @@
 		DA619F2F212A5AF900F8C1B2 /* WJDateTimeSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = DA619F2E212A5AF900F8C1B2 /* WJDateTimeSelectView.m */; };
 		DA875D931FCD5FF400F4F5C9 /* WJEditPhotoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DA875D8F1FCD5FF400F4F5C9 /* WJEditPhotoVC.m */; };
 		DA875D941FCD5FF400F4F5C9 /* WJSelectedImageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DA875D921FCD5FF400F4F5C9 /* WJSelectedImageVC.m */; };
+		DC207CB7227EBA5A00F49E95 /* WJHomepageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DC207CB6227EBA5A00F49E95 /* WJHomepageVC.m */; };
+		DC207CBA227EBF6E00F49E95 /* WJHomepageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DC207CB9227EBF6E00F49E95 /* WJHomepageCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -182,8 +183,6 @@
 		C4274B4D1F0200E800C7B379 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C4274B4F1F0200E800C7B379 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C4274B501F0200E800C7B379 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C4274B521F0200E800C7B379 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		C4274B531F0200E800C7B379 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		C4274B561F0200E800C7B379 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C4274B581F0200E800C7B379 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C4274B5B1F0200E800C7B379 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -200,7 +199,7 @@
 		C4274B931F020C7800C7B379 /* wjModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wjModel.h; sourceTree = "<group>"; };
 		C4274B941F020C7800C7B379 /* wjModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = wjModel.m; sourceTree = "<group>"; };
 		C4274B961F020F8F00C7B379 /* model.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = model.plist; sourceTree = "<group>"; };
-		C4274B981F023C4B00C7B379 /* icon.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = icon.jpeg; sourceTree = "<group>"; };
+		C4274B981F023C4B00C7B379 /* backgroundImageGakki.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = backgroundImageGakki.jpeg; sourceTree = "<group>"; };
 		C4274B9E1F035EE500C7B379 /* wjScanQRCodeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wjScanQRCodeVC.h; sourceTree = "<group>"; };
 		C4274B9F1F035EE500C7B379 /* wjScanQRCodeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = wjScanQRCodeVC.m; sourceTree = "<group>"; };
 		C4274BA01F035EE500C7B379 /* wjScanQRCodeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = wjScanQRCodeVC.xib; sourceTree = "<group>"; };
@@ -322,6 +321,10 @@
 		DA875D901FCD5FF400F4F5C9 /* WJEditPhotoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJEditPhotoVC.h; sourceTree = "<group>"; };
 		DA875D911FCD5FF400F4F5C9 /* WJSelectedImageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJSelectedImageVC.h; sourceTree = "<group>"; };
 		DA875D921FCD5FF400F4F5C9 /* WJSelectedImageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJSelectedImageVC.m; sourceTree = "<group>"; };
+		DC207CB5227EBA5A00F49E95 /* WJHomepageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WJHomepageVC.h; sourceTree = "<group>"; };
+		DC207CB6227EBA5A00F49E95 /* WJHomepageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WJHomepageVC.m; sourceTree = "<group>"; };
+		DC207CB8227EBF6E00F49E95 /* WJHomepageCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WJHomepageCell.h; sourceTree = "<group>"; };
+		DC207CB9227EBF6E00F49E95 /* WJHomepageCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WJHomepageCell.m; sourceTree = "<group>"; };
 		E2F2F86FC9BB0C5E41E26943 /* Pods-wjTestDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wjTestDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-wjTestDemo/Pods-wjTestDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -538,7 +541,7 @@
 		C4274B8C1F02054500C7B379 /* utils */ = {
 			isa = PBXGroup;
 			children = (
-				C4274B981F023C4B00C7B379 /* icon.jpeg */,
+				C4274B981F023C4B00C7B379 /* backgroundImageGakki.jpeg */,
 				C4274B8D1F02055D00C7B379 /* UIImage+wjQRCodeCreate.h */,
 				C4274B8E1F02055D00C7B379 /* UIImage+wjQRCodeCreate.m */,
 			);
@@ -608,8 +611,10 @@
 			children = (
 				C4274B4F1F0200E800C7B379 /* AppDelegate.h */,
 				C4274B501F0200E800C7B379 /* AppDelegate.m */,
-				C4274B521F0200E800C7B379 /* ViewController.h */,
-				C4274B531F0200E800C7B379 /* ViewController.m */,
+				DC207CB5227EBA5A00F49E95 /* WJHomepageVC.h */,
+				DC207CB6227EBA5A00F49E95 /* WJHomepageVC.m */,
+				DC207CB8227EBF6E00F49E95 /* WJHomepageCell.h */,
+				DC207CB9227EBF6E00F49E95 /* WJHomepageCell.m */,
 				C4274B931F020C7800C7B379 /* wjModel.h */,
 				C4274B941F020C7800C7B379 /* wjModel.m */,
 				C4274B961F020F8F00C7B379 /* model.plist */,
@@ -1129,7 +1134,7 @@
 				9B89F9F61F983866005BDB8A /* lib@2x.png in Resources */,
 				9B6FE82A1F17C4B600660403 /* 重置@2x.png in Resources */,
 				C43691691F04D09900F18340 /* wj3DTouchVC.xib in Resources */,
-				C4274B991F023C4B00C7B379 /* icon.jpeg in Resources */,
+				C4274B991F023C4B00C7B379 /* backgroundImageGakki.jpeg in Resources */,
 				C43691BC1F0626BB00F18340 /* 指纹.png in Resources */,
 				9B6FE8231F17C4B600660403 /* 标注@3x.png in Resources */,
 				9BD0F8D71F0520D000B27648 /* 扫描二维码.png in Resources */,
@@ -1244,7 +1249,6 @@
 			files = (
 				C43691711F04DD0500F18340 /* wjTouchedVC.m in Sources */,
 				DA4AB9D920439FDC004FFBCE /* WJCornerButton.m in Sources */,
-				C4274B541F0200E800C7B379 /* ViewController.m in Sources */,
 				C4A0F62D1F626CD3009D5718 /* wjDataEncryptionVC.m in Sources */,
 				C48E2DFC1F59089C0078260B /* wjWebCacheURLProtocal.m in Sources */,
 				9B6FE80A1F17BBE200660403 /* wjButtonModel.m in Sources */,
@@ -1270,6 +1274,7 @@
 				C43691D01F06554F00F18340 /* wjGestureLockView.m in Sources */,
 				9BB20B0B1FA1CAEB00326012 /* WJLineChart.m in Sources */,
 				C4274BA11F035EE500C7B379 /* wjScanQRCodeVC.m in Sources */,
+				DC207CB7227EBA5A00F49E95 /* WJHomepageVC.m in Sources */,
 				C48BB0101F25912500FBFE87 /* NSString+wjEncryptionData.m in Sources */,
 				C4274B4E1F0200E800C7B379 /* main.m in Sources */,
 				C46294141F186AD400A233B3 /* wjPageView.m in Sources */,
@@ -1287,6 +1292,7 @@
 				DA619F2F212A5AF900F8C1B2 /* WJDateTimeSelectView.m in Sources */,
 				C4682D111F612351003AB3A8 /* WJCardScrollViewController.m in Sources */,
 				9BB20B011FA1C82000326012 /* WJChartSpeciesVC.m in Sources */,
+				DC207CBA227EBF6E00F49E95 /* WJHomepageCell.m in Sources */,
 				DA4AB9DD2043A061004FFBCE /* WJCornerButtonVC.m in Sources */,
 				DA619F2C212A5AD400F8C1B2 /* WJSelectDateTimeVC.m in Sources */,
 				C48BB0141F2591C200FBFE87 /* GTMBase64.m in Sources */,

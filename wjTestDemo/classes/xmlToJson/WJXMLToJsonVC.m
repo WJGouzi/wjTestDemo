@@ -20,6 +20,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"xml->json";
     NSString *xmlFilePath = [[NSBundle mainBundle] pathForResource:@"Demo.xml" ofType:nil]; // 模拟器上是没得有问题的
     
     NSData *xmlData = [NSData dataWithContentsOfFile:xmlFilePath];
