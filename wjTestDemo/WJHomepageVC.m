@@ -41,14 +41,14 @@
 
 /** UI界面的搭建 */
 - (void)setUpUI {
-    self.view.backgroundColor = [UIColor whiteColor];
+    self.view.backgroundColor = WHITE_COLOR;
     self.title = @"我的私有项目";
     
     UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
     flowLayout.itemSize = CGSizeMake(75, 75);
     
     UICollectionView *collectionView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:flowLayout];
-    collectionView.backgroundColor = [UIColor whiteColor];
+    collectionView.backgroundColor = NORMAL_THEME_COLOR;
     collectionView.dataSource = self;
     collectionView.delegate = self;
     [self.view addSubview:collectionView];

@@ -38,17 +38,20 @@
 
 #pragma mark - UI界面的搭建
 - (void)setUpUI {
-    
-    self.layer.borderColor = [UIColor colorWithRed:114/255.0 green:114/255.0 blue:114/255.0 alpha:1.0].CGColor;
-    self.layer.borderWidth = 0.5;
+    self.backgroundColor = WHITE_COLOR;
+    UIBezierPath *maskPath = [UIBezierPath bezierPathWithRoundedRect:self.bounds byRoundingCorners:UIRectCornerAllCorners cornerRadii:CGSizeMake(5, 5)];
+    CAShapeLayer *maskLayer = [CAShapeLayer layer];
+    maskLayer.frame = self.bounds;
+    maskLayer.path = maskPath.CGPath;
+    self.layer.mask = maskLayer;
     
     self.iconImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"backgroundImageGakki.jpeg"]];
     self.iconImageView.contentMode = UIViewContentModeScaleAspectFit;
     [self addSubview:self.iconImageView];
     
     self.titleLabel = [[UILabel alloc] init];
-    self.titleLabel.font = [UIFont systemFontOfSize:12 * SCREEN_RATE];
-    self.titleLabel.textColor = [UIColor colorWithRed:20/255.0 green:20/255.0 blue:20/255.0 alpha:1.0];
+    self.titleLabel.font = [UIFont systemFontOfSize:SCREEN_FIT(12)];
+    self.titleLabel.textColor = NORMAL_TITLE_COLOR;
     self.titleLabel.textAlignment = NSTextAlignmentCenter;
     self.titleLabel.numberOfLines = 0;
     [self.titleLabel sizeToFit];
@@ -60,10 +63,9 @@
 - (void)layoutSubviews {
     [super layoutSubviews];
     
-    self.iconImageView.frame = CGRectMake(20 * SCREEN_RATE, 5 * SCREEN_RATE, 35 * SCREEN_RATE, 30 * SCREEN_RATE);
+    self.iconImageView.frame = CGRectMake(SCREEN_FIT(20), SCREEN_FIT(5), SCREEN_FIT(35), SCREEN_FIT(30));
     CGFloat imageViewMaxY = CGRectGetMaxY(self.iconImageView.frame);
-    self.titleLabel.frame = CGRectMake(0, imageViewMaxY + 5 * SCREEN_RATE, self.bounds.size.width, 35 * SCREEN_RATE);
-    
+    self.titleLabel.frame = CGRectMake(0, imageViewMaxY + SCREEN_FIT(5), self.bounds.size.width, SCREEN_FIT(35));
 }
 
 
