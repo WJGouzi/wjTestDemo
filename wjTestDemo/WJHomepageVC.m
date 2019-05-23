@@ -45,7 +45,7 @@
     self.title = @"我的私有项目";
     
     UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
-    flowLayout.itemSize = CGSizeMake(75, 75);
+    flowLayout.itemSize = CGSizeMake(SCREEN_FIT(75), SCREEN_FIT(75));
     
     UICollectionView *collectionView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:flowLayout];
     collectionView.backgroundColor = NORMAL_THEME_COLOR;
@@ -68,7 +68,7 @@
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
 
-    WJHomepageCell *cell = [WJHomepageCell homepageCellWithCollectionView:collectionView inIndexPath:indexPath cellFrame:CGRectMake(0, 0, 75, 75)];
+    WJHomepageCell *cell = [WJHomepageCell homepageCellWithCollectionView:collectionView inIndexPath:indexPath cellFrame:CGRectMake(0, 0, SCREEN_FIT(75), SCREEN_FIT(75))];
     cell.model = self.dataArray[indexPath.row];
     return cell;
     
@@ -78,19 +78,19 @@
 #pragma mark - UICollectionViewDelegateFlowLayout
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section {
     if (section == 0) {
-        return 15;
+        return SCREEN_FIT(15);
     }
     
-    return 10;
+    return SCREEN_FIT(10);
 }
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
-    return CGSizeMake(75, 75);
+    return CGSizeMake(SCREEN_FIT(75), SCREEN_FIT(75));
 }
 
 
 - (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section {
-    return UIEdgeInsetsMake(15, 15, 5, 15);//分别为上、左、下、右
+    return UIEdgeInsetsMake(SCREEN_FIT(15), SCREEN_FIT(15), SCREEN_FIT(5), SCREEN_FIT(15)); //分别为上、左、下、右
 }
 
 

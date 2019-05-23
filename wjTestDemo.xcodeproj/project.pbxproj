@@ -1077,7 +1077,7 @@
 				TargetAttributes = {
 					C4274B481F0200E800C7B379 = {
 						CreatedOnToolsVersion = 8.3.1;
-						DevelopmentTeam = 72F35J6V2R;
+						DevelopmentTeam = V6D4S9252L;
 						ProvisioningStyle = Automatic;
 					};
 					C4274B611F0200E800C7B379 = {
@@ -1436,7 +1436,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 72F35J6V2R;
+				DEVELOPMENT_TEAM = V6D4S9252L;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/wjTestDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = wjTestDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1454,7 +1454,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 72F35J6V2R;
+				DEVELOPMENT_TEAM = V6D4S9252L;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/wjTestDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = wjTestDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
