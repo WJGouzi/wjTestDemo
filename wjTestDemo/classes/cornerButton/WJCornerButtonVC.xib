@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WJCornerButtonVC">
             <connections>
+                <outlet property="cornerView" destination="cps-Lw-IqF" id="8Ek-q5-JI0"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -19,133 +20,190 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c8d-VE-Oi1" customClass="WJCornerButton">
-                    <rect key="frame" x="210" y="80" width="101" height="30"/>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Cq-yS-wsv" customClass="WJCornerButton">
+                    <rect key="frame" x="49" y="92" width="93" height="46"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" red="0.57337853039999997" green="0.86733853530000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                    <state key="normal" title="Button"/>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="number" keyPath="style">
-                            <integer key="value" value="1"/>
-                        </userDefinedRuntimeAttribute>
-                    </userDefinedRuntimeAttributes>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oyr-Yc-ezV" customClass="WJCornerButton">
-                    <rect key="frame" x="66" y="141" width="101" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" red="0.57337853039999997" green="0.86733853530000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                    <state key="normal" title="Button"/>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="number" keyPath="style">
-                            <integer key="value" value="2"/>
-                        </userDefinedRuntimeAttribute>
-                    </userDefinedRuntimeAttributes>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wNK-gg-jXc" customClass="WJCornerButton">
-                    <rect key="frame" x="210" y="141" width="101" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" red="0.57337853039999997" green="0.86733853530000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                    <state key="normal" title="Button"/>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="number" keyPath="style">
-                            <integer key="value" value="3"/>
-                        </userDefinedRuntimeAttribute>
-                    </userDefinedRuntimeAttributes>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i17-2f-4B3" customClass="WJCornerButton">
-                    <rect key="frame" x="66" y="194" width="101" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" red="0.57337853039999997" green="0.86733853530000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                    <state key="normal" title="Button"/>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="number" keyPath="style">
-                            <integer key="value" value="4"/>
-                        </userDefinedRuntimeAttribute>
-                    </userDefinedRuntimeAttributes>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CN8-Lx-9At" customClass="WJCornerButton">
-                    <rect key="frame" x="210" y="194" width="101" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" red="0.57337853039999997" green="0.86733853530000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                    <state key="normal" title="Button"/>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="number" keyPath="style">
-                            <integer key="value" value="5"/>
-                        </userDefinedRuntimeAttribute>
-                    </userDefinedRuntimeAttributes>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jhD-Le-LwL" customClass="WJCornerButton">
-                    <rect key="frame" x="66" y="255" width="101" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" red="0.57337853039999997" green="0.86733853530000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                    <state key="normal" title="Button"/>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="number" keyPath="style">
-                            <integer key="value" value="6"/>
-                        </userDefinedRuntimeAttribute>
-                    </userDefinedRuntimeAttributes>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1YV-9t-ksA" customClass="WJCornerButton">
-                    <rect key="frame" x="210" y="255" width="101" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" red="0.57337853039999997" green="0.86733853530000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                    <state key="normal" title="Button"/>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="number" keyPath="style">
-                            <integer key="value" value="7"/>
-                        </userDefinedRuntimeAttribute>
-                    </userDefinedRuntimeAttributes>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ql8-k5-Mbq" customClass="WJCornerButton">
-                    <rect key="frame" x="66" y="308" width="101" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" red="0.57337853039999997" green="0.86733853530000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                    <state key="normal" title="Button"/>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="number" keyPath="style">
-                            <integer key="value" value="8"/>
-                        </userDefinedRuntimeAttribute>
-                    </userDefinedRuntimeAttributes>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T66-PZ-Jpq" customClass="WJCornerButton">
-                    <rect key="frame" x="210" y="308" width="101" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" red="0.57337853039999997" green="0.86733853530000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                    <state key="normal" title="Button"/>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="number" keyPath="style">
-                            <integer key="value" value="9"/>
-                        </userDefinedRuntimeAttribute>
-                    </userDefinedRuntimeAttributes>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AJg-QL-ckV" customClass="WJCornerButton">
-                    <rect key="frame" x="66" y="369" width="245" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" red="0.57337853039999997" green="0.86733853530000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                    <state key="normal" title="Button"/>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="number" keyPath="style">
-                            <integer key="value" value="10"/>
-                        </userDefinedRuntimeAttribute>
-                    </userDefinedRuntimeAttributes>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8mp-0Y-DKX" customClass="WJCornerButton">
-                    <rect key="frame" x="66" y="80" width="101" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" red="0.57337853039999997" green="0.86733853530000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                    <state key="normal" title="Button"/>
+                    <color key="backgroundColor" red="0.48004740480000002" green="0.62785691020000001" blue="0.84665650130000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <state key="normal" title="Button">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="style">
                             <integer key="value" value="0"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                     <connections>
-                        <action selector="firstBtnAction:" destination="-1" eventType="touchUpInside" id="aLg-NW-e5P"/>
+                        <action selector="cornerButtonClickAction:" destination="-1" eventType="touchUpInside" id="49l-cq-uWc"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2i2-0y-qM5" customClass="WJCornerButton">
+                    <rect key="frame" x="247" y="92" width="93" height="46"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.48004740480000002" green="0.62785691020000001" blue="0.84665650130000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <state key="normal" title="Button">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="style">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="cornerButtonClickAction:" destination="-1" eventType="touchUpInside" id="0n7-aU-asO"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="heK-ru-CbP" customClass="WJCornerButton">
+                    <rect key="frame" x="49" y="158" width="93" height="46"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.48004740480000002" green="0.62785691020000001" blue="0.84665650130000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <state key="normal" title="Button">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="style">
+                            <integer key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="cornerButtonClickAction:" destination="-1" eventType="touchUpInside" id="1Z9-Qr-vST"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K23-nD-oKI" customClass="WJCornerButton">
+                    <rect key="frame" x="247" y="158" width="93" height="46"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.48004740480000002" green="0.62785691020000001" blue="0.84665650130000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <state key="normal" title="Button">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="style">
+                            <integer key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="cornerButtonClickAction:" destination="-1" eventType="touchUpInside" id="x4I-Wv-AiW"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TBO-KU-PE5" customClass="WJCornerButton">
+                    <rect key="frame" x="49" y="225" width="93" height="46"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.48004740480000002" green="0.62785691020000001" blue="0.84665650130000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <state key="normal" title="Button">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="style">
+                            <integer key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="cornerButtonClickAction:" destination="-1" eventType="touchUpInside" id="H1o-1g-EVU"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sD7-HP-cWR" customClass="WJCornerButton">
+                    <rect key="frame" x="247" y="225" width="93" height="46"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.48004740480000002" green="0.62785691020000001" blue="0.84665650130000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <state key="normal" title="Button">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="style">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="cornerButtonClickAction:" destination="-1" eventType="touchUpInside" id="MEW-Lo-O4l"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sL9-3y-nid" customClass="WJCornerButton">
+                    <rect key="frame" x="49" y="291" width="93" height="46"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.48004740480000002" green="0.62785691020000001" blue="0.84665650130000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <state key="normal" title="Button">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="style">
+                            <integer key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="cornerButtonClickAction:" destination="-1" eventType="touchUpInside" id="jUw-70-BgA"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7kc-Qm-wOM" customClass="WJCornerButton">
+                    <rect key="frame" x="247" y="291" width="93" height="46"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.48004740480000002" green="0.62785691020000001" blue="0.84665650130000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <state key="normal" title="Button">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="style">
+                            <integer key="value" value="7"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="cornerButtonClickAction:" destination="-1" eventType="touchUpInside" id="fZ4-4J-gTf"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1D0-bg-kqJ" customClass="WJCornerButton">
+                    <rect key="frame" x="49" y="354" width="93" height="46"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.48004740480000002" green="0.62785691020000001" blue="0.84665650130000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <state key="normal" title="Button">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="style">
+                            <integer key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="cornerButtonClickAction:" destination="-1" eventType="touchUpInside" id="8xi-e0-OUa"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uqg-kH-Zg6" customClass="WJCornerButton">
+                    <rect key="frame" x="49" y="427" width="291" height="46"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.48004740480000002" green="0.62785691020000001" blue="0.84665650130000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <state key="normal" title="Button">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="style">
+                            <integer key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="cornerButtonClickAction:" destination="-1" eventType="touchUpInside" id="2HN-oB-vMg"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hXO-t3-35x" customClass="WJCornerButton">
+                    <rect key="frame" x="247" y="354" width="93" height="46"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.48004740480000002" green="0.62785691020000001" blue="0.84665650130000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <state key="normal" title="Button">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="style">
+                            <integer key="value" value="9"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="cornerButtonClickAction:" destination="-1" eventType="touchUpInside" id="TbS-d9-1yv"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cps-Lw-IqF">
+                    <rect key="frame" x="67" y="498" width="240" height="128"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.48004740480000002" green="0.62785691020000001" blue="0.84665650130000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-            <point key="canvasLocation" x="-19" y="9"/>
+            <point key="canvasLocation" x="68" y="44.527736131934034"/>
         </view>
     </objects>
 </document>

@@ -38,6 +38,7 @@
 #import "DDXML.h"
 #import "DDXMLElementAdditions.h"
 #import "NSString+verifyInfo.h"
+#import "Masonry.h"
 
 #pragma mark - 一些常规的设置
 #pragma mark - 尺寸的设置

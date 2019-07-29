@@ -53,7 +53,7 @@
     
     UIBezierPath *maskPath = [UIBezierPath bezierPathWithRoundedRect:self.bounds
                                                    byRoundingCorners:corners
-                                                         cornerRadii:CGSizeMake(5, 5)];
+                                                         cornerRadii:CGSizeMake(10, 10)];
     CAShapeLayer *maskLayer = [CAShapeLayer layer];
     maskLayer.frame         = self.bounds;
     maskLayer.path          = maskPath.CGPath;

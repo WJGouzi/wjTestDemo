@@ -25,6 +25,18 @@
 		9B6FE82D1F17C4B600660403 /* 重置_selected@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B6FE81D1F17C4B600660403 /* 重置_selected@3x.png */; };
 		9B89F9F61F983866005BDB8A /* lib@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B89F9F51F983866005BDB8A /* lib@2x.png */; };
 		9B8B0D4D1F9D903600031086 /* WJGetContacts.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B8B0D4C1F9D903600031086 /* WJGetContacts.m */; };
+		9B956B4922EE9F9E00408EAE /* WJCornerButtonVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B956B4722EE9F9E00408EAE /* WJCornerButtonVC.m */; };
+		9B956B4A22EE9F9E00408EAE /* WJCornerButtonVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B956B4822EE9F9E00408EAE /* WJCornerButtonVC.xib */; };
+		9B956B7A22EEBE3600408EAE /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B956B6122EEBE3600408EAE /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		9B956B7B22EEBE3600408EAE /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B956B6A22EEBE3600408EAE /* ViewController+MASAdditions.m */; };
+		9B956B7C22EEBE3600408EAE /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B956B6E22EEBE3600408EAE /* MASCompositeConstraint.m */; };
+		9B956B7D22EEBE3600408EAE /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B956B6F22EEBE3600408EAE /* MASConstraintMaker.m */; };
+		9B956B7E22EEBE3600408EAE /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B956B7022EEBE3600408EAE /* MASLayoutConstraint.m */; };
+		9B956B7F22EEBE3600408EAE /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B956B7122EEBE3600408EAE /* NSArray+MASAdditions.m */; };
+		9B956B8022EEBE3600408EAE /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B956B7222EEBE3600408EAE /* View+MASAdditions.m */; };
+		9B956B8122EEBE3600408EAE /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B956B7522EEBE3600408EAE /* MASConstraint.m */; };
+		9B956B8222EEBE3600408EAE /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B956B7722EEBE3600408EAE /* MASViewConstraint.m */; };
+		9B956B8322EEBE3600408EAE /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B956B7822EEBE3600408EAE /* MASViewAttribute.m */; };
 		9BB20B011FA1C82000326012 /* WJChartSpeciesVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB20B001FA1C82000326012 /* WJChartSpeciesVC.m */; };
 		9BB20B041FA1CADA00326012 /* WJChartDisplayVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB20B031FA1CADA00326012 /* WJChartDisplayVC.m */; };
 		9BB20B0A1FA1CAEB00326012 /* WJChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB20B071FA1CAEB00326012 /* WJChart.m */; };
@@ -123,8 +135,6 @@
 		C4B2F16F1F18B6180028796B /* 缩放@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C4B2F16B1F18B6180028796B /* 缩放@2x.png */; };
 		C4B2F1701F18B6180028796B /* 缩放@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C4B2F16C1F18B6180028796B /* 缩放@3x.png */; };
 		DA4AB9D920439FDC004FFBCE /* WJCornerButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4AB9D820439FDC004FFBCE /* WJCornerButton.m */; };
-		DA4AB9DD2043A061004FFBCE /* WJCornerButtonVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4AB9DB2043A061004FFBCE /* WJCornerButtonVC.m */; };
-		DA4AB9DE2043A061004FFBCE /* WJCornerButtonVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA4AB9DC2043A061004FFBCE /* WJCornerButtonVC.xib */; };
 		DA619F2C212A5AD400F8C1B2 /* WJSelectDateTimeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DA619F2B212A5AD400F8C1B2 /* WJSelectDateTimeVC.m */; };
 		DA619F2F212A5AF900F8C1B2 /* WJDateTimeSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = DA619F2E212A5AF900F8C1B2 /* WJDateTimeSelectView.m */; };
 		DA875D931FCD5FF400F4F5C9 /* WJEditPhotoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DA875D8F1FCD5FF400F4F5C9 /* WJEditPhotoVC.m */; };
@@ -165,6 +175,34 @@
 		9B89F9F51F983866005BDB8A /* lib@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lib@2x.png"; sourceTree = "<group>"; };
 		9B8B0D4B1F9D903600031086 /* WJGetContacts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WJGetContacts.h; sourceTree = "<group>"; };
 		9B8B0D4C1F9D903600031086 /* WJGetContacts.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WJGetContacts.m; sourceTree = "<group>"; };
+		9B956B4622EE9F9E00408EAE /* WJCornerButtonVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WJCornerButtonVC.h; sourceTree = "<group>"; };
+		9B956B4722EE9F9E00408EAE /* WJCornerButtonVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WJCornerButtonVC.m; sourceTree = "<group>"; };
+		9B956B4822EE9F9E00408EAE /* WJCornerButtonVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WJCornerButtonVC.xib; sourceTree = "<group>"; };
+		9B956B6022EEBE3600408EAE /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
+		9B956B6122EEBE3600408EAE /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		9B956B6222EEBE3600408EAE /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
+		9B956B6322EEBE3600408EAE /* MASLayoutConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASLayoutConstraint.h; sourceTree = "<group>"; };
+		9B956B6422EEBE3600408EAE /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		9B956B6522EEBE3600408EAE /* MASConstraintMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraintMaker.h; sourceTree = "<group>"; };
+		9B956B6622EEBE3600408EAE /* View+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASAdditions.h"; sourceTree = "<group>"; };
+		9B956B6722EEBE3600408EAE /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		9B956B6822EEBE3600408EAE /* MASUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASUtilities.h; sourceTree = "<group>"; };
+		9B956B6922EEBE3600408EAE /* MASViewAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewAttribute.h; sourceTree = "<group>"; };
+		9B956B6A22EEBE3600408EAE /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		9B956B6B22EEBE3600408EAE /* MASViewConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewConstraint.h; sourceTree = "<group>"; };
+		9B956B6C22EEBE3600408EAE /* MASConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraint.h; sourceTree = "<group>"; };
+		9B956B6D22EEBE3600408EAE /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		9B956B6E22EEBE3600408EAE /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
+		9B956B6F22EEBE3600408EAE /* MASConstraintMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraintMaker.m; sourceTree = "<group>"; };
+		9B956B7022EEBE3600408EAE /* MASLayoutConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASLayoutConstraint.m; sourceTree = "<group>"; };
+		9B956B7122EEBE3600408EAE /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		9B956B7222EEBE3600408EAE /* View+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "View+MASAdditions.m"; sourceTree = "<group>"; };
+		9B956B7322EEBE3600408EAE /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		9B956B7422EEBE3600408EAE /* Masonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Masonry.h; sourceTree = "<group>"; };
+		9B956B7522EEBE3600408EAE /* MASConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraint.m; sourceTree = "<group>"; };
+		9B956B7622EEBE3600408EAE /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		9B956B7722EEBE3600408EAE /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
+		9B956B7822EEBE3600408EAE /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
 		9BB20AFF1FA1C82000326012 /* WJChartSpeciesVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WJChartSpeciesVC.h; sourceTree = "<group>"; };
 		9BB20B001FA1C82000326012 /* WJChartSpeciesVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WJChartSpeciesVC.m; sourceTree = "<group>"; };
 		9BB20B021FA1CADA00326012 /* WJChartDisplayVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WJChartDisplayVC.h; sourceTree = "<group>"; };
@@ -310,9 +348,6 @@
 		D82EB3AA493BD64263734750 /* Pods_wjTestDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_wjTestDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA4AB9D720439FDC004FFBCE /* WJCornerButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WJCornerButton.h; sourceTree = "<group>"; };
 		DA4AB9D820439FDC004FFBCE /* WJCornerButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WJCornerButton.m; sourceTree = "<group>"; };
-		DA4AB9DA2043A061004FFBCE /* WJCornerButtonVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WJCornerButtonVC.h; sourceTree = "<group>"; };
-		DA4AB9DB2043A061004FFBCE /* WJCornerButtonVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WJCornerButtonVC.m; sourceTree = "<group>"; };
-		DA4AB9DC2043A061004FFBCE /* WJCornerButtonVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WJCornerButtonVC.xib; sourceTree = "<group>"; };
 		DA619F2A212A5AD400F8C1B2 /* WJSelectDateTimeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WJSelectDateTimeVC.h; sourceTree = "<group>"; };
 		DA619F2B212A5AD400F8C1B2 /* WJSelectDateTimeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WJSelectDateTimeVC.m; sourceTree = "<group>"; };
 		DA619F2D212A5AF900F8C1B2 /* WJDateTimeSelectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJDateTimeSelectView.h; sourceTree = "<group>"; };
@@ -387,6 +422,38 @@
 				9B8B0D4C1F9D903600031086 /* WJGetContacts.m */,
 			);
 			path = getContacts;
+			sourceTree = "<group>";
+		};
+		9B956B5F22EEBE3600408EAE /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				9B956B6022EEBE3600408EAE /* MASCompositeConstraint.h */,
+				9B956B6122EEBE3600408EAE /* NSLayoutConstraint+MASDebugAdditions.m */,
+				9B956B6222EEBE3600408EAE /* MASConstraint+Private.h */,
+				9B956B6322EEBE3600408EAE /* MASLayoutConstraint.h */,
+				9B956B6422EEBE3600408EAE /* NSArray+MASShorthandAdditions.h */,
+				9B956B6522EEBE3600408EAE /* MASConstraintMaker.h */,
+				9B956B6622EEBE3600408EAE /* View+MASAdditions.h */,
+				9B956B6722EEBE3600408EAE /* NSArray+MASAdditions.h */,
+				9B956B6822EEBE3600408EAE /* MASUtilities.h */,
+				9B956B6922EEBE3600408EAE /* MASViewAttribute.h */,
+				9B956B6A22EEBE3600408EAE /* ViewController+MASAdditions.m */,
+				9B956B6B22EEBE3600408EAE /* MASViewConstraint.h */,
+				9B956B6C22EEBE3600408EAE /* MASConstraint.h */,
+				9B956B6D22EEBE3600408EAE /* NSLayoutConstraint+MASDebugAdditions.h */,
+				9B956B6E22EEBE3600408EAE /* MASCompositeConstraint.m */,
+				9B956B6F22EEBE3600408EAE /* MASConstraintMaker.m */,
+				9B956B7022EEBE3600408EAE /* MASLayoutConstraint.m */,
+				9B956B7122EEBE3600408EAE /* NSArray+MASAdditions.m */,
+				9B956B7222EEBE3600408EAE /* View+MASAdditions.m */,
+				9B956B7322EEBE3600408EAE /* View+MASShorthandAdditions.h */,
+				9B956B7422EEBE3600408EAE /* Masonry.h */,
+				9B956B7522EEBE3600408EAE /* MASConstraint.m */,
+				9B956B7622EEBE3600408EAE /* ViewController+MASAdditions.h */,
+				9B956B7722EEBE3600408EAE /* MASViewConstraint.m */,
+				9B956B7822EEBE3600408EAE /* MASViewAttribute.m */,
+			);
+			path = Masonry;
 			sourceTree = "<group>";
 		};
 		9BB20AFE1FA1C7C900326012 /* chartDisplay */ = {
@@ -777,6 +844,7 @@
 		C45F940B1F0B6B8A0021FFF0 /* utils */ = {
 			isa = PBXGroup;
 			children = (
+				9B956B5F22EEBE3600408EAE /* Masonry */,
 				C480DB681F7CF23F00A162C3 /* verifyInfo */,
 				C45F940C1F0B6BDC0021FFF0 /* ProgressHud */,
 			);
@@ -996,9 +1064,9 @@
 			children = (
 				DA4AB9D720439FDC004FFBCE /* WJCornerButton.h */,
 				DA4AB9D820439FDC004FFBCE /* WJCornerButton.m */,
-				DA4AB9DA2043A061004FFBCE /* WJCornerButtonVC.h */,
-				DA4AB9DB2043A061004FFBCE /* WJCornerButtonVC.m */,
-				DA4AB9DC2043A061004FFBCE /* WJCornerButtonVC.xib */,
+				9B956B4622EE9F9E00408EAE /* WJCornerButtonVC.h */,
+				9B956B4722EE9F9E00408EAE /* WJCornerButtonVC.m */,
+				9B956B4822EE9F9E00408EAE /* WJCornerButtonVC.xib */,
 			);
 			path = cornerButton;
 			sourceTree = "<group>";
@@ -1116,7 +1184,7 @@
 				C4682D2C1F612DA0003AB3A8 /* imgsModel.plist in Resources */,
 				C4274B971F020F8F00C7B379 /* model.plist in Resources */,
 				C43691C61F06539A00F18340 /* gesture_node_normal@2x.png in Resources */,
-				DA4AB9DE2043A061004FFBCE /* WJCornerButtonVC.xib in Resources */,
+				9B956B4A22EE9F9E00408EAE /* WJCornerButtonVC.xib in Resources */,
 				9B6FE8221F17C4B600660403 /* 标注@2x.png in Resources */,
 				C4A0F61F1F614454009D5718 /* health_lunboxian_hlt@3x.png in Resources */,
 				C4274BAA1F03614D00C7B379 /* pick_bg.png in Resources */,
@@ -1253,6 +1321,7 @@
 				C48E2DFC1F59089C0078260B /* wjWebCacheURLProtocal.m in Sources */,
 				9B6FE80A1F17BBE200660403 /* wjButtonModel.m in Sources */,
 				C46906511F666B4200258805 /* WJModifyXMLFileVC.m in Sources */,
+				9B956B8322EEBE3600408EAE /* MASViewAttribute.m in Sources */,
 				9BB20B141FA6B65500326012 /* XMLReader.m in Sources */,
 				C46EEC4A1F56B48B0007A952 /* wjKeyWordVC.m in Sources */,
 				9BB20B041FA1CADA00326012 /* WJChartDisplayVC.m in Sources */,
@@ -1262,29 +1331,38 @@
 				9BB20B0A1FA1CAEB00326012 /* WJChart.m in Sources */,
 				9B8B0D4D1F9D903600031086 /* WJGetContacts.m in Sources */,
 				C43691681F04D09900F18340 /* wj3DTouchVC.m in Sources */,
+				9B956B8222EEBE3600408EAE /* MASViewConstraint.m in Sources */,
 				C45F94141F0B6BDC0021FFF0 /* UIImage+animatedGIF.m in Sources */,
 				C43691B41F06213400F18340 /* wjTouchIDVerificationVC.m in Sources */,
 				DA875D931FCD5FF400F4F5C9 /* WJEditPhotoVC.m in Sources */,
 				C4274B511F0200E800C7B379 /* AppDelegate.m in Sources */,
 				9BB20B1A1FA6B76F00326012 /* WJXMLToJsonVC.m in Sources */,
+				9B956B7F22EEBE3600408EAE /* NSArray+MASAdditions.m in Sources */,
+				9B956B4922EE9F9E00408EAE /* WJCornerButtonVC.m in Sources */,
 				DA875D941FCD5FF400F4F5C9 /* WJSelectedImageVC.m in Sources */,
+				9B956B7C22EEBE3600408EAE /* MASCompositeConstraint.m in Sources */,
 				C43691B91F0622B700F18340 /* wjTouchID.m in Sources */,
 				C4760EDB1F1778BD00F6DC09 /* wjImageDetailVC.m in Sources */,
 				C4A0F62F1F626CD3009D5718 /* wjEncryptionVC.m in Sources */,
 				C43691D01F06554F00F18340 /* wjGestureLockView.m in Sources */,
+				9B956B7B22EEBE3600408EAE /* ViewController+MASAdditions.m in Sources */,
 				9BB20B0B1FA1CAEB00326012 /* WJLineChart.m in Sources */,
 				C4274BA11F035EE500C7B379 /* wjScanQRCodeVC.m in Sources */,
 				DC207CB7227EBA5A00F49E95 /* WJHomepageVC.m in Sources */,
+				9B956B7D22EEBE3600408EAE /* MASConstraintMaker.m in Sources */,
 				C48BB0101F25912500FBFE87 /* NSString+wjEncryptionData.m in Sources */,
 				C4274B4E1F0200E800C7B379 /* main.m in Sources */,
 				C46294141F186AD400A233B3 /* wjPageView.m in Sources */,
 				C4760ECF1F17704900F6DC09 /* wjImageModel.m in Sources */,
 				9B6FE8071F17B92600660403 /* wjButton.m in Sources */,
 				C480DB6B1F7CF26100A162C3 /* NSString+verifyInfo.m in Sources */,
+				9B956B8122EEBE3600408EAE /* MASConstraint.m in Sources */,
 				C4760ECB1F176F8F00F6DC09 /* wjHandleImageVC.m in Sources */,
 				C4274B891F02029700C7B379 /* wjQRCodeVC.m in Sources */,
 				C4B2F1681F18A2E30028796B /* wjSaveImageVC.m in Sources */,
+				9B956B8022EEBE3600408EAE /* View+MASAdditions.m in Sources */,
 				C4682D171F612445003AB3A8 /* NewPagedFlowView.m in Sources */,
+				9B956B7A22EEBE3600408EAE /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				C46BEFE61F60F22400D878B8 /* WJGraduallyChangeVC.m in Sources */,
 				C45F94131F0B6BDC0021FFF0 /* ProgressHUD.m in Sources */,
 				C48E2DF91F5908490078260B /* wjWebCacheVC.m in Sources */,
@@ -1293,8 +1371,8 @@
 				C4682D111F612351003AB3A8 /* WJCardScrollViewController.m in Sources */,
 				9BB20B011FA1C82000326012 /* WJChartSpeciesVC.m in Sources */,
 				DC207CBA227EBF6E00F49E95 /* WJHomepageCell.m in Sources */,
-				DA4AB9DD2043A061004FFBCE /* WJCornerButtonVC.m in Sources */,
 				DA619F2C212A5AD400F8C1B2 /* WJSelectDateTimeVC.m in Sources */,
+				9B956B7E22EEBE3600408EAE /* MASLayoutConstraint.m in Sources */,
 				C48BB0141F2591C200FBFE87 /* GTMBase64.m in Sources */,
 				C4682D181F612445003AB3A8 /* PGIndexBannerSubiew.m in Sources */,
 				C4274B8F1F02055D00C7B379 /* UIImage+wjQRCodeCreate.m in Sources */,
@@ -1441,6 +1519,17 @@
 				INFOPLIST_FILE = wjTestDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/wjTestDemo/classes/utils/Masonry",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"KissXML\"",
+					"-framework",
+					"\"RegexKitLite\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.wj.wjTestDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1459,6 +1548,17 @@
 				INFOPLIST_FILE = wjTestDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/wjTestDemo/classes/utils/Masonry",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"KissXML\"",
+					"-framework",
+					"\"RegexKitLite\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.wj.wjTestDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
