@@ -31,6 +31,7 @@
 #import "wjWebCacheVC.h"            // web缓存
 #import "WJCardScrollViewController.h" // 卡片式轮播
 #import "WJModifyXMLFileVC.h"       // 修改xml文件
+#import "UIView+WJCornerView.h"     // 修改View的圆角的类
 
 #pragma mark - 引入的三方类库
 #import "ProgressHUD.h"

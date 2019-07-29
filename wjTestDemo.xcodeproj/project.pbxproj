@@ -37,6 +37,7 @@
 		9B956B8122EEBE3600408EAE /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B956B7522EEBE3600408EAE /* MASConstraint.m */; };
 		9B956B8222EEBE3600408EAE /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B956B7722EEBE3600408EAE /* MASViewConstraint.m */; };
 		9B956B8322EEBE3600408EAE /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B956B7822EEBE3600408EAE /* MASViewAttribute.m */; };
+		9B956B8822EEC34C00408EAE /* UIView+WJCornerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B956B8722EEC34C00408EAE /* UIView+WJCornerView.m */; };
 		9BB20B011FA1C82000326012 /* WJChartSpeciesVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB20B001FA1C82000326012 /* WJChartSpeciesVC.m */; };
 		9BB20B041FA1CADA00326012 /* WJChartDisplayVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB20B031FA1CADA00326012 /* WJChartDisplayVC.m */; };
 		9BB20B0A1FA1CAEB00326012 /* WJChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB20B071FA1CAEB00326012 /* WJChart.m */; };
@@ -203,6 +204,8 @@
 		9B956B7622EEBE3600408EAE /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
 		9B956B7722EEBE3600408EAE /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
 		9B956B7822EEBE3600408EAE /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
+		9B956B8622EEC34C00408EAE /* UIView+WJCornerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+WJCornerView.h"; sourceTree = "<group>"; };
+		9B956B8722EEC34C00408EAE /* UIView+WJCornerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+WJCornerView.m"; sourceTree = "<group>"; };
 		9BB20AFF1FA1C82000326012 /* WJChartSpeciesVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WJChartSpeciesVC.h; sourceTree = "<group>"; };
 		9BB20B001FA1C82000326012 /* WJChartSpeciesVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WJChartSpeciesVC.m; sourceTree = "<group>"; };
 		9BB20B021FA1CADA00326012 /* WJChartDisplayVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WJChartDisplayVC.h; sourceTree = "<group>"; };
@@ -1067,6 +1070,8 @@
 				9B956B4622EE9F9E00408EAE /* WJCornerButtonVC.h */,
 				9B956B4722EE9F9E00408EAE /* WJCornerButtonVC.m */,
 				9B956B4822EE9F9E00408EAE /* WJCornerButtonVC.xib */,
+				9B956B8622EEC34C00408EAE /* UIView+WJCornerView.h */,
+				9B956B8722EEC34C00408EAE /* UIView+WJCornerView.m */,
 			);
 			path = cornerButton;
 			sourceTree = "<group>";
@@ -1338,6 +1343,7 @@
 				C4274B511F0200E800C7B379 /* AppDelegate.m in Sources */,
 				9BB20B1A1FA6B76F00326012 /* WJXMLToJsonVC.m in Sources */,
 				9B956B7F22EEBE3600408EAE /* NSArray+MASAdditions.m in Sources */,
+				9B956B8822EEC34C00408EAE /* UIView+WJCornerView.m in Sources */,
 				9B956B4922EE9F9E00408EAE /* WJCornerButtonVC.m in Sources */,
 				DA875D941FCD5FF400F4F5C9 /* WJSelectedImageVC.m in Sources */,
 				9B956B7C22EEBE3600408EAE /* MASCompositeConstraint.m in Sources */,

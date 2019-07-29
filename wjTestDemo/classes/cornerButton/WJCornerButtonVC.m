@@ -41,6 +41,17 @@
     
     
     
+    UIView *redView = [[UIView alloc] init];
+    redView.backgroundColor = [UIColor redColor];
+    redView.frame = CGRectMake(50, 600, 40, 40);
+    [self.view addSubview:redView];
+//    [redView mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.centerX.mas_equalTo(self.view.mas_centerX);
+//        make.bottom.mas_equalTo(self.view.mas_bottom).offset(-50);
+//    }];
+    
+    [UIView cornerViewInView:redView cornerRadius:10 cornerType:13];
+    
 }
 
 - (IBAction)cornerButtonClickAction:(WJCornerButton *)sender {
